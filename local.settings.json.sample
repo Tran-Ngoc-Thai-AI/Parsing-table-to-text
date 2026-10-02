@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AZURE_OPENAI_ENDPOINT": "xxx",
+    "AZURE_OPENAI_API_KEY": "xxx",
+    "AZURE_OPENAI_DEPLOYMENT": "xxx",
+    "AZURE_STORAGE_CONNECTION_STRING": "xxx",
+    "AZURE_STORAGE_INPUT_CONTAINER": "xxx",
+    "AZURE_STORAGE_OUTPUT_CONTAINER": "xxx"
+  }
+}
