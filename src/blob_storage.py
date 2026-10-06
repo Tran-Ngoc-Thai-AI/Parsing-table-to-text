@@ -1,8 +1,7 @@
 from pathlib import Path
-from typing import List
+from typing import Any, Dict, List
 
 from azure.storage.blob import BlobServiceClient
-
 
 class BlobStorageClient:
     """
@@ -59,6 +58,32 @@ class BlobStorageClient:
             if blob_name.lower().endswith(".docx")
         ]
 
+    def list_docx_metadata(self, prefix: str = "") -> List[dict]:
+        """List DOCX blobs with blob properties and metadata."""
+
+        blob_items = self.container_client.list_blobs(
+            name_starts_with=prefix,
+            include=["metadata"],
+        )
+
+        results = []
+
+        for blob in blob_items:
+            if not blob.name.lower().endswith(".docx"):
+                continue
+
+            results.append(
+                {
+                    "name": blob.name,
+                    "etag": blob.etag,
+                    "last_modified": blob.last_modified,
+                    "size": blob.size,
+                    "metadata": blob.metadata or {},
+                }
+            )
+
+        return results
+
     def download_blob(
         self,
         blob_name: str,
@@ -88,6 +113,7 @@ class BlobStorageClient:
         local_path: Path,
         blob_name: str,
         overwrite: bool = True,
+        metadata: dict | None = None,
     ) -> str:
         """Upload one local file to Blob Storage."""
 
@@ -106,10 +132,19 @@ class BlobStorageClient:
             blob_client.upload_blob(
                 file,
                 overwrite=overwrite,
+                metadata=metadata,
             )
 
         return blob_name
 
+    def delete_blob(self, blob_name: str) -> None:
+        """Delete one blob."""
+
+        blob_client = self.container_client.get_blob_client(
+            blob_name
+        )
+
+        blob_client.delete_blob()
 
 if __name__ == "__main__":
 
@@ -171,6 +206,34 @@ if __name__ == "__main__":
 
     print()
     print("TEST 1 PASSED")
+
+    # ============================================================
+    # TEST 1B — LIST DOCX METADATA
+    # ============================================================
+
+    print()
+    print("=" * 80)
+    print("TEST 1B — LIST DOCX METADATA")
+    print("=" * 80)
+
+    docx_metadata = input_client.list_docx_metadata()
+
+    print(f"Total DOCX: {len(docx_metadata)}")
+    print()
+
+    for item in docx_metadata:
+        print(f"Blob name      : {item['name']}")
+        print(f"ETag           : {item['etag']}")
+        print(f"Last modified  : {item['last_modified']}")
+        print(f"Size           : {item['size']} bytes")
+        print("-" * 80)
+
+    if len(docx_metadata) != len(docx_files):
+        raise RuntimeError(
+            "Metadata DOCX count does not match DOCX list count."
+        )
+
+    print("TEST 1B PASSED")
 
     # ============================================================
     # TEST 2 — DOWNLOAD ALL
@@ -273,6 +336,56 @@ if __name__ == "__main__":
     )
 
     print("TEST 3 PASSED")
+
+    # ============================================================
+    # TEST 4 — DELETE
+    # ============================================================
+
+    print()
+    print("=" * 80)
+    print("TEST 4 — DELETE BLOB")
+    print("=" * 80)
+
+    test_blob_name = "__test_delete_blob__.txt"
+
+    print(f"Creating test blob: {test_blob_name}")
+
+    test_blob_client = output_client.container_client.get_blob_client(
+        test_blob_name
+    )
+
+    test_blob_client.upload_blob(
+        b"test delete blob",
+        overwrite=True,
+    )
+
+    # Verify test blob exists
+    output_files_all = output_client.list_blobs()
+
+    if test_blob_name not in output_files_all:
+        raise RuntimeError(
+            "Test blob was not created successfully."
+        )
+
+    print("Test blob created.")
+
+    # Delete
+    print(f"Deleting: {test_blob_name}")
+
+    output_client.delete_blob(
+        blob_name=test_blob_name
+    )
+
+    # Verify deleted
+    output_files_all = output_client.list_blobs()
+
+    if test_blob_name in output_files_all:
+        raise RuntimeError(
+            "Delete verification failed."
+        )
+
+    print("Delete verified.")
+    print("TEST 4 PASSED")
 
     # ============================================================
     # FINAL RESULT
