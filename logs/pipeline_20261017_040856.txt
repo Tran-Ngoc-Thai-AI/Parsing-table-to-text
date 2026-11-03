@@ -1,0 +1,848 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : raw-documents
+Output container : parsing-raw-documents
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 150
+OUTPUT DOCX : 148
+
+--------------------------------------------------------------------------------
+[1/150] 0001.PGV.2026(1) ​Quy che Phan loai va tham quyen ban hanh van ban.docx/0001.PGV.2026(1) ​Quy che Phan loai va tham quyen ban hanh van ban.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/150] 0002.PGV.2026(1) QD The thuc va danh so VB.docx/0002.PGV.2026(1) QD The thuc va danh so VB.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[3/150] 0002.PGV.2026(2) - Quy dinh the thuc va danh so van ban.docx/0002.PGV.2026(2) - Quy dinh the thuc va danh so van ban.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[4/150] 0003.PGV.2026(1) QT Ban hanh VB.docx/0003.PGV.2026(1) QT Ban hanh VB.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[5/150] 0003.PGV.2026(2) - Quy trinh Ban hanh van ban.docx/0003.PGV.2026(2) - Quy trinh Ban hanh van ban.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[6/150] 0005.PGV.2026(1) Quy che to chuc va hoat dong SACOMBANK.docx/0005.PGV.2026(1) Quy che to chuc va hoat dong SACOMBANK.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[7/150] 0005.PGV.2026(2) Quy che to chuc va hoat dong SACOMBANK.docx/0005.PGV.2026(2) Quy che to chuc va hoat dong SACOMBANK.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[8/150] 0006.PGV.2026(1) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc DV.NVNH, CN, PGD.docx/0006.PGV.2026(1) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc DV.NVNH, CN, PGD.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[9/150] 0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx/0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[10/150] 0007.PGV.2026(1) Quy dinh co che hoat dong dac thu cua Chi nhanh Hoa Viet.docx/0007.PGV.2026(1) Quy dinh co che hoat dong dac thu cua Chi nhanh Hoa Viet.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[11/150] 0008.PGV.2026(1) Quy trinh danh gia tac dong van ban phap luat.docx/0008.PGV.2026(1) Quy trinh danh gia tac dong van ban phap luat.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[12/150] 0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx/0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[13/150] 0063.LEG.2026(1) Quy dinh su dung bieu mau Hop dong tin dung.docx/0063.LEG.2026(1) Quy dinh su dung bieu mau Hop dong tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[14/150] 0101.CCD.2026(1) _ Quy dinh danh gia hieu suat tuan thu.docx/0101.CCD.2026(1) _ Quy dinh danh gia hieu suat tuan thu.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[15/150] 0102.CCD.2026(1) _ Quy trinh Quan ly hoat dong thanh tra.docx/0102.CCD.2026(1) _ Quy trinh Quan ly hoat dong thanh tra.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[16/150] 0103.CCD.2026(1) ​Quy che Kiem soat noi bo​.docx/0103.CCD.2026(1) ​Quy che Kiem soat noi bo​.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[17/150] 0104.CCD.2026(1) Quy dinh Giai quyet vu viec.docx/0104.CCD.2026(1) Quy dinh Giai quyet vu viec.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[18/150] 0105.CCD.2026(1) Quy trinh kiem tra, giam sat noi bo.docx/0105.CCD.2026(1) Quy trinh kiem tra, giam sat noi bo.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[19/150] 0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx/0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[20/150] 0501.FMD.2026(1) Quy dinh phuong phap dieu hoa von noi bo.docx/0501.FMD.2026(1) Quy dinh phuong phap dieu hoa von noi bo.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[21/150] 0502.FMD.2026(1) Quy dinh thang diem thi dua tap the.docx/0502.FMD.2026(1) Quy dinh thang diem thi dua tap the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[22/150] 0503.FMD.2026(1) Quy trinh phat trien mang luoi.docx/0503.FMD.2026(1) Quy trinh phat trien mang luoi.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[23/150] 0551.ACC.2026(1) Quy dinh kiem tra, sap xep, dong goi va luu tru chung tu ke toan.docx/0551.ACC.2026(1) Quy dinh kiem tra, sap xep, dong goi va luu tru chung tu ke toan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[24/150] 0552.ACC.2026(1) Quy dinh che do bao cao thong ke.docx/0552.ACC.2026(1) Quy dinh che do bao cao thong ke.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[25/150] 1001.RMD.2026(1) Quy trinh danh gia noi bo ve muc du von (ICAAP).docx/1001.RMD.2026(1) Quy trinh danh gia noi bo ve muc du von (ICAAP).docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[26/150] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[27/150] 1003.RMD.2026(1) Quy dinh danh gia rui ro trong yeu.docx/1003.RMD.2026(1) Quy dinh danh gia rui ro trong yeu.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[28/150] 1004.RMD.2026(1) Quy dinh To chuc va hoat dong cua Hội dong rui ro.docx/1004.RMD.2026(1) Quy dinh To chuc va hoat dong cua Hội dong rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[29/150] 1005.RMD.2026(1) Quy dinh Quan ly rui ro thanh khoan.docx/1005.RMD.2026(1) Quy dinh Quan ly rui ro thanh khoan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[30/150] 1007.RMD.2026(1) Quy dinh Quan ly rui ro lai suat tren so ngan hang.docx/1007.RMD.2026(1) Quy dinh Quan ly rui ro lai suat tren so ngan hang.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[31/150] 1010.RMD.2026(1) Quy che Quan ly rui ro.docx/1010.RMD.2026(1) Quy che Quan ly rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[32/150] 1098.DRD.2026(1) Quy trinh xu ly va thu hoi no.docx/1098.DRD.2026(1) Quy trinh xu ly va thu hoi no.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[33/150] 1100.DRD.2026(1) Quy che quan ly no.docx/1100.DRD.2026(1) Quy che quan ly no.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[34/150] 1100.DRD.2026(2) Quy che Quan ly no.docx/1100.DRD.2026(2) Quy che Quan ly no.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[35/150] 1101.CRM.2026(1) Quy trinh tham dinh phe duyet han muc the tin dung KHCN truc tiep.docx/1101.CRM.2026(1) Quy trinh tham dinh phe duyet han muc the tin dung KHCN truc tiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[36/150] 1102.CRM.2026(1) - Quy trinh tham dinh va phe duyet cho vay doi voi KHCN.docx/1102.CRM.2026(1) - Quy trinh tham dinh va phe duyet cho vay doi voi KHCN.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[37/150] 1102.CRM.2026(2) Quy trinh tham dinh va phe duyet cho vay doi voi Khach hang ca nha.docx/1102.CRM.2026(2) Quy trinh tham dinh va phe duyet cho vay doi voi Khach hang ca nha.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[38/150] 1103.CRM.2026(1) Quy dinh tham dinh, PD CTD KHPN.docx/1103.CRM.2026(1) Quy dinh tham dinh, PD CTD KHPN.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[39/150] 1104.CRM.2026(1) Quy che phan loai TSBĐ tieu chi nhan va ty le cap tin dung.docx/1104.CRM.2026(1) Quy che phan loai TSBĐ tieu chi nhan va ty le cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[40/150] 1105.CRM.2026(1) Quy trinh canh bao som khach hang ca nhan.docx/1105.CRM.2026(1) Quy trinh canh bao som khach hang ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[41/150] 1105.CRM.2026(2) Quy trinh canh bao som rui ro tin dung khach hang ca nhan.docx/1105.CRM.2026(2) Quy trinh canh bao som rui ro tin dung khach hang ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[42/150] 1106.CRM.2026(1) Quy dinh phat hanh thu chap thuan cap tin dung.docx/1106.CRM.2026(1) Quy dinh phat hanh thu chap thuan cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[43/150] 1107.CRM.2026(1) Quy dinh Co cau lai thoi han tra no.docx/1107.CRM.2026(1) Quy dinh Co cau lai thoi han tra no.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[44/150] 1108.CRM.2026(1) Quy che mua, ban no.docx/1108.CRM.2026(1) Quy che mua, ban no.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[45/150] 1109.CRM.2026(1) Quy dinh bao dam cap tin dung.docx/1109.CRM.2026(1) Quy dinh bao dam cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[46/150] 1110.CRM.2026(1) Quy dinh kiem tra, giam sat sau cap tin dung.docx/1110.CRM.2026(1) Quy dinh kiem tra, giam sat sau cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[47/150] 1110.CRM.2026(2) Quy dinh kiem tra, giam sat sau cap tin dung.docx/1110.CRM.2026(2) Quy dinh kiem tra, giam sat sau cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[48/150] 1111.CRM.2026(1) Quy dinh chung ve cap tin dung.docx/1111.CRM.2026(1) Quy dinh chung ve cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[49/150] 1111.CRM.2026(2) Quy dinh chung ve cap tin dung.docx/1111.CRM.2026(2) Quy dinh chung ve cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[50/150] 1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx/1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[51/150] 1113.CRM.2026(1) Quy che phan quyet cap tin dung.docx/1113.CRM.2026(1) Quy che phan quyet cap tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[52/150] 1115.CRM.2026(1) Quy dinh ve cho vay va giai ngan hoan von.docx/1115.CRM.2026(1) Quy dinh ve cho vay va giai ngan hoan von.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[53/150] 1251.VAL.2026(1) Quy trinh dinh gia tai san bao dam.docx/1251.VAL.2026(1) Quy trinh dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[54/150] 1251.VAL.2026(2) Quy trinh dinh gia tai san bao dam.docx/1251.VAL.2026(2) Quy trinh dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[55/150] 1252.VAL.2026(1) Quy trinh xay dung khung gia tai san bao dam.docx/1252.VAL.2026(1) Quy trinh xay dung khung gia tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[56/150] 1253.VAL.2026(1) Quy trinh danh gia chat luong dinh gia tai san bao dam.docx/1253.VAL.2026(1) Quy trinh danh gia chat luong dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[57/150] 1701.WPD.2026(1) San pham cap tin dung cho doanh nghiep SME, MSME.docx/1701.WPD.2026(1) San pham cap tin dung cho doanh nghiep SME, MSME.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[58/150] 1702.WPD.2026(1) San pham The doanh nghiep.docx/1702.WPD.2026(1) San pham The doanh nghiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[59/150] 1703.WPD.2026(1) San pham Cho vay mua xe o to doanh nghiep.docx/1703.WPD.2026(1) San pham Cho vay mua xe o to doanh nghiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[60/150] 1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[61/150] 1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[62/150] 1706.WPD.2026(1) Quy dinh Nghiep vu chuyen tien ra nuoc ngoai danh cho khach h.docx/1706.WPD.2026(1) Quy dinh Nghiep vu chuyen tien ra nuoc ngoai danh cho khach h.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[63/150] 1707.WPD.2026(1) San pham Chiet khau Hoi phieu kem Bo chung tu nho thu xuat kh.docx/1707.WPD.2026(1) San pham Chiet khau Hoi phieu kem Bo chung tu nho thu xuat kh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[64/150] 1708.WPD.2026(1) Quy trinh phat hanh the doanh nghiep.docx/1708.WPD.2026(1) Quy trinh phat hanh the doanh nghiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[65/150] 1709.WPD.2026(1) San pham thu tin dung dac thu.docx/1709.WPD.2026(1) San pham thu tin dung dac thu.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[66/150] 1710.WPD.2026(1) San pham Thuong luong thanh toan BCT theo LC.docx/1710.WPD.2026(1) San pham Thuong luong thanh toan BCT theo LC.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[67/150] 1711.WPD.2026(1) San pham Tai tro LC xuat khau.docx/1711.WPD.2026(1) San pham Tai tro LC xuat khau.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[68/150] 1712.WPD.2026(1) San pham Tien gui co ky han.docx/1712.WPD.2026(1) San pham Tien gui co ky han.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[69/150] 1730.WPD.2026(1) San pham bao lanh.docx/1730.WPD.2026(1) San pham bao lanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[70/150] 2125.BAN.2026(1) Quy trinh phan phoi san pham bao hiem.docx/2125.BAN.2026(1) Quy trinh phan phoi san pham bao hiem.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[71/150] 2151.RBD.2026(1) Quy trinh phat trien va quan ly May giao dich tu dong.docx/2151.RBD.2026(1) Quy trinh phat trien va quan ly May giao dich tu dong.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[72/150] 2201.RPP.2026(1) Quy dinh phat trien va quan ly Don vi chap nhan the.docx/2201.RPP.2026(1) Quy dinh phat trien va quan ly Don vi chap nhan the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[73/150] 2202.RPP.2026(1) Quy trinh xu ly giao dich voi Don vi chap nhan the,.docx/2202.RPP.2026(1) Quy trinh xu ly giao dich voi Don vi chap nhan the,.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[74/150] 2203.RPP.2026(1) Quy trinh giam sat va xu ly canh bao giao dich the.docx/2203.RPP.2026(1) Quy trinh giam sat va xu ly canh bao giao dich the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[75/150] 2251.RPD.2026(1) Quy trinh phat hanh the ca nhan.docx/2251.RPD.2026(1) Quy trinh phat hanh the ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[76/150] 2252.RPD.2026(1) San pham The ca nhan.docx/2252.RPD.2026(1) San pham The ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[77/150] 2253.RPD.2026(1) San pham cho vay mua bat dong san co giay chung nhan.docx/2253.RPD.2026(1) San pham cho vay mua bat dong san co giay chung nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[78/150] 2254.RPD.2026(1) San pham cho vay hoan von mua bat dong san.docx/2254.RPD.2026(1) San pham cho vay hoan von mua bat dong san.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[79/150] 2255.RPD.2026(1) San pham vay mua bat dong san chua co Giay chung nhan.docx/2255.RPD.2026(1) San pham vay mua bat dong san chua co Giay chung nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[80/150] 2256.RPD.2026(1) San pham vay tai tro thue, phi, tien su dung dat.docx/2256.RPD.2026(1) San pham vay tai tro thue, phi, tien su dung dat.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[81/150] 2257.RPD.2026(1) San pham cho vay tieu dung co tai san bao dam.docx/2257.RPD.2026(1) San pham cho vay tieu dung co tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[82/150] 2258.RPD.2026(1) San pham cho vay tieu dung khong Tai san bao dam.docx/2258.RPD.2026(1) San pham cho vay tieu dung khong Tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[83/150] 2259.RPD.2026(1) San pham Cho vay dam bao bang so du tien gui.docx/2259.RPD.2026(1) San pham Cho vay dam bao bang so du tien gui.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[84/150] 2259.RPD.2026(2) San pham cho vay bao dam bang so du tien gui.docx/2259.RPD.2026(2) San pham cho vay bao dam bang so du tien gui.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[85/150] 2260.RPD.2026(1) San pham cho vay du hoc.docx/2260.RPD.2026(1) San pham cho vay du hoc.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[86/150] 2261.RPD.2026(1) San pham cho vay mua xe o to ca nhan.docx/2261.RPD.2026(1) San pham cho vay mua xe o to ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[87/150] 2262.RPD.2026(1) San pham cho vay san xuat kinh doanh.docx/2262.RPD.2026(1) San pham cho vay san xuat kinh doanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[88/150] 2262.RPD.2026(2) San pham cho vay san xuat kinh doanh.docx/2262.RPD.2026(2) San pham cho vay san xuat kinh doanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[89/150] 2263.RPD.2026(1) San pham cho vay phat trien kinh te gia dinh.docx/2263.RPD.2026(1) San pham cho vay phat trien kinh te gia dinh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[90/150] 2264.RPD.2026(1) San pham cho vay nong nghiep.docx/2264.RPD.2026(1) San pham cho vay nong nghiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[91/150] 2264.RPD.2026(2) San pham cho vay nong nghiep.docx/2264.RPD.2026(2) San pham cho vay nong nghiep.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[92/150] 2265.RPD.2026(1) San pham Thau chi tieu dung.docx/2265.RPD.2026(1) San pham Thau chi tieu dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[93/150] 2266.RPD.2026(1) San pham Thau chi san xuat kinh doanh.docx/2266.RPD.2026(1) San pham Thau chi san xuat kinh doanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[94/150] 2267.RPD.2026(1) San pham cho vay bao dam bang so du tien gui truc tuyen.docx/2267.RPD.2026(1) San pham cho vay bao dam bang so du tien gui truc tuyen.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[95/150] 2268.RPD.2026(1) San pham Chung chi tien gui linh hoat.docx/2268.RPD.2026(1) San pham Chung chi tien gui linh hoat.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[96/150] 2269.RPD.2026(1) Quy dinh Chuyen tien ra nuoc ngoai danh cho Khach hang ca nhan.docx/2269.RPD.2026(1) Quy dinh Chuyen tien ra nuoc ngoai danh cho Khach hang ca nhan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[97/150] 2271.RPD.2026(1) San pham cho vay tieu dung tu the tin dung truc tuyen.docx/2271.RPD.2026(1) San pham cho vay tieu dung tu the tin dung truc tuyen.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[98/150] 2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx/2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[99/150] 2273.RPD.2026(1) Quy dinh su dung bieu mau tin dung doi voi KHCN.docx/2273.RPD.2026(1) Quy dinh su dung bieu mau tin dung doi voi KHCN.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[100/150] 2274.RPD.2026(1) San pham Tai khoan thanh toan.docx/2274.RPD.2026(1) San pham Tai khoan thanh toan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[101/150] 2275.RPD.2026(1) San pham tien gui tiet kiem.docx/2275.RPD.2026(1) San pham tien gui tiet kiem.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[102/150] 2276.RPD.2026(1) San pham Chung chi tien gui.docx/2276.RPD.2026(1) San pham Chung chi tien gui.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[103/150] 2288.RPD.2026(1) San pham Sinh loi Tai Loc.docx/2288.RPD.2026(1) San pham Sinh loi Tai Loc.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[104/150] 2351.PBD.2026(1) Quy dinh dinh danh khach hang uu tien.docx/2351.PBD.2026(1) Quy dinh dinh danh khach hang uu tien.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[105/150] 2701.MMD.2026(1) Quy trinh trien khai dich vu ngan quy.docx/2701.MMD.2026(1) Quy trinh trien khai dich vu ngan quy.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[106/150] 2702.MMD.2026(1) Quy trinh xuat nhap khau ngoai te tien mat.docx/2702.MMD.2026(1) Quy trinh xuat nhap khau ngoai te tien mat.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[107/150] 2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx/2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[108/150] 2851.ALM.2026(1) Quy trinh kiem tra, giam sat, quan ly nguon von trai phieu rieng le sau phat hanh.docx/2851.ALM.2026(1) Quy trinh kiem tra, giam sat, quan ly nguon von trai phieu rieng le sau phat hanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[109/150] 2852.ALM.2026(1) Quy trinh phat hanh trai phieu ra cong chung.docx/2852.ALM.2026(1) Quy trinh phat hanh trai phieu ra cong chung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[110/150] 3201.POD.2026(1) - Quy trinh san xuat va giao the vat ly.docx/3201.POD.2026(1) - Quy trinh san xuat va giao the vat ly.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[111/150] 3201.POD.2026(2) Quy trinh san xuat, phan phoi va kich hoat the.docx/3201.POD.2026(2) Quy trinh san xuat, phan phoi va kich hoat the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[112/150] 3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx/3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[113/150] 3202.POD.2026(1) Quy dinh van hanh, giam sat, tiep quy May giao dich tu dong.docx/3202.POD.2026(1) Quy dinh van hanh, giam sat, tiep quy May giao dich tu dong.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[114/150] 3203.POD.2026(1) Quy trinh xu ly yeu cau the.docx/3203.POD.2026(1) Quy trinh xu ly yeu cau the.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[115/150] 3222.POD.2026(1) Quy trinh chuyen tien ra nuoc ngoai.docx/3222.POD.2026(1) Quy trinh chuyen tien ra nuoc ngoai.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[116/150] 3222.POD.2026(2) Quy trinh chuyen tien ra nuoc ngoai.docx/3222.POD.2026(2) Quy trinh chuyen tien ra nuoc ngoai.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[117/150] 3226.POD.2026(1) Quy trinh chuyen tien den tu nuoc ngoai.docx/3226.POD.2026(1) Quy trinh chuyen tien den tu nuoc ngoai.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[118/150] 3226.POD.2026(2) Quy trinh chuyen tien den tu nuoc ngoai.docx/3226.POD.2026(2) Quy trinh chuyen tien den tu nuoc ngoai.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[119/150] 3266.TFO.2026(1) Quy trinh xu ly ho so Bao lanh quoc te.docx/3266.TFO.2026(1) Quy trinh xu ly ho so Bao lanh quoc te.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[120/150] 3288.TFO.2026(1) Quy trinh nghiep vu LC, nho thu xuat khau.docx/3288.TFO.2026(1) Quy trinh nghiep vu LC, nho thu xuat khau.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[121/150] 3300.TFO.2026(1) Quy trinh nghiep vu LC nhap khau.docx/3300.TFO.2026(1) Quy trinh nghiep vu LC nhap khau.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[122/150] 3300.TFO.2026(2) Quy trinh nghiep vu LC, nho thu nhap khau.docx/3300.TFO.2026(2) Quy trinh nghiep vu LC, nho thu nhap khau.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[123/150] 3301.CSD.2026(1) Quy trinh mo va su dung tai khoan thanh toan cua KHCNquay.docx/3301.CSD.2026(1) Quy trinh mo va su dung tai khoan thanh toan cua KHCNquay.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[124/150] 3301.CSD.2026(2) Quy trinh mo va su dung Tai khoan thanh toan.docx/3301.CSD.2026(2) Quy trinh mo va su dung Tai khoan thanh toan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[125/150] 3302.CSD.2026(1) Quy trinh mo va su dung tien gui tiet kiem cua khach hang ca nhan tai quay.docx/3302.CSD.2026(1) Quy trinh mo va su dung tien gui tiet kiem cua khach hang ca nhan tai quay.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[126/150] 3302.CSD.2026(2) Quy trinh mo va su dung tien gui tiet kiem, tien gui co ky han, chung chi tien gui.docx/3302.CSD.2026(2) Quy trinh mo va su dung tien gui tiet kiem, tien gui co ky han, chung chi tien gui.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[127/150] 3303.CSD.2026(1) Quy dinh giao dich mot cua va han muc duyet giao dich.docx/3303.CSD.2026(1) Quy dinh giao dich mot cua va han muc duyet giao dich.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[128/150] 3310.CSD.2026(1) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx/3310.CSD.2026(1) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[129/150] 3310.CSD.2026(2) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx/3310.CSD.2026(2) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[130/150] 3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx/3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[131/150] 3351.COD.2026(1) Quy trinh soan thao ho so tin dung.docx/3351.COD.2026(1) Quy trinh soan thao ho so tin dung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[132/150] 3352.COD.2026(1) Quy trinh giai ngan.docx/3352.COD.2026(1) Quy trinh giai ngan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[133/150] 3352.COD.2026(2) Quy trinh Giai ngan.docx/3352.COD.2026(2) Quy trinh Giai ngan.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[134/150] 3353.COD.2026(1) Quy trinh quan ly tai san bao dam.docx/3353.COD.2026(1) Quy trinh quan ly tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[135/150] 3353.COD.2026(2) Quy trinh Quan ly TSBĐ.docx/3353.COD.2026(2) Quy trinh Quan ly TSBĐ.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[136/150] 3354.COD.2026(1) Quy dinh giao nhan, bao quan va kiem ke ho so tai san bao dam.docx/3354.COD.2026(1) Quy dinh giao nhan, bao quan va kiem ke ho so tai san bao dam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[137/150] 3582.PRC.2026(1) Quy trinh mua sam hang hoa, dich vu.docx/3582.PRC.2026(1) Quy trinh mua sam hang hoa, dich vu.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[138/150] 3582.PRC.2026(2) Quy trinh mua sam hang hoa, dich vu.docx/3582.PRC.2026(2) Quy trinh mua sam hang hoa, dich vu.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[139/150] 3851.PRC.2026(1) Quy che phan cap tham quyen phe duyet tai chinh mua sam.docx/3851.PRC.2026(1) Quy che phan cap tham quyen phe duyet tai chinh mua sam.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[140/150] 3951.TAD.2026(1) Quy trinh Tuyen dung nhan su.docx/3951.TAD.2026(1) Quy trinh Tuyen dung nhan su.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[141/150] 4001.HRM.2026(1) -  Quy trinh quan ly moi quan he lao dong.docx/4001.HRM.2026(1) -  Quy trinh quan ly moi quan he lao dong.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[142/150] 4002.HRM.2026(1) Noi quy lao dong Ngan hang TMCP Sai Gon Tai Loc.docx/4002.HRM.2026(1) Noi quy lao dong Ngan hang TMCP Sai Gon Tai Loc.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[143/150] 4011.HRM.2026(1) Quy che danh gia muc do hoan thanh cong viec.docx/4011.HRM.2026(1) Quy che danh gia muc do hoan thanh cong viec.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[144/150] 4051.LND.2026(1) Quy dinh he thong chuc danh cua cac Don vi nghiep vu Ngan hang, Vung.docx/4051.LND.2026(1) Quy dinh he thong chuc danh cua cac Don vi nghiep vu Ngan hang, Vung.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[145/150] 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\c88877a43b05daf9.docx
+Output: temp_processed\c88877a43b05daf9.docx
+
+Paragraphs: 39215
+Tables    : 1093
+
+Total tables    : 1093
+Tables need LLM : 1078
+Tables skipped  : 15
+Tables prepared for LLM: 1078
+
+Expected tables : 1078
+LLM results     : 1078
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 1078
+Remaining tables: 15
+
+✓ Processed DOCX saved to: temp_processed\c88877a43b05daf9.docx
+✓ Uploaded: 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+
+--------------------------------------------------------------------------------
+[146/150] 4051.LND.2026(3) - Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(3) - Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\e254d45ea64f8bf9.docx
+Output: temp_processed\e254d45ea64f8bf9.docx
+
+Paragraphs: 48590
+Tables    : 1388
+
+Total tables    : 1388
+Tables need LLM : 1373
+Tables skipped  : 15
+Tables prepared for LLM: 1373
+
+Expected tables : 1373
+LLM results     : 1373
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 1373
+Remaining tables: 15
+
+✓ Processed DOCX saved to: temp_processed\e254d45ea64f8bf9.docx
+✓ Uploaded: 4051.LND.2026(3) - Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(3) - Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+
+--------------------------------------------------------------------------------
+[147/150] 4551.ISD.2026(1) - Quy dinh An toan, bao mat cho viec cung cap dich vu truc tuyen cua Ngan hang.docx/4551.ISD.2026(1) - Quy dinh An toan, bao mat cho viec cung cap dich vu truc tuyen cua Ngan hang.docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\3434eb66e82ba245.docx
+Output: temp_processed\3434eb66e82ba245.docx
+
+Paragraphs: 384
+Tables    : 8
+
+Total tables    : 8
+Tables need LLM : 7
+Tables skipped  : 1
+Tables prepared for LLM: 7
+
+Expected tables : 7
+LLM results     : 7
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 7
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\3434eb66e82ba245.docx
+✓ Uploaded: 4551.ISD.2026(1) - Quy dinh An toan, bao mat cho viec cung cap dich vu truc tuyen cua Ngan hang.docx/4551.ISD.2026(1) - Quy dinh An toan, bao mat cho viec cung cap dich vu truc tuyen cua Ngan hang.docx
+
+--------------------------------------------------------------------------------
+[148/150] 5001.GOV.2026(1) Quy Che Phoi hop hoat dong cua HDQT, Bo may Dieu hanh.docx/5001.GOV.2026(1) Quy Che Phoi hop hoat dong cua HDQT, Bo may Dieu hanh.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[149/150] 5002.GOV.2026(1) Quy che cong bo thong tin.docx/5002.GOV.2026(1) Quy che cong bo thong tin.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[150/150] 5101.CBD.2026(1) Quy trinh Truyen thong va Quan tri thuong hieu.docx/5101.CBD.2026(1) Quy trinh Truyen thong va Quan tri thuong hieu.docx
+Status: UNCHANGED
+→ SKIP
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 2
+Modified  : 1
+Unchanged : 147
+Deleted   : 0
+Failed    : 0
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

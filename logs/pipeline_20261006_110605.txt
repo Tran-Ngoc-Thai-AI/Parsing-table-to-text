@@ -1,0 +1,1057 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : raw-documents
+Output container : parsing-raw-documents
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 148
+OUTPUT DOCX : 141
+
+--------------------------------------------------------------------------------
+[1/148] 0001.PGV.2026(1) ​Quy che Phan loai va tham quyen ban hanh van ban.docx/0001.PGV.2026(1) ​Quy che Phan loai va tham quyen ban hanh van ban.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[2/148] 0002.PGV.2026(1) QD The thuc va danh so VB.docx/0002.PGV.2026(1) QD The thuc va danh so VB.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[3/148] 0002.PGV.2026(2) - Quy dinh the thuc va danh so van ban.docx/0002.PGV.2026(2) - Quy dinh the thuc va danh so van ban.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[4/148] 0003.PGV.2026(1) QT Ban hanh VB.docx/0003.PGV.2026(1) QT Ban hanh VB.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[5/148] 0003.PGV.2026(2) - Quy trinh Ban hanh van ban.docx/0003.PGV.2026(2) - Quy trinh Ban hanh van ban.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[6/148] 0005.PGV.2026(1) Quy che to chuc va hoat dong SACOMBANK.docx/0005.PGV.2026(1) Quy che to chuc va hoat dong SACOMBANK.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[7/148] 0005.PGV.2026(2) Quy che to chuc va hoat dong SACOMBANK.docx/0005.PGV.2026(2) Quy che to chuc va hoat dong SACOMBANK.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[8/148] 0006.PGV.2026(1) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc DV.NVNH, CN, PGD.docx/0006.PGV.2026(1) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc DV.NVNH, CN, PGD.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[9/148] 0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx/0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx/0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx
+  Error: [Errno 2] No such file or directory: 'temp\\0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx\\0006.PGV.2026(2) Quy dinh so do to chuc va nhiem vu cua bo may truc thuoc Don vi nghiep vu Ngan hang, Chi nhanh, Phong giao dich.docx'
+
+--------------------------------------------------------------------------------
+[10/148] 0007.PGV.2026(1) Quy dinh co che hoat dong dac thu cua Chi nhanh Hoa Viet.docx/0007.PGV.2026(1) Quy dinh co che hoat dong dac thu cua Chi nhanh Hoa Viet.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[11/148] 0008.PGV.2026(1) Quy trinh danh gia tac dong van ban phap luat.docx/0008.PGV.2026(1) Quy trinh danh gia tac dong van ban phap luat.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[12/148] 0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx/0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx
+Output: temp_processed\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx
+
+Paragraphs: 156
+Tables    : 13
+
+Total tables    : 13
+Tables need LLM : 12
+Tables skipped  : 1
+Tables prepared for LLM: 12
+
+Expected tables : 12
+LLM results     : 12
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 12
+Remaining tables: 1
+✗ Failed: 0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx/0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx
+  Error: [Errno 2] No such file or directory: 'temp_processed\\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx\\0051.LEG.2026(1) Quy trinh cung cap thong tin, phong toa tai khoan, trich nop tien tu tai khoan Khach hang.docx'
+
+--------------------------------------------------------------------------------
+[13/148] 0063.LEG.2026(1) Quy dinh su dung bieu mau Hop dong tin dung.docx/0063.LEG.2026(1) Quy dinh su dung bieu mau Hop dong tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[14/148] 0101.CCD.2026(1) _ Quy dinh danh gia hieu suat tuan thu.docx/0101.CCD.2026(1) _ Quy dinh danh gia hieu suat tuan thu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[15/148] 0102.CCD.2026(1) _ Quy trinh Quan ly hoat dong thanh tra.docx/0102.CCD.2026(1) _ Quy trinh Quan ly hoat dong thanh tra.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[16/148] 0103.CCD.2026(1) ​Quy che Kiem soat noi bo​.docx/0103.CCD.2026(1) ​Quy che Kiem soat noi bo​.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[17/148] 0104.CCD.2026(1) Quy dinh Giai quyet vu viec.docx/0104.CCD.2026(1) Quy dinh Giai quyet vu viec.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[18/148] 0105.CCD.2026(1) Quy trinh kiem tra, giam sat noi bo.docx/0105.CCD.2026(1) Quy trinh kiem tra, giam sat noi bo.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[19/148] 0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx/0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx/0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx
+  Error: [Errno 2] No such file or directory: 'temp\\0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx\\0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx'
+
+--------------------------------------------------------------------------------
+[20/148] 0501.FMD.2026(1) Quy dinh phuong phap dieu hoa von noi bo.docx/0501.FMD.2026(1) Quy dinh phuong phap dieu hoa von noi bo.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[21/148] 0502.FMD.2026(1) Quy dinh thang diem thi dua tap the.docx/0502.FMD.2026(1) Quy dinh thang diem thi dua tap the.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[22/148] 0503.FMD.2026(1) Quy trinh phat trien mang luoi.docx/0503.FMD.2026(1) Quy trinh phat trien mang luoi.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[23/148] 0551.ACC.2026(1) Quy dinh kiem tra, sap xep, dong goi va luu tru chung tu ke toan.docx/0551.ACC.2026(1) Quy dinh kiem tra, sap xep, dong goi va luu tru chung tu ke toan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[24/148] 0552.ACC.2026(1) Quy dinh che do bao cao thong ke.docx/0552.ACC.2026(1) Quy dinh che do bao cao thong ke.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[25/148] 1001.RMD.2026(1) Quy trinh danh gia noi bo ve muc du von (ICAAP).docx/1001.RMD.2026(1) Quy trinh danh gia noi bo ve muc du von (ICAAP).docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[26/148] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[27/148] 1003.RMD.2026(1) Quy dinh danh gia rui ro trong yeu.docx/1003.RMD.2026(1) Quy dinh danh gia rui ro trong yeu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[28/148] 1004.RMD.2026(1) Quy dinh To chuc va hoat dong cua Hội dong rui ro.docx/1004.RMD.2026(1) Quy dinh To chuc va hoat dong cua Hội dong rui ro.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[29/148] 1005.RMD.2026(1) Quy dinh Quan ly rui ro thanh khoan.docx/1005.RMD.2026(1) Quy dinh Quan ly rui ro thanh khoan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[30/148] 1007.RMD.2026(1) Quy dinh Quan ly rui ro lai suat tren so ngan hang.docx/1007.RMD.2026(1) Quy dinh Quan ly rui ro lai suat tren so ngan hang.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[31/148] 1010.RMD.2026(1) Quy che Quan ly rui ro.docx/1010.RMD.2026(1) Quy che Quan ly rui ro.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[32/148] 1098.DRD.2026(1) Quy trinh xu ly va thu hoi no.docx/1098.DRD.2026(1) Quy trinh xu ly va thu hoi no.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[33/148] 1100.DRD.2026(1) Quy che quan ly no.docx/1100.DRD.2026(1) Quy che quan ly no.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[34/148] 1100.DRD.2026(2) Quy che Quan ly no.docx/1100.DRD.2026(2) Quy che Quan ly no.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[35/148] 1101.CRM.2026(1) Quy trinh tham dinh phe duyet han muc the tin dung KHCN truc tiep.docx/1101.CRM.2026(1) Quy trinh tham dinh phe duyet han muc the tin dung KHCN truc tiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[36/148] 1102.CRM.2026(1) - Quy trinh tham dinh va phe duyet cho vay doi voi KHCN.docx/1102.CRM.2026(1) - Quy trinh tham dinh va phe duyet cho vay doi voi KHCN.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[37/148] 1102.CRM.2026(2) Quy trinh tham dinh va phe duyet cho vay doi voi Khach hang ca nha.docx/1102.CRM.2026(2) Quy trinh tham dinh va phe duyet cho vay doi voi Khach hang ca nha.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[38/148] 1103.CRM.2026(1) Quy dinh tham dinh, PD CTD KHPN.docx/1103.CRM.2026(1) Quy dinh tham dinh, PD CTD KHPN.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[39/148] 1104.CRM.2026(1) Quy che phan loai TSBĐ tieu chi nhan va ty le cap tin dung.docx/1104.CRM.2026(1) Quy che phan loai TSBĐ tieu chi nhan va ty le cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[40/148] 1105.CRM.2026(1) Quy trinh canh bao som khach hang ca nhan.docx/1105.CRM.2026(1) Quy trinh canh bao som khach hang ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[41/148] 1105.CRM.2026(2) Quy trinh canh bao som rui ro tin dung khach hang ca nhan.docx/1105.CRM.2026(2) Quy trinh canh bao som rui ro tin dung khach hang ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[42/148] 1106.CRM.2026(1) Quy dinh phat hanh thu chap thuan cap tin dung.docx/1106.CRM.2026(1) Quy dinh phat hanh thu chap thuan cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[43/148] 1107.CRM.2026(1) Quy dinh Co cau lai thoi han tra no.docx/1107.CRM.2026(1) Quy dinh Co cau lai thoi han tra no.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[44/148] 1108.CRM.2026(1) Quy che mua, ban no.docx/1108.CRM.2026(1) Quy che mua, ban no.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[45/148] 1109.CRM.2026(1) Quy dinh bao dam cap tin dung.docx/1109.CRM.2026(1) Quy dinh bao dam cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[46/148] 1110.CRM.2026(1) Quy dinh kiem tra, giam sat sau cap tin dung.docx/1110.CRM.2026(1) Quy dinh kiem tra, giam sat sau cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[47/148] 1110.CRM.2026(2) Quy dinh kiem tra, giam sat sau cap tin dung.docx/1110.CRM.2026(2) Quy dinh kiem tra, giam sat sau cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[48/148] 1111.CRM.2026(1) Quy dinh chung ve cap tin dung.docx/1111.CRM.2026(1) Quy dinh chung ve cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[49/148] 1111.CRM.2026(2) Quy dinh chung ve cap tin dung.docx/1111.CRM.2026(2) Quy dinh chung ve cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[50/148] 1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx/1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx/1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx
+  Error: [Errno 2] No such file or directory: 'temp\\1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx\\1112.CRM.2026(1) Quy che phan loai tai san co, muc trich, phuong phap trich lap du phong rui ro va viec su dung du phong de xu ly rui ro trong hoat dong cua SACOMBANK.docx'
+
+--------------------------------------------------------------------------------
+[51/148] 1113.CRM.2026(1) Quy che phan quyet cap tin dung.docx/1113.CRM.2026(1) Quy che phan quyet cap tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[52/148] 1115.CRM.2026(1) Quy dinh ve cho vay va giai ngan hoan von.docx/1115.CRM.2026(1) Quy dinh ve cho vay va giai ngan hoan von.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[53/148] 1251.VAL.2026(1) Quy trinh dinh gia tai san bao dam.docx/1251.VAL.2026(1) Quy trinh dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[54/148] 1251.VAL.2026(2) Quy trinh dinh gia tai san bao dam.docx/1251.VAL.2026(2) Quy trinh dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[55/148] 1252.VAL.2026(1) Quy trinh xay dung khung gia tai san bao dam.docx/1252.VAL.2026(1) Quy trinh xay dung khung gia tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[56/148] 1253.VAL.2026(1) Quy trinh danh gia chat luong dinh gia tai san bao dam.docx/1253.VAL.2026(1) Quy trinh danh gia chat luong dinh gia tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[57/148] 1701.WPD.2026(1) San pham cap tin dung cho doanh nghiep SME, MSME.docx/1701.WPD.2026(1) San pham cap tin dung cho doanh nghiep SME, MSME.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[58/148] 1702.WPD.2026(1) San pham The doanh nghiep.docx/1702.WPD.2026(1) San pham The doanh nghiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[59/148] 1703.WPD.2026(1) San pham Cho vay mua xe o to doanh nghiep.docx/1703.WPD.2026(1) San pham Cho vay mua xe o to doanh nghiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[60/148] 1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+  Error: [Errno 2] No such file or directory: 'temp\\1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx\\1705.WPD.2026(1) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx'
+
+--------------------------------------------------------------------------------
+[61/148] 1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx/1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx
+  Error: [Errno 2] No such file or directory: 'temp\\1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx\\1705.WPD.2026(2) Quy dinh nghiep vu thanh toan va chuyen tien lien quan den kinh doanh chuyen khau hang hoa.docx'
+
+--------------------------------------------------------------------------------
+[62/148] 1706.WPD.2026(1) Quy dinh Nghiep vu chuyen tien ra nuoc ngoai danh cho khach h.docx/1706.WPD.2026(1) Quy dinh Nghiep vu chuyen tien ra nuoc ngoai danh cho khach h.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[63/148] 1707.WPD.2026(1) San pham Chiet khau Hoi phieu kem Bo chung tu nho thu xuat kh.docx/1707.WPD.2026(1) San pham Chiet khau Hoi phieu kem Bo chung tu nho thu xuat kh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[64/148] 1708.WPD.2026(1) Quy trinh phat hanh the doanh nghiep.docx/1708.WPD.2026(1) Quy trinh phat hanh the doanh nghiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[65/148] 1709.WPD.2026(1) San pham thu tin dung dac thu.docx/1709.WPD.2026(1) San pham thu tin dung dac thu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[66/148] 1710.WPD.2026(1) San pham Thuong luong thanh toan BCT theo LC.docx/1710.WPD.2026(1) San pham Thuong luong thanh toan BCT theo LC.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[67/148] 1711.WPD.2026(1) San pham Tai tro LC xuat khau.docx/1711.WPD.2026(1) San pham Tai tro LC xuat khau.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[68/148] 1712.WPD.2026(1) San pham Tien gui co ky han.docx/1712.WPD.2026(1) San pham Tien gui co ky han.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[69/148] 1730.WPD.2026(1) San pham bao lanh.docx/1730.WPD.2026(1) San pham bao lanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[70/148] 2125.BAN.2026(1) Quy trinh phan phoi san pham bao hiem.docx/2125.BAN.2026(1) Quy trinh phan phoi san pham bao hiem.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[71/148] 2151.RBD.2026(1) Quy trinh phat trien va quan ly May giao dich tu dong.docx/2151.RBD.2026(1) Quy trinh phat trien va quan ly May giao dich tu dong.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[72/148] 2201.RPP.2026(1) Quy dinh phat trien va quan ly Don vi chap nhan the.docx/2201.RPP.2026(1) Quy dinh phat trien va quan ly Don vi chap nhan the.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[73/148] 2202.RPP.2026(1) Quy trinh xu ly giao dich voi Don vi chap nhan the,.docx/2202.RPP.2026(1) Quy trinh xu ly giao dich voi Don vi chap nhan the,.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[74/148] 2203.RPP.2026(1) Quy trinh giam sat va xu ly canh bao giao dich the.docx/2203.RPP.2026(1) Quy trinh giam sat va xu ly canh bao giao dich the.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[75/148] 2251.RPD.2026(1) Quy trinh phat hanh the ca nhan.docx/2251.RPD.2026(1) Quy trinh phat hanh the ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[76/148] 2252.RPD.2026(1) San pham The ca nhan.docx/2252.RPD.2026(1) San pham The ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[77/148] 2253.RPD.2026(1) San pham cho vay mua bat dong san co giay chung nhan.docx/2253.RPD.2026(1) San pham cho vay mua bat dong san co giay chung nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[78/148] 2254.RPD.2026(1) San pham cho vay hoan von mua bat dong san.docx/2254.RPD.2026(1) San pham cho vay hoan von mua bat dong san.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[79/148] 2255.RPD.2026(1) San pham vay mua bat dong san chua co Giay chung nhan.docx/2255.RPD.2026(1) San pham vay mua bat dong san chua co Giay chung nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[80/148] 2256.RPD.2026(1) San pham vay tai tro thue, phi, tien su dung dat.docx/2256.RPD.2026(1) San pham vay tai tro thue, phi, tien su dung dat.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[81/148] 2257.RPD.2026(1) San pham cho vay tieu dung co tai san bao dam.docx/2257.RPD.2026(1) San pham cho vay tieu dung co tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[82/148] 2258.RPD.2026(1) San pham cho vay tieu dung khong Tai san bao dam.docx/2258.RPD.2026(1) San pham cho vay tieu dung khong Tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[83/148] 2259.RPD.2026(1) San pham Cho vay dam bao bang so du tien gui.docx/2259.RPD.2026(1) San pham Cho vay dam bao bang so du tien gui.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[84/148] 2259.RPD.2026(2) San pham cho vay bao dam bang so du tien gui.docx/2259.RPD.2026(2) San pham cho vay bao dam bang so du tien gui.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[85/148] 2260.RPD.2026(1) San pham cho vay du hoc.docx/2260.RPD.2026(1) San pham cho vay du hoc.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[86/148] 2261.RPD.2026(1) San pham cho vay mua xe o to ca nhan.docx/2261.RPD.2026(1) San pham cho vay mua xe o to ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[87/148] 2262.RPD.2026(1) San pham cho vay san xuat kinh doanh.docx/2262.RPD.2026(1) San pham cho vay san xuat kinh doanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[88/148] 2262.RPD.2026(2) San pham cho vay san xuat kinh doanh.docx/2262.RPD.2026(2) San pham cho vay san xuat kinh doanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[89/148] 2263.RPD.2026(1) San pham cho vay phat trien kinh te gia dinh.docx/2263.RPD.2026(1) San pham cho vay phat trien kinh te gia dinh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[90/148] 2264.RPD.2026(1) San pham cho vay nong nghiep.docx/2264.RPD.2026(1) San pham cho vay nong nghiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[91/148] 2264.RPD.2026(2) San pham cho vay nong nghiep.docx/2264.RPD.2026(2) San pham cho vay nong nghiep.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[92/148] 2265.RPD.2026(1) San pham Thau chi tieu dung.docx/2265.RPD.2026(1) San pham Thau chi tieu dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[93/148] 2266.RPD.2026(1) San pham Thau chi san xuat kinh doanh.docx/2266.RPD.2026(1) San pham Thau chi san xuat kinh doanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[94/148] 2267.RPD.2026(1) San pham cho vay bao dam bang so du tien gui truc tuyen.docx/2267.RPD.2026(1) San pham cho vay bao dam bang so du tien gui truc tuyen.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[95/148] 2268.RPD.2026(1) San pham Chung chi tien gui linh hoat.docx/2268.RPD.2026(1) San pham Chung chi tien gui linh hoat.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[96/148] 2269.RPD.2026(1) Quy dinh Chuyen tien ra nuoc ngoai danh cho Khach hang ca nhan.docx/2269.RPD.2026(1) Quy dinh Chuyen tien ra nuoc ngoai danh cho Khach hang ca nhan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[97/148] 2271.RPD.2026(1) San pham cho vay tieu dung tu the tin dung truc tuyen.docx/2271.RPD.2026(1) San pham cho vay tieu dung tu the tin dung truc tuyen.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[98/148] 2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx/2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+Output: temp_processed\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+
+Paragraphs: 164
+Tables    : 8
+
+Total tables    : 8
+Tables need LLM : 5
+Tables skipped  : 3
+Tables prepared for LLM: 5
+
+Expected tables : 5
+LLM results     : 5
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 5
+Remaining tables: 3
+
+✓ Processed DOCX saved to: temp_processed\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx\2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+✓ Uploaded: 2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx/2272.RPD.2026(1) San pham Vay tin chap tu luong truc tuyen.docx
+
+--------------------------------------------------------------------------------
+[99/148] 2273.RPD.2026(1) Quy dinh su dung bieu mau tin dung doi voi KHCN.docx/2273.RPD.2026(1) Quy dinh su dung bieu mau tin dung doi voi KHCN.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[100/148] 2274.RPD.2026(1) San pham Tai khoan thanh toan.docx/2274.RPD.2026(1) San pham Tai khoan thanh toan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[101/148] 2275.RPD.2026(1) San pham tien gui tiet kiem.docx/2275.RPD.2026(1) San pham tien gui tiet kiem.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[102/148] 2276.RPD.2026(1) San pham Chung chi tien gui.docx/2276.RPD.2026(1) San pham Chung chi tien gui.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\2276.RPD.2026(1) San pham Chung chi tien gui.docx\2276.RPD.2026(1) San pham Chung chi tien gui.docx
+Output: temp_processed\2276.RPD.2026(1) San pham Chung chi tien gui.docx\2276.RPD.2026(1) San pham Chung chi tien gui.docx
+
+Paragraphs: 58
+Tables    : 5
+
+Total tables    : 5
+Tables need LLM : 4
+Tables skipped  : 1
+Tables prepared for LLM: 4
+
+Expected tables : 4
+LLM results     : 4
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 4
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\2276.RPD.2026(1) San pham Chung chi tien gui.docx\2276.RPD.2026(1) San pham Chung chi tien gui.docx
+✓ Uploaded: 2276.RPD.2026(1) San pham Chung chi tien gui.docx/2276.RPD.2026(1) San pham Chung chi tien gui.docx
+
+--------------------------------------------------------------------------------
+[103/148] 2288.RPD.2026(1) San pham Sinh loi Tai Loc.docx/2288.RPD.2026(1) San pham Sinh loi Tai Loc.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[104/148] 2351.PBD.2026(1) Quy dinh dinh danh khach hang uu tien.docx/2351.PBD.2026(1) Quy dinh dinh danh khach hang uu tien.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[105/148] 2701.MMD.2026(1) Quy trinh trien khai dich vu ngan quy.docx/2701.MMD.2026(1) Quy trinh trien khai dich vu ngan quy.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[106/148] 2702.MMD.2026(1) Quy trinh xuat nhap khau ngoai te tien mat.docx/2702.MMD.2026(1) Quy trinh xuat nhap khau ngoai te tien mat.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[107/148] 2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx/2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+Output: temp_processed\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+
+Paragraphs: 211
+Tables    : 42
+
+Total tables    : 42
+Tables need LLM : 41
+Tables skipped  : 1
+Tables prepared for LLM: 41
+
+Expected tables : 41
+LLM results     : 41
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 41
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx\2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+✓ Uploaded: 2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx/2752.FDT.2026(1) Quy trinh kinh doanh tien te.docx
+
+--------------------------------------------------------------------------------
+[108/148] 2851.ALM.2026(1) Quy trinh kiem tra, giam sat, quan ly nguon von trai phieu rieng le sau phat hanh.docx/2851.ALM.2026(1) Quy trinh kiem tra, giam sat, quan ly nguon von trai phieu rieng le sau phat hanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[109/148] 2852.ALM.2026(1) Quy trinh phat hanh trai phieu ra cong chung.docx/2852.ALM.2026(1) Quy trinh phat hanh trai phieu ra cong chung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[110/148] 3201.POD.2026(1) - Quy trinh san xuat va giao the vat ly.docx/3201.POD.2026(1) - Quy trinh san xuat va giao the vat ly.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[111/148] 3201.POD.2026(2) Quy trinh san xuat, phan phoi va kich hoat the.docx/3201.POD.2026(2) Quy trinh san xuat, phan phoi va kich hoat the.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[112/148] 3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx/3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+Output: temp_processed\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+
+Paragraphs: 117
+Tables    : 10
+
+Total tables    : 10
+Tables need LLM : 8
+Tables skipped  : 2
+Tables prepared for LLM: 8
+
+Expected tables : 8
+LLM results     : 8
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 8
+Remaining tables: 2
+
+✓ Processed DOCX saved to: temp_processed\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx\3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+✓ Uploaded: 3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx/3201.POD.2026(3) Quy trinh san xuat, phan phoi va kich hoat the.docx
+
+--------------------------------------------------------------------------------
+[113/148] 3202.POD.2026(1) Quy dinh van hanh, giam sat, tiep quy May giao dich tu dong.docx/3202.POD.2026(1) Quy dinh van hanh, giam sat, tiep quy May giao dich tu dong.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[114/148] 3203.POD.2026(1) Quy trinh xu ly yeu cau the.docx/3203.POD.2026(1) Quy trinh xu ly yeu cau the.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[115/148] 3222.POD.2026(1) Quy trinh chuyen tien ra nuoc ngoai.docx/3222.POD.2026(1) Quy trinh chuyen tien ra nuoc ngoai.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[116/148] 3222.POD.2026(2) Quy trinh chuyen tien ra nuoc ngoai.docx/3222.POD.2026(2) Quy trinh chuyen tien ra nuoc ngoai.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[117/148] 3226.POD.2026(1) Quy trinh chuyen tien den tu nuoc ngoai.docx/3226.POD.2026(1) Quy trinh chuyen tien den tu nuoc ngoai.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[118/148] 3226.POD.2026(2) Quy trinh chuyen tien den tu nuoc ngoai.docx/3226.POD.2026(2) Quy trinh chuyen tien den tu nuoc ngoai.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[119/148] 3266.TFO.2026(1) Quy trinh xu ly ho so Bao lanh quoc te.docx/3266.TFO.2026(1) Quy trinh xu ly ho so Bao lanh quoc te.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[120/148] 3288.TFO.2026(1) Quy trinh nghiep vu LC, nho thu xuat khau.docx/3288.TFO.2026(1) Quy trinh nghiep vu LC, nho thu xuat khau.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[121/148] 3300.TFO.2026(1) Quy trinh nghiep vu LC nhap khau.docx/3300.TFO.2026(1) Quy trinh nghiep vu LC nhap khau.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[122/148] 3300.TFO.2026(2) Quy trinh nghiep vu LC, nho thu nhap khau.docx/3300.TFO.2026(2) Quy trinh nghiep vu LC, nho thu nhap khau.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[123/148] 3301.CSD.2026(1) Quy trinh mo va su dung tai khoan thanh toan cua KHCNquay.docx/3301.CSD.2026(1) Quy trinh mo va su dung tai khoan thanh toan cua KHCNquay.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[124/148] 3301.CSD.2026(2) Quy trinh mo va su dung Tai khoan thanh toan.docx/3301.CSD.2026(2) Quy trinh mo va su dung Tai khoan thanh toan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[125/148] 3302.CSD.2026(1) Quy trinh mo va su dung tien gui tiet kiem cua khach hang ca nhan tai quay.docx/3302.CSD.2026(1) Quy trinh mo va su dung tien gui tiet kiem cua khach hang ca nhan tai quay.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[126/148] 3302.CSD.2026(2) Quy trinh mo va su dung tien gui tiet kiem, tien gui co ky han, chung chi tien gui.docx/3302.CSD.2026(2) Quy trinh mo va su dung tien gui tiet kiem, tien gui co ky han, chung chi tien gui.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[127/148] 3303.CSD.2026(1) Quy dinh giao dich mot cua va han muc duyet giao dich.docx/3303.CSD.2026(1) Quy dinh giao dich mot cua va han muc duyet giao dich.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[128/148] 3310.CSD.2026(1) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx/3310.CSD.2026(1) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[129/148] 3310.CSD.2026(2) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx/3310.CSD.2026(2) Quy dinh ve giao nhan, bao quan, van chuyen tien mat, tai san quy, giay to co gia.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[130/148] 3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx/3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+Output: temp_processed\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+
+Paragraphs: 233
+Tables    : 20
+
+Total tables    : 20
+Tables need LLM : 19
+Tables skipped  : 1
+Tables prepared for LLM: 19
+
+Expected tables : 19
+LLM results     : 19
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 19
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx\3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+✓ Uploaded: 3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx/3336.CSD.2026(1) Quy trinh thu chi tien (VND, ngoai te) va vang.docx
+
+--------------------------------------------------------------------------------
+[131/148] 3351.COD.2026(1) Quy trinh soan thao ho so tin dung.docx/3351.COD.2026(1) Quy trinh soan thao ho so tin dung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[132/148] 3352.COD.2026(1) Quy trinh giai ngan.docx/3352.COD.2026(1) Quy trinh giai ngan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[133/148] 3352.COD.2026(2) Quy trinh Giai ngan.docx/3352.COD.2026(2) Quy trinh Giai ngan.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[134/148] 3353.COD.2026(1) Quy trinh quan ly tai san bao dam.docx/3353.COD.2026(1) Quy trinh quan ly tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[135/148] 3353.COD.2026(2) Quy trinh Quan ly TSBĐ.docx/3353.COD.2026(2) Quy trinh Quan ly TSBĐ.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[136/148] 3354.COD.2026(1) Quy dinh giao nhan, bao quan va kiem ke ho so tai san bao dam.docx/3354.COD.2026(1) Quy dinh giao nhan, bao quan va kiem ke ho so tai san bao dam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[137/148] 3582.PRC.2026(1) Quy trinh mua sam hang hoa, dich vu.docx/3582.PRC.2026(1) Quy trinh mua sam hang hoa, dich vu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[138/148] 3582.PRC.2026(2) Quy trinh mua sam hang hoa, dich vu.docx/3582.PRC.2026(2) Quy trinh mua sam hang hoa, dich vu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'Van_ban_bi_thay_the', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[139/148] 3851.PRC.2026(1) Quy che phan cap tham quyen phe duyet tai chinh mua sam.docx/3851.PRC.2026(1) Quy che phan cap tham quyen phe duyet tai chinh mua sam.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[140/148] 3951.TAD.2026(1) Quy trinh Tuyen dung nhan su.docx/3951.TAD.2026(1) Quy trinh Tuyen dung nhan su.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[141/148] 4001.HRM.2026(1) -  Quy trinh quan ly moi quan he lao dong.docx/4001.HRM.2026(1) -  Quy trinh quan ly moi quan he lao dong.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[142/148] 4002.HRM.2026(1) Noi quy lao dong Ngan hang TMCP Sai Gon Tai Loc.docx/4002.HRM.2026(1) Noi quy lao dong Ngan hang TMCP Sai Gon Tai Loc.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[143/148] 4011.HRM.2026(1) Quy che danh gia muc do hoan thanh cong viec.docx/4011.HRM.2026(1) Quy che danh gia muc do hoan thanh cong viec.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[144/148] 4051.LND.2026(1) Quy dinh he thong chuc danh cua cac Don vi nghiep vu Ngan hang, Vung.docx/4051.LND.2026(1) Quy dinh he thong chuc danh cua cac Don vi nghiep vu Ngan hang, Vung.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'Ngay_het_hieu_luc', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[145/148] 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+  Error: [Errno 2] No such file or directory: 'temp\\4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx\\4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx'
+
+--------------------------------------------------------------------------------
+[146/148] 5001.GOV.2026(1) Quy Che Phoi hop hoat dong cua HDQT, Bo may Dieu hanh.docx/5001.GOV.2026(1) Quy Che Phoi hop hoat dong cua HDQT, Bo may Dieu hanh.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[147/148] 5002.GOV.2026(1) Quy che cong bo thong tin.docx/5002.GOV.2026(1) Quy che cong bo thong tin.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+--------------------------------------------------------------------------------
+[148/148] 5101.CBD.2026(1) Quy trinh Truyen thong va Quan tri thuong hieu.docx/5101.CBD.2026(1) Quy trinh Truyen thong va Quan tri thuong hieu.docx
+Status: UNCHANGED
+→ UPDATE METADATA
+✓ Metadata updated: ['file_name', 'sharepoint_url', 'file_id', 'So_thu_tu', 'sync_run_id', 'Linh_vuc', 'Ngay_hieu_luc', 'Ngay_ban_hanh', 'Tinh_trang', 'Trich_yeu', 'etag', 'sync_status', 'Loai_van_ban', 'So_quyet_dinh', 'last_modified', 'source', 'sharepoint_item_id', 'server_relative_url', 'file_size_bytes']
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 7
+Modified  : 5
+Unchanged : 0
+Deleted   : 0
+Failed    : 7
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

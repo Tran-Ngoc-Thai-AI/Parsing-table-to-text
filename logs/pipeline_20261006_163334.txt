@@ -1,0 +1,55 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 1
+OUTPUT DOCX : 0
+
+--------------------------------------------------------------------------------
+[1/1] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\f6e69477e137e71d.docx
+Output: temp_processed\f6e69477e137e71d.docx
+
+Paragraphs: 71
+Tables    : 10
+
+Total tables    : 10
+Tables need LLM : 9
+Tables skipped  : 1
+Tables prepared for LLM: 9
+
+Expected tables : 9
+LLM results     : 9
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 9
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\f6e69477e137e71d.docx
+✓ Uploaded: 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 0
+Deleted   : 0
+Failed    : 0
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

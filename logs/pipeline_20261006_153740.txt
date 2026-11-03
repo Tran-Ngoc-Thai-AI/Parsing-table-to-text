@@ -1,0 +1,30 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 1
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/1] 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\c88877a43b05daf9.docx
+Output: temp_processed\c88877a43b05daf9.docx
+
+Paragraphs: 39215
+Tables    : 1093
+
+Total tables    : 1093
+Tables need LLM : 1078
+Tables skipped  : 15
+Tables prepared for LLM: 1078

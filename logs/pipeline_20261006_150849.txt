@@ -1,0 +1,43 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 3
+OUTPUT DOCX : 2
+
+--------------------------------------------------------------------------------
+[1/3] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/3] 3352.COD.2026(2) Quy trinh Giai ngan (1).docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[3/3] 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx/4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx
+  Error: [Errno 2] No such file or directory: 'temp\\4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx\\4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich.docx'
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 2
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

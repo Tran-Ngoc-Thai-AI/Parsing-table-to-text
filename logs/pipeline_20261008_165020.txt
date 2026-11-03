@@ -1,0 +1,60 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/2] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich (1).docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\66d275b716115e3e.docx
+Output: temp_processed\66d275b716115e3e.docx
+
+Paragraphs: 79
+Tables    : 2
+
+Total tables    : 2
+Tables need LLM : 2
+Tables skipped  : 0
+Tables prepared for LLM: 2
+
+Expected tables : 2
+LLM results     : 2
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 2
+Remaining tables: 0
+
+✓ Processed DOCX saved to: temp_processed\66d275b716115e3e.docx
+✓ Uploaded: 4051.LND.2026(2) Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich (1).docx
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 1
+Deleted   : 0
+Failed    : 0
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

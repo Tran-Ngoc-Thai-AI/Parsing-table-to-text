@@ -72,12 +72,17 @@ class BlobStorageClient:
             if not blob.name.lower().endswith(".docx"):
                 continue
 
+            content_md5 = None
+            if blob.content_settings and blob.content_settings.content_md5:
+                content_md5 = blob.content_settings.content_md5.hex()
+
             results.append(
                 {
                     "name": blob.name,
                     "etag": blob.etag,
                     "last_modified": blob.last_modified,
                     "size": blob.size,
+                    "content_md5": content_md5,
                     "metadata": blob.metadata or {},
                 }
             )
@@ -145,6 +150,19 @@ class BlobStorageClient:
         )
 
         blob_client.delete_blob()
+
+    def set_blob_metadata(
+        self,
+        blob_name: str,
+        metadata: dict,
+    ) -> None:
+        blob_client = self.container_client.get_blob_client(
+            blob_name
+        )
+
+        blob_client.set_blob_metadata(
+            metadata=metadata
+        )
 
 if __name__ == "__main__":
 

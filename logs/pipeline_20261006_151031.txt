@@ -1,0 +1,43 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 3
+OUTPUT DOCX : 2
+
+--------------------------------------------------------------------------------
+[1/3] 0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx
+Status: NEW
+→ PROCESS
+✗ Failed: 0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx
+  Error: [Errno 13] Permission denied: 'temp\\0106.CCD.2026(1) Quy dinh ve phong, chong rua tien, tai tro khung bo, tai tro pho bien vu khi huy diet hang loat.docx'
+
+--------------------------------------------------------------------------------
+[2/3] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[3/3] 3352.COD.2026(2) Quy trinh Giai ngan (1).docx
+Status: UNCHANGED
+→ SKIP
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 2
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

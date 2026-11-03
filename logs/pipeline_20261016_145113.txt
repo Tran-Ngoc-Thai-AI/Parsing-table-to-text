@@ -1,0 +1,60 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : raw-documents
+Output container : parsing-raw-documents
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 2
+
+--------------------------------------------------------------------------------
+[1/2] 3352.COD.2026 (1) Quy trinh giai ngan (1).docx/3352.COD.2026 (1) Quy trinh giai ngan (1).docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] MB01.0003.PGV - Ban thuyet minh quy trinh giai ngan.docx/MB01.0003.PGV - Ban thuyet minh quy trinh giai ngan.docx
+Status: MODIFIED
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\4731cf242546c570.docx
+Output: temp_processed\4731cf242546c570.docx
+
+Paragraphs: 11
+Tables    : 1
+
+Total tables    : 1
+Tables need LLM : 1
+Tables skipped  : 0
+Tables prepared for LLM: 1
+
+Expected tables : 1
+LLM results     : 1
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 1
+Remaining tables: 0
+
+✓ Processed DOCX saved to: temp_processed\4731cf242546c570.docx
+✓ Uploaded: MB01.0003.PGV - Ban thuyet minh quy trinh giai ngan.docx/MB01.0003.PGV - Ban thuyet minh quy trinh giai ngan.docx
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 0
+Modified  : 1
+Unchanged : 1
+Deleted   : 0
+Failed    : 0
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

@@ -1,0 +1,67 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 1
+OUTPUT DOCX : 3
+
+--------------------------------------------------------------------------------
+[1/1] 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1).docx
+Status: NEW
+→ PROCESS
+================================================================================
+DOCX PROCESSING
+================================================================================
+Input : temp\1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx\1002.RMD.2026(1).docx
+Output: temp_processed\1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx\1002.RMD.2026(1).docx
+
+Paragraphs: 71
+Tables    : 10
+
+Total tables    : 10
+Tables need LLM : 9
+Tables skipped  : 1
+Tables prepared for LLM: 9
+
+Expected tables : 9
+LLM results     : 9
+✓ All table results are valid.
+
+✓ All selected tables were replaced with semantic text.
+Tables processed: 9
+Remaining tables: 1
+
+✓ Processed DOCX saved to: temp_processed\1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx\1002.RMD.2026(1).docx
+✓ Uploaded: 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1).docx
+
+--------------------------------------------------------------------------------
+DELETED INPUT → DELETE OUTPUT: 0106.CCD.2026(1).docx
+✓ Deleted: 0106.CCD.2026(1).docx
+
+--------------------------------------------------------------------------------
+DELETED INPUT → DELETE OUTPUT: 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+✓ Deleted: 1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx/1002.RMD.2026(1) Quy dinh thiet lap khau vi rui ro.docx
+
+--------------------------------------------------------------------------------
+DELETED INPUT → DELETE OUTPUT: 3352.COD.2026(2) Quy trinh Giai ngan (1).docx
+✓ Deleted: 3352.COD.2026(2) Quy trinh Giai ngan (1).docx
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 0
+Deleted   : 3
+Failed    : 0
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

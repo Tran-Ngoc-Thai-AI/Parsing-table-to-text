@@ -1,3 +1,4 @@
+import hashlib
 from pathlib import Path
 
 from src.docx_processor import DocxProcessor
@@ -68,17 +69,25 @@ class DocumentPipeline:
             return True, "NEW"
 
         input_etag = input_metadata["etag"]
+        output_meta = output_metadata.get("metadata", {})
+        output_source_etag = output_meta.get("source_etag")
 
-        output_source_etag = output_metadata.get(
-            "metadata", {}
-        ).get(
-            "source_etag"
-        )
+        if input_etag == output_source_etag:
+            return False, "UNCHANGED"
 
-        if input_etag != output_source_etag:
-            return True, "MODIFIED"
+        # Azure Blob ETag also changes when metadata changes. Use the source
+        # content fingerprint to distinguish a metadata-only change.
+        input_content_md5 = input_metadata.get("content_md5")
+        output_content_md5 = output_meta.get("source_content_md5")
 
-        return False, "UNCHANGED"
+        if (
+            input_content_md5
+            and output_content_md5
+            and input_content_md5 == output_content_md5
+        ):
+            return False, "METADATA_ONLY"
+
+        return True, "MODIFIED"
 
     def sync_blobs(
         self,
@@ -154,9 +163,57 @@ class DocumentPipeline:
             print(f"Status: {status}")
 
             if not should_process:
-                unchanged_count += 1
+                missing_metadata = self.get_missing_metadata(
+                    input_metadata=input_metadata,
+                    output_metadata=output_metadata,
+                )
 
-                print("→ SKIP")
+                if status == "METADATA_ONLY":
+                    updated_metadata = dict(
+                        output_metadata.get("metadata", {})
+                    )
+                    updated_metadata.update(missing_metadata)
+                    updated_metadata["source_etag"] = input_metadata["etag"]
+
+                    if input_metadata.get("content_md5"):
+                        updated_metadata["source_content_md5"] = input_metadata[
+                            "content_md5"
+                        ]
+
+                    output_client.set_blob_metadata(
+                        blob_name=output_blob_name,
+                        metadata=updated_metadata,
+                    )
+
+                    print("→ UPDATE METADATA ONLY")
+                    print("✓ Content unchanged; parsing skipped")
+                    continue
+
+                if missing_metadata:
+                    print("→ UPDATE METADATA")
+
+                    updated_metadata = dict(
+                        output_metadata.get("metadata", {})
+                    )
+
+                    updated_metadata.update(
+                        missing_metadata
+                    )
+
+                    output_client.set_blob_metadata(
+                        blob_name=output_blob_name,
+                        metadata=updated_metadata,
+                    )
+
+                    print(
+                        f"✓ Metadata updated: "
+                        f"{list(missing_metadata.keys())}"
+                    )
+
+                else:
+                    unchanged_count += 1
+                    print("→ SKIP")
+
                 continue
 
             try:
@@ -171,12 +228,16 @@ class DocumentPipeline:
                 # Temporary local paths
                 # ------------------------------------------------
 
+                blob_hash = hashlib.md5(
+                    input_blob_name.encode("utf-8")
+                ).hexdigest()[:16]
+
                 local_input = (
-                    Path("temp") / input_blob_name
+                    Path("temp") / f"{blob_hash}.docx"
                 )
 
                 local_output = (
-                    Path("temp_processed") / input_blob_name
+                    Path("temp_processed") / f"{blob_hash}.docx"
                 )
 
                 # ------------------------------------------------
@@ -187,6 +248,60 @@ class DocumentPipeline:
                     blob_name=input_blob_name,
                     local_path=local_input,
                 )
+
+                # Some source blobs do not expose content_md5. If the
+                # previous output has our stored content fingerprint, hash
+                # the downloaded source before deciding whether parsing is
+                # necessary. A metadata-only change will stop here.
+                
+                # ------------------------------------------------
+                # Check if content actually changed (for MODIFIED files)
+                # ------------------------------------------------
+                
+                current_content_md5 = None
+                
+                # Only check MD5 if output already exists
+                if output_metadata is not None:
+                    output_meta = output_metadata.get("metadata", {})
+                    source_content_md5 = output_meta.get("source_content_md5")
+                    
+                    if source_content_md5:
+                        # Calculate current MD5 to compare
+                        current_content_md5 = self._calculate_file_md5(
+                            local_input
+                        )
+                        
+                        if current_content_md5 == source_content_md5:
+                            print("→ METADATA ONLY: content unchanged")
+                            
+                            missing_metadata = self.get_missing_metadata(
+                                input_metadata=input_metadata,
+                                output_metadata=output_metadata,
+                            )
+                            
+                            updated_metadata = dict(output_meta)
+                            updated_metadata.update(missing_metadata)
+                            updated_metadata["source_etag"] = input_metadata["etag"]
+                            
+                            output_client.set_blob_metadata(
+                                blob_name=output_blob_name,
+                                metadata=updated_metadata,
+                            )
+                            
+                            print("✓ Metadata synchronized without processing")
+                            
+                            if local_input.exists():
+                                local_input.unlink()
+                            
+                            continue
+                        
+                        print("→ CONTENT CHANGED: process required")
+                
+                # Calculate MD5 if not already calculated
+                if current_content_md5 is None:
+                    current_content_md5 = self._calculate_file_md5(
+                        local_input
+                    )
 
                 # ------------------------------------------------
                 # Process DOCX
@@ -206,6 +321,7 @@ class DocumentPipeline:
                 )
 
                 output_metadata["source_etag"] = input_metadata["etag"]
+                output_metadata["source_content_md5"] = current_content_md5
 
                 output_client.upload_file(
                     local_path=local_output,
@@ -349,6 +465,32 @@ class DocumentPipeline:
         print(f"Failed      : {failed_count}")
         print("=" * 80)
 
+    def get_missing_metadata(
+        self,
+        input_metadata: dict,
+        output_metadata: dict,
+    ) -> dict:
+        input_meta = input_metadata.get("metadata", {})
+        output_meta = output_metadata.get("metadata", {})
+
+        missing_metadata = {}
+
+        for key, value in input_meta.items():
+            if output_meta.get(key) != value:
+                missing_metadata[key] = value
+
+        return missing_metadata
+
+    @staticmethod
+    def _calculate_file_md5(file_path: Path) -> str:
+        """Calculate a content fingerprint for change detection."""
+        digest = hashlib.md5()
+
+        with open(file_path, "rb") as file:
+            for chunk in iter(lambda: file.read(1024 * 1024), b""):
+                digest.update(chunk)
+
+        return digest.hexdigest()
 
 if __name__ == "__main__":
     INPUT_DIR = Path("input")
