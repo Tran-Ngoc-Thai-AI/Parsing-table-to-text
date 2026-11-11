@@ -1,7 +1,7 @@
 import hashlib
 from pathlib import Path
-
-from src.docx_processor import DocxProcessor
+from pathlib import Path, PurePosixPath
+from .docx_processor import DocxProcessor
 
 
 class DocumentPipeline:
@@ -47,9 +47,11 @@ class DocumentPipeline:
                 folder-a/0001.docx
 
             output:
-                folder-a/0001.docx
+                folder-a/0001.md
         """
-        return input_blob_name
+        return str(
+            PurePosixPath(input_blob_name).with_suffix(".md")
+        )
 
     def should_process(
         self,
@@ -93,6 +95,7 @@ class DocumentPipeline:
         self,
         input_client,
         output_client,
+        prefix: str = "",
     ):
         """
         Synchronize Azure Blob INPUT -> OUTPUT.
@@ -104,8 +107,8 @@ class DocumentPipeline:
         - Deleted files
         """
 
-        input_files = input_client.list_docx_metadata()
-        output_files = output_client.list_docx_metadata()
+        input_files = input_client.list_docx_metadata(prefix=prefix)
+        output_files = output_client.list_md_metadata(prefix=prefix)
 
         input_map = {
             item["name"]: item
@@ -129,7 +132,7 @@ class DocumentPipeline:
         print("=" * 80)
 
         print(f"INPUT DOCX  : {len(input_files)}")
-        print(f"OUTPUT DOCX : {len(output_files)}")
+        print(f"OUTPUT MD : {len(output_files)}")
 
         # ========================================================
         # PROCESS NEW / MODIFIED / UNCHANGED
@@ -237,7 +240,7 @@ class DocumentPipeline:
                 )
 
                 local_output = (
-                    Path("temp_processed") / f"{blob_hash}.docx"
+                    Path("temp_processed") / f"{blob_hash}.md"
                 )
 
                 # ------------------------------------------------
@@ -355,7 +358,11 @@ class DocumentPipeline:
 
         for output_blob_name in output_map:
 
-            if output_blob_name not in input_map:
+            expected_input_name = str(
+                PurePosixPath(output_blob_name).with_suffix(".docx")
+            )
+
+            if expected_input_name not in input_map:
 
                 print()
                 print("-" * 80)
@@ -413,7 +420,7 @@ class DocumentPipeline:
 
         print(f"Input directory : {self.input_dir.resolve()}")
         print(f"Output directory: {self.output_dir.resolve()}")
-        print(f"DOCX files      : {len(input_files)}")
+        print(f"MD files      : {len(input_files)}")
 
         if not input_files:
             print("\nNo DOCX files found.")
@@ -425,7 +432,7 @@ class DocumentPipeline:
         for index, input_file in enumerate(input_files, start=1):
             output_file = (
                 self.output_dir
-                / f"{input_file.stem}.docx"
+                / f"{input_file.stem}.md"
             )
 
             print()
