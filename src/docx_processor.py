@@ -1,11 +1,87 @@
+
 from pathlib import Path
-import json
+from html import escape
+from html.parser import HTMLParser
+import re
 
 from docx import Document
-from docx.oxml import OxmlElement
 from docx.text.paragraph import Paragraph
-from openai import OpenAI
+from docx.table import Table
+from docling.datamodel.base_models import InputFormat
+from docling.document_converter import DocumentConverter
 
+
+# =============================================================
+# HTML TABLE PARSER
+# =============================================================
+
+class TableHTMLParser(HTMLParser):
+    """
+    Parse HTML table and preserve colspan / rowspan.
+
+    Each cell:
+        {
+            "text": "...",
+            "colspan": 1,
+            "rowspan": 1
+        }
+    """
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+
+        self.rows = []
+        self.current_row = None
+        self.current_cell = None
+        self.in_table = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+
+        if tag == "table":
+            self.in_table = True
+
+        elif tag == "tr" and self.in_table:
+            self.current_row = []
+
+        elif tag in ("td", "th") and self.current_row is not None:
+            self.current_cell = {
+                "text": "",
+                "colspan": int(attrs.get("colspan", 1)),
+                "rowspan": int(attrs.get("rowspan", 1)),
+            }
+
+        elif tag == "br" and self.current_cell is not None:
+            self.current_cell["text"] += "\n"
+
+    def handle_startendtag(self, tag, attrs):
+        if tag == "br" and self.current_cell is not None:
+            self.current_cell["text"] += "\n"
+
+    def handle_data(self, data):
+        if self.current_cell is not None:
+            self.current_cell["text"] += data
+
+    def handle_endtag(self, tag):
+        if tag in ("td", "th") and self.current_cell is not None:
+            self.current_cell["text"] = self.current_cell["text"].strip()
+
+            self.current_row.append(self.current_cell)
+            self.current_cell = None
+
+        elif tag == "tr" and self.current_row is not None:
+            if self.current_row:
+                self.rows.append(self.current_row)
+
+            self.current_row = None
+
+        elif tag == "table":
+            self.in_table = False
+
+
+# =============================================================
+# DOCX PROCESSOR
+# =============================================================
 
 class DocxProcessor:
     """
@@ -13,538 +89,1146 @@ class DocxProcessor:
 
     Flow:
         DOCX
-        -> detect tables
-        -> send tables to LLM
-        -> validate LLM results
-        -> replace tables with semantic text
-        -> save processed DOCX
+        -> extract tables using python-docx
+        -> convert each extracted table to HTML
+        -> Docling: HTML -> Markdown
+        -> Detect table type
+            -> BLOCK: Markdown -> Semantic Text
+            -> JOB_DESCRIPTION: Original HTML -> Semantic Text
+            -> UNKNOWN: Raise error and print HTML/Markdown
+        -> replace original tables with Semantic Text
+        -> save DOCX
     """
 
-    def __init__(self, settings_path: Path = Path("local.settings.json")):
-        settings_path = Path(settings_path)
+    BLOCK = "BLOCK"
+    JOB_DESCRIPTION = "JOB_DESCRIPTION"
+    UNKNOWN = "UNKNOWN"
 
-        with open(settings_path, "r", encoding="utf-8") as f:
-            settings = json.load(f)["Values"]
+    JOB_SECTIONS = [
+        "MÔ TẢ CHỨC DANH",
+        "VAI TRÒ & MỤC TIÊU",
+        "THẨM QUYỀN",
+        "NHIỆM VỤ TRỌNG TÂM",
+    ]
 
-        self.azure_openai_api_key = settings["AZURE_OPENAI_API_KEY"]
-        self.azure_openai_deployment = settings["AZURE_OPENAI_DEPLOYMENT"]
-        self.azure_openai_endpoint = settings["AZURE_OPENAI_ENDPOINT"]
+    def __init__(self, settings_path=Path("local.settings.json")):
+        # Keep settings_path for backward compatibility.
+        # No Azure OpenAI is used.
+        self.converter = DocumentConverter()
 
-        self.client = OpenAI(
-            api_key=self.azure_openai_api_key,
-            base_url=self.azure_openai_endpoint,
+    # ---------------------------------------------------------
+    # COMMON HELPERS
+    # ---------------------------------------------------------
+
+    @staticmethod
+    def normalize_text(text):
+        return re.sub(r"\s+", " ", text or "").strip()
+
+    @staticmethod
+    def normalize_header(text):
+        return re.sub(
+            r"\s+",
+            " ",
+            (text or "").strip().lower()
         )
 
-    # ============================================================
-    # 1. Load DOCX
-    # ============================================================
+    # ---------------------------------------------------------
+    # 1. LOAD DOCUMENT
+    # ---------------------------------------------------------
 
-    def load_document(self, input_path: Path):
+    def load_document(self, input_path):
         input_path = Path(input_path)
 
         if not input_path.exists():
             raise FileNotFoundError(
-                f"Input DOCX not found: {input_path}"
+                f"File not found: {input_path}"
+            )
+
+        if input_path.suffix.lower() != ".docx":
+            raise ValueError(
+                "Input file must be a DOCX file."
             )
 
         return Document(input_path)
 
-    # ============================================================
-    # 2. Detect tables
-    # ============================================================
+    # ---------------------------------------------------------
+    # 2. DETECT TABLES
+    # ---------------------------------------------------------
 
     def detect_tables(self, doc):
-        tables_need_llm = []
+        tables_need_docling = []
         tables_skipped = []
 
-        for i, table in enumerate(doc.tables):
-
+        for table_index, table in enumerate(doc.tables):
             rows = [
-                [cell.text.strip() for cell in row.cells]
+                [
+                    cell.text.strip()
+                    for cell in row.cells
+                ]
                 for row in table.rows
             ]
 
-            table_text = " ".join(
-                cell
+            has_content = any(
+                value
                 for row in rows
-                for cell in row
-                if cell
+                for value in row
             )
 
-            row_count = len(rows)
-            col_count = len(table.columns)
-
-            # Giữ nguyên logic notebook
-            if row_count >= 2 and table_text:
-                tables_need_llm.append({
-                    "table_index": i,
-                    "rows": row_count,
-                    "cols": col_count,
-                    "text": table_text,
-                })
+            if len(rows) >= 2 and has_content:
+                tables_need_docling.append(table_index)
             else:
-                if row_count < 2:
-                    reason = "Less than 2 rows"
-                elif not table_text:
-                    reason = "Empty table"
+                tables_skipped.append(table_index)
+
+        return tables_need_docling, tables_skipped
+
+    # ---------------------------------------------------------
+    # 3. EXTRACT TABLE -> HTML
+    # ---------------------------------------------------------
+
+    def table_to_html(self, table):
+        """
+        Extract one DOCX table and convert it to HTML.
+
+        Preserve:
+            - Horizontal merge: colspan
+            - Vertical merge: rowspan
+        """
+
+        grid = table._tbl.tblGrid
+        total_columns = len(grid.gridCol_lst)
+
+        if total_columns == 0:
+            total_columns = max(
+                (len(row.cells) for row in table.rows),
+                default=0
+            )
+
+        active_vertical_merges = {}
+        html_rows = []
+
+        for row in table.rows:
+            row_cells = []
+            column_index = 0
+
+            for tc in row._tr.tc_lst:
+                tc_pr = tc.tcPr
+
+                # ---------------------------------------------
+                # Horizontal merge: gridSpan
+                # ---------------------------------------------
+
+                colspan = 1
+
+                if (
+                    tc_pr is not None
+                    and tc_pr.gridSpan is not None
+                ):
+                    colspan = int(tc_pr.gridSpan.val)
+
+                # ---------------------------------------------
+                # Vertical merge: vMerge
+                # ---------------------------------------------
+
+                vmerge_value = None
+
+                if (
+                    tc_pr is not None
+                    and tc_pr.vMerge is not None
+                ):
+                    # In Word XML:
+                    # <w:vMerge w:val="restart"/> = start
+                    # <w:vMerge/> = continue
+
+                    vmerge_value = (
+                        tc_pr.vMerge.val or "continue"
+                    )
+
+                # ---------------------------------------------
+                # Extract cell text
+                # ---------------------------------------------
+
+                paragraphs = tc.xpath("./w:p")
+
+                cell_text = "\n".join(
+                    paragraph.text.strip()
+                    for paragraph in paragraphs
+                    if paragraph.text.strip()
+                )
+
+                cell_text = escape(cell_text).replace(
+                    "\n",
+                    "<br>"
+                )
+
+                # ---------------------------------------------
+                # Continuation of vertical merge
+                # ---------------------------------------------
+
+                if vmerge_value == "continue":
+                    origin = active_vertical_merges.get(
+                        column_index
+                    )
+
+                    if origin is not None:
+                        origin["rowspan"] += 1
+
+                    column_index += colspan
+                    continue
+
+                # ---------------------------------------------
+                # New cell
+                # ---------------------------------------------
+
+                cell = {
+                    "text": cell_text,
+                    "colspan": colspan,
+                    "rowspan": 1,
+                }
+
+                if vmerge_value == "restart":
+                    for col in range(
+                        column_index,
+                        column_index + colspan
+                    ):
+                        active_vertical_merges[col] = cell
+
                 else:
-                    reason = "Does not meet LLM criteria"
-
-                tables_skipped.append({
-                    "table_index": i,
-                    "rows": row_count,
-                    "cols": col_count,
-                    "reason": reason,
-                })
-
-        return tables_need_llm, tables_skipped
-
-    # ============================================================
-    # 3. Prepare tables for LLM
-    # ============================================================
-
-    def prepare_tables_for_llm(self, doc, tables_need_llm):
-
-        tables_for_llm = []
-
-        for item in tables_need_llm:
-
-            table = doc.tables[item["table_index"]]
-
-            rows = [
-                [cell.text.strip() for cell in row.cells]
-                for row in table.rows
-            ]
-
-            tables_for_llm.append({
-                "table_index": item["table_index"],
-                "rows": rows,
-            })
-
-        return tables_for_llm
-
-    # ============================================================
-    # 4. Build prompt
-    # ============================================================
-
-    def build_prompt(self, rows):
-
-        table_json = json.dumps(
-            rows,
-            ensure_ascii=False,
-            indent=2,
-        )
-
-        prompt = f"""
-Bạn là hệ thống chuyển đổi bảng dữ liệu trong tài liệu nghiệp vụ
-thành văn bản có cấu trúc để sử dụng làm dữ liệu cho chatbot/RAG.
-
-NHIỆM VỤ
-
-Đọc bảng đầu vào và chuyển toàn bộ thông tin trong bảng thành
-structured semantic text.
-
-Mục tiêu là:
-- Giữ nguyên thông tin của bảng.
-- Làm rõ quan hệ giữa các trường và giá trị.
-- Loại bỏ sự phụ thuộc vào cấu trúc bảng khi chatbot tìm kiếm.
-- Cho phép người đọc hiểu được nội dung mà không cần nhìn bảng gốc.
-
-QUY TRÌNH XỬ LÝ BẮT BUỘC
-
-Bước 1 — Xác định record
-
-Hãy coi MỖI DÒNG của bảng là một record độc lập.
-
-Không được gộp các giá trị của các dòng khác nhau ở bước này.
-
-Bước 2 — Xác định entity của từng record
-
-Từ các cột trong bảng, xác định các trường tạo nên "đối tượng chính"
-của record.
-
-Các trường mô tả định danh hoặc nhận diện đối tượng phải được giữ
-nguyên cùng nhau.
-
-Các trường có thể bao gồm:
-- tên đối tượng
-- mã đối tượng
-- tên tiếng Anh
-- số hiệu
-- hoặc các trường khác có vai trò nhận diện đối tượng.
-
-Không được tự động coi một cột đơn lẻ là entity nếu điều đó làm
-mất quan hệ giữa các cột.
-
-Bước 3 — Group record
-
-Chỉ group hai hoặc nhiều record khi chúng mô tả CÙNG MỘT ĐỐI TƯỢNG.
-
-Hai record KHÔNG được coi là cùng đối tượng nếu các giá trị định danh
-chính của chúng khác nhau.
-
-Đặc biệt:
-
-KHÔNG được group toàn bộ bảng theo từng cột.
-
-KHÔNG được lấy tất cả giá trị của cột A gom lại với tất cả giá trị
-của cột B.
-
-KHÔNG được tạo kết quả kiểu:
-
-Thuộc tính A: A1 / A2
-Thuộc tính B: B1 / B2
-Thuộc tính C: C1 / C2 / C3
-
-nếu các giá trị này thuộc các record khác nhau.
-
-Bước 4 — Merge thuộc tính
-
-Sau khi đã xác định các record thuộc CÙNG MỘT ĐỐI TƯỢNG,
-mới được merge các giá trị khác nhau của cùng một thuộc tính.
-
-Ví dụ:
-
-Record 1:
-Entity A | X | Value 1
-
-Record 2:
-Entity A | X | Value 2
-
-=> merge thành:
-
-Entity: A
-X: Value 1 / Value 2
-
-Nhưng:
-
-Record 1:
-Entity A | X | Value 1
-
-Record 2:
-Entity B | X | Value 2
-
-=> KHÔNG được merge.
-
-Phải tạo hai block riêng.
-
-Bước 5 — Xuất kết quả
-
-Mỗi entity chỉ có MỘT block.
-
-Trong một block:
-- Mỗi thuộc tính chỉ xuất hiện một lần.
-- Nếu thuộc tính có nhiều giá trị do nhiều record của cùng entity,
-  merge các giá trị bằng "/ ".
-- Các thuộc tính khác nhau giữa các entity tuyệt đối không được
-  trộn lẫn với nhau.
-
-QUY TẮC QUAN TRỌNG NHẤT
-
-Thứ tự xử lý bắt buộc là:
-
-ROWS
-→ IDENTIFY ENTITY
-→ GROUP ROWS BY ENTITY
-→ MERGE ATTRIBUTES WITHIN EACH ENTITY
-→ OUTPUT BLOCKS
-
-Tuyệt đối KHÔNG xử lý theo:
-
-COLUMNS
-→ MERGE VALUES
-→ OUTPUT
-
-Nếu không chắc hai record có cùng entity hay không,
-KHÔNG được merge chúng.
-
-YÊU CẦU VỀ KHẢ NĂNG SEARCH
-
-Kết quả phải giúp chatbot có thể tìm kiếm riêng biệt các thông tin
-quan trọng trong bảng.
-
-Do đó:
-- Các đối tượng khác nhau phải có thể phân biệt được.
-- Các thuộc tính quan trọng phải được thể hiện rõ.
-- Các giá trị thuộc cùng một đối tượng phải được liên kết rõ ràng.
-- Không làm mất thông tin chỉ vì thông tin đó bị lặp lại giữa
-  nhiều dòng.
-- Khi nhiều giá trị thuộc cùng một thuộc tính của cùng một đối tượng,
-  phải đặt các giá trị đó trên cùng một dòng thuộc tính.
-
-KIỂM TRA TRƯỚC KHI TRẢ KẾT QUẢ
-
-Trước khi trả về kết quả, phải kiểm tra:
-
-- Có bỏ sót thông tin nào trong bảng không?
-- Có tạo thêm thông tin không có trong bảng không?
-- Các giá trị trên cùng một dòng có còn đúng quan hệ không?
-- Các dòng thuộc cùng một đối tượng đã được gộp đúng chưa?
-- Trong mỗi block có thuộc tính nào bị lặp lại không?
-- Nếu một thuộc tính có nhiều giá trị, các giá trị đó đã được
-  merge vào cùng một dòng chưa?
-
-Nếu phát hiện một thuộc tính xuất hiện nhiều lần trong cùng một block,
-phải gộp các giá trị của thuộc tính đó thành một dòng duy nhất
-trước khi trả kết quả.
-
-BẢNG ĐẦU VÀO:
-
-{table_json}
-"""
-
-        return prompt
-
-    # ============================================================
-    # 5. Reconstruct tables with LLM
-    # ============================================================
-
-    def reconstruct_tables(self, tables_for_llm):
-
-        results = []
-
-        for table_data in tables_for_llm:
-
-            table_index = table_data["table_index"]
-            rows = table_data["rows"]
-
-            prompt = self.build_prompt(rows)
-
-            response = self.client.chat.completions.create(
-                model=self.azure_openai_deployment,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "Bạn là chuyên gia chuyển đổi dữ liệu bảng "
-                            "nghiệp vụ thành structured semantic text "
-                            "cho hệ thống RAG."
-                        ),
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt,
-                    },
-                ],
-                temperature=0,
-            )
-
-            semantic_text = (
-                response.choices[0].message.content.strip()
-            )
-
-            results.append({
-                "table_index": table_index,
-                "semantic_text": semantic_text,
-            })
-
-            # print()
-            # print("=" * 80)
-            # print(f"TABLE {table_index}")
-            # print("=" * 80)
-            # print(semantic_text)
-
-        return results
-
-    # ============================================================
-    # 6. Validate LLM results
-    # ============================================================
-
-    def validate_results(self, tables_for_llm, results):
-
-        print()
-        print(f"Expected tables : {len(tables_for_llm)}")
-        print(f"LLM results     : {len(results)}")
-
-        assert len(results) == len(tables_for_llm), (
-            f"Missing results: "
-            f"expected {len(tables_for_llm)}, "
-            f"got {len(results)}"
-        )
-
-        for result in results:
-
-            table_index = result["table_index"]
-            semantic_text = result["semantic_text"]
-
-            assert semantic_text, (
-                f"Table {table_index} has empty semantic text"
-            )
-
-        print("✓ All table results are valid.")
-
-    # ============================================================
-    # 7. Replace tables
-    # ============================================================
-
-    def insert_paragraph_before_table(self, table, text):
-
-        table_element = table._element
-
-        lines = [
-            line.strip()
-            for line in text.splitlines()
-            if line.strip()
+                    for col in range(
+                        column_index,
+                        column_index + colspan
+                    ):
+                        active_vertical_merges.pop(col, None)
+
+                row_cells.append(cell)
+                column_index += colspan
+
+            html_rows.append(row_cells)
+
+        # ---------------------------------------------
+        # Generate HTML
+        # ---------------------------------------------
+
+        html = [
+            "<html>",
+            "<body>",
+            "<table border='1'>",
         ]
 
-        for line in lines:
+        for row_cells in html_rows:
+            html.append("<tr>")
 
-            p = OxmlElement("w:p")
-            table_element.addprevious(p)
+            for cell in row_cells:
+                attrs = []
 
-            paragraph = Paragraph(
-                p,
-                table._parent,
-            )
+                if cell["colspan"] > 1:
+                    attrs.append(
+                        f'colspan="{cell["colspan"]}"'
+                    )
 
-            paragraph.add_run(line)
+                if cell["rowspan"] > 1:
+                    attrs.append(
+                        f'rowspan="{cell["rowspan"]}"'
+                    )
 
-        table_element.getparent().remove(
-            table_element
-        )
+                attr_text = (
+                    " " + " ".join(attrs)
+                    if attrs
+                    else ""
+                )
 
-    def replace_tables(self, doc, results):
+                html.append(
+                    f"<td{attr_text}>{cell['text']}</td>"
+                )
 
-        semantic_text_by_table = {
-            result["table_index"]: result["semantic_text"]
-            for result in results
-        }
+            html.append("</tr>")
 
-        # Reverse order để table index không bị thay đổi
-        for table_index in sorted(
-            semantic_text_by_table.keys(),
-            reverse=True,
-        ):
+        html.extend([
+            "</table>",
+            "</body>",
+            "</html>",
+        ])
 
+        return "\n".join(html)
+
+    def prepare_tables_for_docling(
+        self,
+        doc,
+        tables_need_docling
+    ):
+        tables_for_docling = []
+
+        for table_index in tables_need_docling:
             table = doc.tables[table_index]
 
-            semantic_text = (
-                semantic_text_by_table[table_index]
+            table_html = self.table_to_html(table)
+
+            tables_for_docling.append({
+                "table_index": table_index,
+                "html": table_html,
+            })
+
+        return tables_for_docling
+
+    # ---------------------------------------------------------
+    # 4. DOCLING: HTML -> MARKDOWN
+    # ---------------------------------------------------------
+
+    def convert_table_to_markdown(self, table_html):
+        result = self.converter.convert_string(
+            content=table_html,
+            format=InputFormat.HTML,
+            name="extracted_table.html",
+        )
+
+        if result.document is None:
+            raise ValueError(
+                "Docling could not convert the extracted table."
             )
 
-            self.insert_paragraph_before_table(
-                table,
-                semantic_text,
+        markdown = result.document.export_to_markdown()
+
+        if not markdown or not markdown.strip():
+            raise ValueError(
+                "Docling returned empty Markdown."
             )
 
-        print()
-        print("✓ All selected tables were replaced with semantic text.")
-        print(
-            f"Tables processed: "
-            f"{len(semantic_text_by_table)}"
-        )
-        print(
-            f"Remaining tables: "
-            f"{len(doc.tables)}"
+        return markdown.strip()
+
+    # ---------------------------------------------------------
+    # 5. EXTRACT MARKDOWN TABLE
+    # ---------------------------------------------------------
+
+    def extract_markdown_table(self, markdown):
+        """
+        Extract Markdown table rows.
+
+        Ignore separator rows.
+        """
+
+        table_lines = []
+
+        for line in markdown.splitlines():
+            line = line.strip()
+
+            if "|" not in line:
+                continue
+
+            if line.startswith("|"):
+                line = line[1:]
+
+            if line.endswith("|"):
+                line = line[:-1]
+
+            cells = [
+                cell.strip()
+                for cell in line.split("|")
+            ]
+
+            if len(cells) >= 2:
+                table_lines.append(cells)
+
+        rows = []
+
+        for cells in table_lines:
+            is_separator = all(
+                re.fullmatch(
+                    r":?-{3,}:?",
+                    cell.replace(" ", "")
+                )
+                for cell in cells
+            )
+
+            if not is_separator:
+                rows.append(cells)
+
+        return rows
+
+    # ---------------------------------------------------------
+    # 6. DETECT TABLE TYPE
+    # ---------------------------------------------------------
+
+    def detect_table_type(self, html: str, markdown: str) -> str:
+        normalized = self.normalize_text(html).upper()
+
+        # 1. JOB_DESCRIPTION - ưu tiên cao nhất
+        job_sections = [
+            "MÔ TẢ CHỨC DANH",
+            "VAI TRÒ & MỤC TIÊU",
+            "THẨM QUYỀN",
+            "NHIỆM VỤ TRỌNG TÂM",
+            "NHIỆM VỤ KHÁC",
+            "YÊU CẦU TRÌNH ĐỘ & NĂNG LỰC",
+            "YÊU CẦU TRÌNH ĐỘ",
+            "YÊU CẦU NĂNG LỰC",
+        ]
+
+        job_count = sum(
+            1 for section in job_sections
+            if section in normalized
         )
 
-    # ============================================================
-    # 8. Process one DOCX
-    # ============================================================
+        if job_count >= 1:
+            return "JOB_DESCRIPTION"
 
-    def process(
+        # 2. BLOCK
+        block_headers = [
+            "TÊN CHỨC DANH",
+            "TÊN CHỨC DANH TIẾNG ANH",
+            "TÊN CHỨC DANH TRỰC THUỘC",
+            "PHÂN LUỒNG",
+            "PHÂN LOẠI",
+        ]
+
+        block_count = sum(
+            1 for header in block_headers
+            if header in normalized
+        )
+
+        if block_count >= 2:
+            return "BLOCK"
+
+        # 3. LIST - tiêu đề đặc trưng
+        if "GIÁ TRỊ CỐT LÕI" in normalized:
+            return "LIST"
+
+        # 4. LIST - cấu trúc số thứ tự + nội dung
+        parser = TableHTMLParser()
+        parser.feed(html)
+
+        numbered_rows = 0
+
+        for row in parser.rows:
+            cells = [
+                self.normalize_text(cell["text"])
+                for cell in row
+                if self.normalize_text(cell["text"])
+            ]
+
+            if len(cells) < 2 or len(cells) % 2 != 0:
+                continue
+
+            if all(
+                re.match(r"^\d+\.?$", cells[i])
+                for i in range(0, len(cells), 2)
+            ):
+                numbered_rows += 1
+
+        if numbered_rows >= 1:
+            return "LIST"
+
+        return "UNKNOWN"
+
+    # ---------------------------------------------------------
+    # 7. BLOCK: MARKDOWN -> SEMANTIC TEXT
+    # ---------------------------------------------------------
+
+    
+    def markdown_to_semantic_text(self, markdown):
+        """
+        Convert Markdown table into structured Semantic Text.
+
+        Reconstruct continuation rows when entity column is empty.
+        """
+
+        rows = self.extract_markdown_table(markdown)
+
+        if len(rows) < 2:
+            raise ValueError(
+                "BLOCK table does not contain enough Markdown rows."
+            )
+
+        headers = [
+            self.normalize_text(header)
+            for header in rows[0]
+        ]
+
+        # ---------------------------------------------
+        # 1. Normalize duplicated merged headers
+        # ---------------------------------------------
+
+        merged_header = "Bộ máy Tên chức danh trực thuộc"
+
+        merged_indexes = [
+            index
+            for index, header in enumerate(headers)
+            if header.lower() == merged_header.lower()
+        ]
+
+        if len(merged_indexes) >= 2:
+            headers[merged_indexes[0]] = "Bộ máy"
+            headers[merged_indexes[-1]] = (
+                "Tên chức danh trực thuộc"
+            )
+
+        # ---------------------------------------------
+        # 2. Find entity column
+        # ---------------------------------------------
+
+        entity_candidates = [
+            index
+            for index, header in enumerate(headers)
+            if (
+                "tên chức danh trực thuộc" in header.lower()
+                or header.lower() == "tên chức danh"
+            )
+        ]
+
+        if not entity_candidates:
+            entity_candidates = [
+                index
+                for index, header in enumerate(headers)
+                if header.lower() in [
+                    "tên",
+                    "chức danh",
+                    "tên đơn vị",
+                    "tên phòng ban",
+                ]
+            ]
+
+        if not entity_candidates:
+            raise ValueError(
+                "Cannot identify entity column. "
+                f"Headers: {headers}"
+            )
+
+        entity_column = entity_candidates[-1]
+
+        # ---------------------------------------------
+        # 3. Normalize rows
+        # ---------------------------------------------
+
+        normalized_rows = []
+
+        for row in rows[1:]:
+
+            row = row[:len(headers)]
+            row += [""] * (len(headers) - len(row))
+
+            row = [
+                self.normalize_text(value)
+                for value in row
+            ]
+
+            normalized_rows.append(row)
+
+        # ---------------------------------------------
+        # 4. Reconstruct continuation rows
+        # ---------------------------------------------
+
+        reconstructed_rows = []
+
+        for row in normalized_rows:
+
+            entity_name = row[entity_column]
+
+            if entity_name:
+                # Start a new record
+                reconstructed_rows.append(row)
+                continue
+
+            if not reconstructed_rows:
+                # Ignore continuation rows without a preceding record
+                continue
+
+            # Append non-empty cells to the previous record
+            previous_row = reconstructed_rows[-1]
+
+            for index, value in enumerate(row):
+
+                if not value:
+                    continue
+
+                if previous_row[index]:
+                    previous_row[index] = (
+                        previous_row[index].rstrip()
+                        + " "
+                        + value.lstrip()
+                    )
+                else:
+                    previous_row[index] = value
+
+        # ---------------------------------------------
+        # 5. Generate Semantic Text blocks
+        # ---------------------------------------------
+
+        blocks = []
+
+        for row in reconstructed_rows:
+
+            entity_name = row[entity_column]
+
+            if not entity_name:
+                continue
+
+            block_lines = [
+                f"**Block {len(blocks) + 1} — {entity_name}**"
+            ]
+
+            for index, value in enumerate(row):
+
+                if not value:
+                    continue
+
+                header = (
+                    headers[index]
+                    or f"Column {index + 1}"
+                )
+
+                block_lines.append(
+                    f"- **{header}:** {value}"
+                )
+
+            blocks.append("\n".join(block_lines))
+
+        if not blocks:
+            raise ValueError(
+                "BLOCK table did not produce any Semantic Text blocks."
+            )
+
+        return "\n\n---\n\n".join(blocks)
+
+
+    # ---------------------------------------------------------
+    # 8. JOB DESCRIPTION: HTML -> SEMANTIC TEXT
+    # ---------------------------------------------------------
+
+    def html_to_list_text(self, html: str) -> str:
+        parser = TableHTMLParser()
+        parser.feed(html)
+
+        output = []
+
+        for row in parser.rows:
+            cells = [
+                self.normalize_text(cell["text"])
+                for cell in row
+                if cell["text"].strip()
+            ]
+
+            if not cells:
+                continue
+
+            # Tiêu đề section
+            if len(cells) == 1:
+                text = cells[0]
+
+                if text.isupper():
+                    output.append(f"\n## {text}")
+                else:
+                    output.append(text)
+
+                continue
+
+            # Danh sách dạng số thứ tự + nội dung
+            if len(cells) % 2 == 0:
+                pairs = []
+
+                for i in range(0, len(cells), 2):
+                    number = cells[i].strip()
+                    content = cells[i + 1].strip()
+
+                    if re.match(r"^\d+\.?$", number):
+                        pairs.append(f"{number} {content}")
+                    else:
+                        pairs = []
+                        break
+
+                if pairs:
+                    output.extend(pairs)
+                    continue
+
+            # Các dòng không nhận diện được cấu trúc:
+            # Giữ nguyên thứ tự nội dung, không tự suy luận.
+            output.append(" | ".join(cells))
+
+        return "\n".join(output).strip()
+
+    def html_to_job_description_text(self, html):
+        """
+        Convert Job Description HTML into Semantic Text.
+
+        Preserve original cell boundaries and merge information.
+
+        Does not use Docling Markdown as the structural source,
+        because Markdown may duplicate merged-cell content.
+        """
+
+        parser = TableHTMLParser()
+        parser.feed(html)
+
+        if not parser.rows:
+            raise ValueError(
+                "Cannot parse Job Description HTML table."
+            )
+
+        output = []
+        current_section = None
+
+        section_names = {
+            self.normalize_text(section).upper()
+            for section in self.JOB_SECTIONS
+        }
+
+        for row in parser.rows:
+
+            cells = [
+                cell
+                for cell in row
+                if self.normalize_text(cell["text"])
+            ]
+
+            if not cells:
+                continue
+
+            # ---------------------------------------------
+            # Single cell: title, section or content
+            # ---------------------------------------------
+
+            if len(cells) == 1:
+                cell = cells[0]
+
+                text = self.normalize_text(
+                    cell["text"]
+                )
+
+                normalized = text.upper()
+
+                is_full_width = (
+                    cell["colspan"] > 1
+                    or cell["rowspan"] > 1
+                )
+
+                if normalized in section_names:
+                    current_section = normalized
+
+                    output.append(
+                        f"\n## {normalized}"
+                    )
+
+                elif (
+                    normalized == "MÔ TẢ CHỨC DANH"
+                    or (
+                        is_full_width
+                        and normalized in section_names
+                    )
+                ):
+                    output.append(
+                        f"\n## {normalized}"
+                    )
+
+                else:
+                    output.append(text)
+
+                continue
+
+            # ---------------------------------------------
+            # Multiple cells
+            # ---------------------------------------------
+
+            parts = [
+                self.normalize_text(cell["text"])
+                for cell in cells
+            ]
+
+            # ---------------------------------------------
+            # Detect label-value pairs
+            # ---------------------------------------------
+
+            is_label_value_row = (
+                len(cells) >= 2
+                and len(cells) % 2 == 0
+            )
+
+            if is_label_value_row:
+                for index in range(0, len(cells), 2):
+                    label = parts[index]
+                    value = parts[index + 1]
+
+                    is_label = (
+                        label.startswith("-")
+                        or label.endswith(":")
+                        or label.endswith("：")
+                    )
+
+                    if not is_label:
+                        is_label_value_row = False
+                        break
+
+            if is_label_value_row:
+                for index in range(0, len(cells), 2):
+                    label = parts[index]
+                    value = parts[index + 1]
+
+                    label = label.lstrip("-").strip()
+                    label = label.rstrip(":：").strip()
+
+                    if value:
+                        output.append(
+                            f"- **{label}:** {value}"
+                        )
+                    else:
+                        output.append(
+                            f"- **{label}:**"
+                        )
+
+            else:
+                # Preserve original content without guessing
+                # relationships between merged cells.
+                output.append(
+                    " | ".join(parts)
+                )
+
+        semantic_text = "\n".join(output).strip()
+
+        if not semantic_text:
+            raise ValueError(
+                "Job Description Semantic Text is empty."
+            )
+
+        return semantic_text
+
+    # ---------------------------------------------------------
+    # 9. CONVERT TABLE BY TYPE
+    # ---------------------------------------------------------
+
+    def convert_table_to_semantic_text(
         self,
-        input_path: Path,
-        output_path: Path,
-    ) -> Path:
+        table_type: str,
+        html: str,
+        markdown: str
+    ) -> str:
 
+        if table_type == "JOB_DESCRIPTION":
+            return self.html_to_job_description_text(html)
+
+        elif table_type == "BLOCK":
+            return self.markdown_to_semantic_text(markdown)
+
+        elif table_type == "LIST":
+            return self.html_to_list_text(html)
+
+        raise ValueError(f"Unsupported table type: {table_type}")
+
+    # ---------------------------------------------------------
+    # 10. RECONSTRUCT TABLES
+    # ---------------------------------------------------------
+
+    def reconstruct_tables(self, tables_for_docling):
+        reconstructed_tables = []
+
+        for table_item in tables_for_docling:
+
+            table_index = table_item["table_index"]
+            html = table_item["html"]
+            markdown = ""
+
+            try:
+                # -----------------------------------------
+                # Step 1. HTML -> Markdown
+                # -----------------------------------------
+
+                markdown = self.convert_table_to_markdown(
+                    html
+                )
+
+                # -----------------------------------------
+                # Step 2. Detect type -> Semantic Text
+                # -----------------------------------------
+                table_type = self.detect_table_type(
+                    html=html,
+                    markdown=markdown
+                )
+
+                print(f"[TABLE {table_index}] Detected type: {table_type}")
+
+                semantic_text = (
+                    self.convert_table_to_semantic_text(
+                        table_type=table_type,
+                        html=html,
+                        markdown=markdown
+                    )
+                )
+
+                if (
+                    not semantic_text
+                    or not semantic_text.strip()
+                ):
+                    raise ValueError(
+                        "Semantic Text is empty."
+                    )
+
+                reconstructed_tables.append({
+                    "table_index": table_index,
+                    "markdown": markdown,
+                    "semantic_text": semantic_text,
+                })
+
+                print(
+                    f"Table {table_index}: "
+                    f"processed successfully."
+                )
+
+            except Exception as e:
+
+                print("\n" + "=" * 80)
+                print("TABLE PROCESSING ERROR")
+                print(f"Table index: {table_index}")
+                print(f"Error: {e}")
+
+                print("\n--- INPUT HTML ---")
+                print(html)
+
+                print("\n--- DOCLING MARKDOWN ---")
+                print(markdown or "(Markdown unavailable)")
+
+                print("=" * 80)
+
+                raise
+
+        return reconstructed_tables
+
+    # ---------------------------------------------------------
+    # 11. VALIDATE RESULTS
+    # ---------------------------------------------------------
+
+    def validate_results(
+        self,
+        tables_need_docling,
+        reconstructed_tables
+    ):
+        if len(tables_need_docling) != len(
+            reconstructed_tables
+        ):
+            raise ValueError(
+                "The number of reconstructed tables does not "
+                "match the number of input tables."
+            )
+
+        expected_indexes = set(tables_need_docling)
+
+        actual_indexes = {
+            item["table_index"]
+            for item in reconstructed_tables
+        }
+
+        if expected_indexes != actual_indexes:
+            raise ValueError(
+                "Table indexes do not match."
+            )
+
+        for item in reconstructed_tables:
+            if not item["semantic_text"].strip():
+                raise ValueError(
+                    f"Empty Semantic Text at table index "
+                    f"{item['table_index']}."
+                )
+
+    # ---------------------------------------------------------
+    # 12. REPLACE TABLE WITH SEMANTIC TEXT
+    # ---------------------------------------------------------
+
+    def build_markdown(self, doc, reconstructed_tables):
+        """
+        Build Markdown from DOCX content in original XML order.
+
+        - Paragraph -> Markdown text
+        - Processed table -> Semantic Text
+        - Skipped table -> Original table text
+        - Ignore Word layout elements
+        """
+
+        # Map table index -> Semantic Text
+        semantic_tables = {
+            item["table_index"]: item["semantic_text"]
+            for item in reconstructed_tables
+        }
+
+        markdown_blocks = []
+        table_index = 0
+
+        body = doc.element.body
+
+        for child in body.iterchildren():
+
+            # ---------------------------------------------
+            # Paragraph
+            # ---------------------------------------------
+
+            if child.tag.endswith("}p"):
+
+                paragraph = Paragraph(child, doc)
+
+                # Extract actual text only.
+                # This avoids carrying page/column break elements.
+                text = "".join(
+                    node.text or ""
+                    for node in child.xpath(".//w:t")
+                ).strip()
+
+                if not text:
+                    continue
+
+                # Preserve Word heading hierarchy
+                style_name = (
+                    paragraph.style.name
+                    if paragraph.style
+                    else ""
+                )
+
+                heading_match = re.fullmatch(
+                    r"Heading ([1-6])",
+                    style_name
+                )
+
+                if heading_match:
+                    level = int(heading_match.group(1))
+                    text = f"{'#' * level} {text}"
+
+                markdown_blocks.append(text)
+
+            # ---------------------------------------------
+            # Table
+            # ---------------------------------------------
+
+            elif child.tag.endswith("}tbl"):
+
+                table = Table(child, doc)
+
+                if table_index in semantic_tables:
+
+                    # Use reconstructed Semantic Text
+                    table_text = semantic_tables[table_index]
+
+                else:
+
+                    # Keep original content of skipped tables
+                    rows = []
+
+                    for row in table.rows:
+                        cells = [
+                            cell.text.strip()
+                            for cell in row.cells
+                            if cell.text.strip()
+                        ]
+
+                        if cells:
+                            rows.append(" | ".join(cells))
+
+                    table_text = "\n".join(rows)
+
+                if table_text.strip():
+                    markdown_blocks.append(table_text.strip())
+
+                table_index += 1
+
+        return "\n\n".join(markdown_blocks)
+
+    # ---------------------------------------------------------
+    # 13. PROCESS
+    # ---------------------------------------------------------
+
+    def process(self, input_path, output_path):
         input_path = Path(input_path)
         output_path = Path(output_path)
 
-        print("=" * 80)
-        print("DOCX PROCESSING")
-        print("=" * 80)
+        # ---------------------------------------------
+        # Step 1. Load DOCX
+        # ---------------------------------------------
 
-        print(f"Input : {input_path}")
-        print(f"Output: {output_path}")
-
-        # Load
         doc = self.load_document(input_path)
 
-        print()
-        print(f"Paragraphs: {len(doc.paragraphs)}")
-        print(f"Tables    : {len(doc.tables)}")
+        # ---------------------------------------------
+        # Step 2. Detect tables
+        # ---------------------------------------------
 
-        # Detect
-        tables_need_llm, tables_skipped = (
-            self.detect_tables(doc)
-        )
+        (
+            tables_need_docling,
+            tables_skipped
+        ) = self.detect_tables(doc)
 
-        print()
-        print(f"Total tables    : {len(doc.tables)}")
-        print(
-            f"Tables need LLM : "
-            f"{len(tables_need_llm)}"
-        )
-        print(
-            f"Tables skipped  : "
-            f"{len(tables_skipped)}"
-        )
+        print(f"Tables selected: {len(tables_need_docling)}")
+        print(f"Tables skipped: {len(tables_skipped)}")
 
-        # Prepare
-        tables_for_llm = self.prepare_tables_for_llm(
+        # ---------------------------------------------
+        # Step 3. Extract selected tables -> HTML
+        # ---------------------------------------------
+
+        reconstructed_tables = []
+
+        if tables_need_docling:
+
+            tables_for_docling = (
+                self.prepare_tables_for_docling(
+                    doc,
+                    tables_need_docling
+                )
+            )
+
+            # -----------------------------------------
+            # Step 4. Docling + Semantic Text
+            # -----------------------------------------
+
+            reconstructed_tables = self.reconstruct_tables(
+                tables_for_docling
+            )
+
+            # -----------------------------------------
+            # Step 5. Validate
+            # -----------------------------------------
+
+            self.validate_results(
+                tables_need_docling,
+                reconstructed_tables
+            )
+
+        # ---------------------------------------------
+        # Step 6. Build Markdown
+        # ---------------------------------------------
+
+        markdown = self.build_markdown(
             doc,
-            tables_need_llm,
+            reconstructed_tables
         )
 
-        print(
-            f"Tables prepared for LLM: "
-            f"{len(tables_for_llm)}"
-        )
+        # ---------------------------------------------
+        # Step 7. Save Markdown
+        # ---------------------------------------------
 
-        # LLM
-        results = self.reconstruct_tables(
-            tables_for_llm
-        )
-
-        # Validate
-        self.validate_results(
-            tables_for_llm,
-            results,
-        )
-
-        # Replace
-        self.replace_tables(
-            doc,
-            results,
-        )
-
-        # Save
         output_path.parent.mkdir(
             parents=True,
-            exist_ok=True,
+            exist_ok=True
         )
 
-        doc.save(output_path)
+        output_path.write_text(
+            markdown,
+            encoding="utf-8"
+        )
 
-        print()
-        print(f"✓ Processed DOCX saved to: {output_path}")
+        print(f"Markdown saved: {output_path}")
 
-        return output_path
+        return {
+            "input_path": str(input_path),
+            "output_path": str(output_path),
+            "tables_processed": len(reconstructed_tables),
+            "tables_skipped": len(tables_skipped),
+        }
 
 
-# ================================================================
-# Manual test
-# ================================================================
+# =============================================================
+# MANUAL TEST
+# =============================================================
 
 if __name__ == "__main__":
 
-    INPUT_FILE = Path(
-        "input/3352.docx"
-    )
-
-    OUTPUT_FILE = Path(
-        "output/3352.docx"
-    )
-
     processor = DocxProcessor()
 
-    processor.process(
-        input_path=INPUT_FILE,
-        output_path=OUTPUT_FILE,
+    input_file = Path("input/test.docx")
+    output_file = Path("output/test.md")
+
+    result = processor.process(
+        input_path=input_file,
+        output_path=output_file
     )
 
-    print()
-    print("=" * 80)
-    print("TEST PASSED")
-    print("=" * 80)
+    print("\nProcessing completed:")
+    print(result)

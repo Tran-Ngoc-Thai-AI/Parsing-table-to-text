@@ -1,0 +1,155 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/2] sample.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] test.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1373
+Tables skipped: 15
+
+================================================================================
+TABLE PROCESSING ERROR
+Table index: 0
+Error: DocxProcessor.convert_table_to_semantic_text() missing 1 required positional argument: 'table_type'
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Tên chức danh</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td>Tổng Giám đốc</td>
+<td>Chief Executive Officer</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>quản lý</td>
+</tr>
+<tr>
+<td>Phó Tổng Giám đốc thường trực</td>
+<td>Standing Deputy Chief Executive Officer</td>
+<td>Kinh doanh</td>
+<td>Nhân sự</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>trực tiếp/</td>
+<td>quản lý</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Hỗ trợ kinh</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>doanh</td>
+<td></td>
+</tr>
+<tr>
+<td>Phó Tổng Giám đốc</td>
+<td>Deputy Chief Executive Officer</td>
+<td>Kinh doanh</td>
+<td>Nhân sự</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>trực tiếp/</td>
+<td>quản lý</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Hỗ trợ kinh</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>doanh</td>
+<td></td>
+</tr>
+<tr>
+<td>Thành viên Ban điều hành</td>
+<td>Executive Committee Member</td>
+<td>Kinh doanh</td>
+<td>Nhân sự</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>trực tiếp/</td>
+<td>quản lý</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Hỗ trợ kinh</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>doanh</td>
+<td></td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Tên chức danh                 | Tên chức danh tiếng Anh                 | Phân luồng             | Phân loại         |
+|-------------------------------|-----------------------------------------|------------------------|-------------------|
+| Tổng Giám đốc                 | Chief Executive Officer                 | Kinh doanh   trực tiếp | Nhân sự   quản lý |
+| Phó Tổng Giám đốc thường trực | Standing Deputy Chief Executive Officer | Kinh doanh             | Nhân sự           |
+|                               |                                         | trực tiếp/             | quản lý           |
+|                               |                                         | Hỗ trợ kinh            |                   |
+|                               |                                         | doanh                  |                   |
+| Phó Tổng Giám đốc             | Deputy Chief Executive Officer          | Kinh doanh             | Nhân sự           |
+|                               |                                         | trực tiếp/             | quản lý           |
+|                               |                                         | Hỗ trợ kinh            |                   |
+|                               |                                         | doanh                  |                   |
+| Thành viên Ban điều hành      | Executive Committee Member              | Kinh doanh             | Nhân sự           |
+|                               |                                         | trực tiếp/             | quản lý           |
+|                               |                                         | Hỗ trợ kinh            |                   |
+|                               |                                         | doanh                  |                   |
+================================================================================
+✗ Failed: test.docx
+  Error: DocxProcessor.convert_table_to_semantic_text() missing 1 required positional argument: 'table_type'
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 1
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

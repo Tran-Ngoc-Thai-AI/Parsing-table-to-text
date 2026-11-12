@@ -1,5 +1,5 @@
 import json
-
+import os
 from src.blob_storage import BlobStorageClient
 from src.pipeline import DocumentPipeline
 
@@ -104,6 +104,10 @@ def main():
                 container_name=output_container,
             )
 
+            azure_storage_prefix = settings.get("AZURE_STORAGE_PREFIX", "").strip()
+
+            print(f"azure_storage_prefix: {azure_storage_prefix or '(ALL)'}")
+
             pipeline = DocumentPipeline(
                 input_dir=None,
                 output_dir=None,
@@ -112,6 +116,7 @@ def main():
             pipeline.sync_blobs(
                 input_client=input_blob_storage,
                 output_client=output_blob_storage,
+                prefix=azure_storage_prefix,
             )
 
             print()

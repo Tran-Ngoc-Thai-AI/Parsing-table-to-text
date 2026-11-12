@@ -89,6 +89,37 @@ class BlobStorageClient:
 
         return results
 
+    def list_md_metadata(self, prefix: str = "") -> List[dict]:
+        """List Markdown blobs with blob properties and metadata."""
+
+        blob_items = self.container_client.list_blobs(
+            name_starts_with=prefix,
+            include=["metadata"],
+        )
+
+        results = []
+
+        for blob in blob_items:
+            if not blob.name.lower().endswith(".md"):
+                continue
+
+            content_md5 = None
+            if blob.content_settings and blob.content_settings.content_md5:
+                content_md5 = blob.content_settings.content_md5.hex()
+
+            results.append(
+                {
+                    "name": blob.name,
+                    "etag": blob.etag,
+                    "last_modified": blob.last_modified,
+                    "size": blob.size,
+                    "content_md5": content_md5,
+                    "metadata": blob.metadata or {},
+                }
+            )
+
+        return results
+
     def download_blob(
         self,
         blob_name: str,

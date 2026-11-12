@@ -1,0 +1,232 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+azure_storage_prefix: (ALL)
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 5
+OUTPUT MD : 0
+
+--------------------------------------------------------------------------------
+[1/5] 602026thm/602026thm_20261106_173936.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1
+Tables skipped: 0
+[TABLE 0] Detected type: JOB_DESCRIPTION
+Table 0: processed successfully.
+Markdown saved: temp_processed\949b14d4ce2b3736.md
+✓ Uploaded: 602026thm/602026thm_20261106_173936.md
+
+--------------------------------------------------------------------------------
+[2/5] 602026thm/652026thm_20261106_173921.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1
+Tables skipped: 0
+[TABLE 0] Detected type: JOB_DESCRIPTION
+Table 0: processed successfully.
+Markdown saved: temp_processed\9c9e07db3b5f95b3.md
+✓ Uploaded: 602026thm/652026thm_20261106_173921.md
+
+--------------------------------------------------------------------------------
+[3/5] 602026thm/662026thm_20261106_173843.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1
+Tables skipped: 0
+[TABLE 0] Detected type: UNKNOWN
+
+================================================================================
+TABLE PROCESSING ERROR
+Table index: 0
+Error: Unsupported table type: UNKNOWN
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td colspan="2">66/2026/THM – Công ty TNHH hai thành viên chuyển đổi thành công ty TNHH một thành viên</td>
+</tr>
+<tr>
+<td>Tình trạng</td>
+<td>Còn áp dụng</td>
+</tr>
+<tr>
+<td>Chi tiết tình trạng</td>
+<td></td>
+</tr>
+<tr>
+<td>Ngày ban hành</td>
+<td>29/10/2026</td>
+</tr>
+<tr>
+<td>Ngày ngừng áp dụng</td>
+<td></td>
+</tr>
+<tr>
+<td>Nội dung tình huống:</td>
+<td>Công ty TNHH hai thành viên đang vay vốn tại Ngân hàng, TSBĐ là bất động sản của Công ty. Hiện tại công ty đã chuyển đổi thành công ty TNHH một thành viên (có thay đổi tên công ty). Trường hợp này có cần phải ký lại HĐTD, HĐTC và thu thập thêm các hồ sơ nào không?</td>
+</tr>
+<tr>
+<td>Nội dung tư vấn</td>
+<td>Về mặt pháp lý, sau khi chuyển đổi công ty TNHH MTV sẽ kế thừa toàn bộ quyền và nghĩa vụ phát sinh mà công ty TNHH hai thành viên đã giao kết với Ngân hàng.<br>Theo Điểm b Khoản 1 Điều 133 Luật Đất đai 2024, người sử dụng đất phải thực hiện đăng ký biến động đất đai khi được phép đổi tên.<br>Do vậy, Đơn vị yêu cầu công ty TNHH MTV thực hiện:<br>+ Cung cấp các hồ sơ pháp lý mới của công ty TNHH MTV (công ty sau chuyển đổi) theo quy định tại Quyết định 1103.CRM.2026(1) v/v ban hành Quy trình thẩm định và phê duyệt cấp tín dụng đối với khách hàng pháp nhân và chủ doanh nghiệp tư nhân và các văn bản sửa đổi, bổ sung, thay thế trong từng thời kỳ gồm: Giấy chứng nhận đăng ký doanh nghiệp; Hồ sơ về mẫu dấu; Điều lệ; Quyết định của chủ sở hữu công ty TNHH MTV về việc tiếp tục thực hiện nghĩa vụ của công ty TNHH hai thành viên phát sinh từ các hợp đồng, thỏa thuận, cam kết đã ký với Ngân hàng; và các hồ sơ khác có liên quan (nếu có).<br>+ Đăng ký biến động đất đai theo Điểm đ Khoản 1 Điều 133 Luật Đất đai 2024.<br>+ Đối với HĐTC: ký thỏa thuận sửa đổi, bổ sung HĐTC (thay đổi thông tin Bên bảo đảm và giấy chứng nhận) và đăng ký thay đổi nội dung biện pháp bảo đảm đã đăng ký theo Khoản 1 Điều 18 Nghị định 99/2022/NĐ-CP.<br>+ Đối với HĐTD:<br>Trường hợp KH còn nhân nợ, khuyến khích Đơn vị trao đổi với KH để ký TTSĐBS HĐTD để điều chỉnh thông tin Bên được cấp tín dụng (khuyến khích). Trường hợp KH không đồng ý, khi thiết lập GNN, Đơn vị thể hiện tên mới của Ngân hàng kèm nội dung mở ngoặc đơn về tên cũ.<br>Trường hợp KH không còn nhận nợ, KHÔNG bắt buộc ký TTSĐBS HĐTD để điều chỉnh Bên được cấp tín dụng.</td>
+</tr>
+<tr>
+<td>Lĩnh vực</td>
+<td>Bảo đảm tiền vay</td>
+</tr>
+<tr>
+<td>VBPL tham chiếu</td>
+<td></td>
+</tr>
+<tr>
+<td>CCPL tham chiếu</td>
+<td></td>
+</tr>
+<tr>
+<td>Liên quan về hiệu lực</td>
+<td></td>
+</tr>
+<tr>
+<td>File đính kèm</td>
+<td></td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| 66/2026/THM - Công ty TNHH hai thành viên chuyển đổi thành công ty TNHH một thành viên   | 66/2026/THM - Công ty TNHH hai thành viên chuyển đổi thành công ty TNHH một thành viên                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tình trạng                                                                               | Còn áp dụng                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Chi tiết tình trạng                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Ngày ban hành                                                                            | 29/10/2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Ngày ngừng áp dụng                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Nội dung tình huống:                                                                     | Công ty TNHH hai thành viên đang vay vốn tại Ngân hàng, TSBĐ là bất động sản của Công ty. Hiện tại công ty đã chuyển đổi thành công ty TNHH một thành viên (có thay đổi tên công ty). Trường hợp này có cần phải ký lại HĐTD, HĐTC và thu thập thêm các hồ sơ nào không?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Nội dung tư vấn                                                                          | Về mặt pháp lý, sau khi chuyển đổi công ty TNHH MTV sẽ kế thừa toàn bộ quyền và nghĩa vụ phát sinh mà công ty TNHH hai thành viên đã giao kết với Ngân hàng.   Theo Điểm b Khoản 1 Điều 133 Luật Đất đai 2024, người sử dụng đất phải thực hiện đăng ký biến động đất đai khi được phép đổi tên.   Do vậy, Đơn vị yêu cầu công ty TNHH MTV thực hiện:   + Cung cấp các hồ sơ pháp lý mới của công ty TNHH MTV (công ty sau chuyển đổi) theo quy định tại Quyết định 1103.CRM.2026(1) v/v ban hành Quy trình thẩm định và phê duyệt cấp tín dụng đối với khách hàng pháp nhân và chủ doanh nghiệp tư nhân và các văn bản sửa đổi, bổ sung, thay thế trong từng thời kỳ gồm: Giấy chứng nhận đăng ký doanh nghiệp; Hồ sơ về mẫu dấu; Điều lệ; Quyết định của chủ sở hữu công ty TNHH MTV về việc tiếp tục thực hiện nghĩa vụ của công ty TNHH hai thành viên phát sinh từ các hợp đồng, thỏa thuận, cam kết đã ký với Ngân hàng; và các hồ sơ khác có liên quan (nếu có).   + Đăng ký biến động đất đai theo Điểm đ Khoản 1 Điều 133 Luật Đất đai 2024.   + Đối với HĐTC: ký thỏa thuận sửa đổi, bổ sung HĐTC (thay đổi thông tin Bên bảo đảm và giấy chứng nhận) và đăng ký thay đổi nội dung biện pháp bảo đảm đã đăng ký theo Khoản 1 Điều 18 Nghị định 99/2022/NĐ-CP.   + Đối với HĐTD:   Trường hợp KH còn nhân nợ, khuyến khích Đơn vị trao đổi với KH để ký TTSĐBS HĐTD để điều chỉnh thông tin Bên được cấp tín dụng (khuyến khích). Trường hợp KH không đồng ý, khi thiết lập GNN, Đơn vị thể hiện tên mới của Ngân hàng kèm nội dung mở ngoặc đơn về tên cũ.   Trường hợp KH không còn nhận nợ, KHÔNG bắt buộc ký TTSĐBS HĐTD để điều chỉnh Bên được cấp tín dụng. |
+| Lĩnh vực                                                                                 | Bảo đảm tiền vay                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| VBPL tham chiếu                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| CCPL tham chiếu                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Liên quan về hiệu lực                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| File đính kèm                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+================================================================================
+✗ Failed: 602026thm/662026thm_20261106_173843.docx
+  Error: Unsupported table type: UNKNOWN
+
+--------------------------------------------------------------------------------
+[4/5] 602026thm/672026thm_20261106_173831.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1
+Tables skipped: 0
+[TABLE 0] Detected type: JOB_DESCRIPTION
+Table 0: processed successfully.
+Markdown saved: temp_processed\1f4d3f8b642c1e20.md
+✓ Uploaded: 602026thm/672026thm_20261106_173831.md
+
+--------------------------------------------------------------------------------
+[5/5] 602026thm/752026thm_20261106_173810.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1
+Tables skipped: 0
+[TABLE 0] Detected type: UNKNOWN
+
+================================================================================
+TABLE PROCESSING ERROR
+Table index: 0
+Error: Unsupported table type: UNKNOWN
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td colspan="2">75/2026/THM – Thiết lập thời hạn duy trì hạn mức khi Khách hàng được tái tục</td>
+</tr>
+<tr>
+<td>Tình trạng</td>
+<td>Còn áp dụng</td>
+</tr>
+<tr>
+<td>Chi tiết tình trạng</td>
+<td></td>
+</tr>
+<tr>
+<td>Ngày ban hành</td>
+<td>29/10/2026</td>
+</tr>
+<tr>
+<td>Ngày ngừng áp dụng</td>
+<td></td>
+</tr>
+<tr>
+<td>Nội dung tình huống:</td>
+<td>HĐTD hạn mức ký lần đầu ngày 01/02/2024 có thời hạn duy trì HMTD 12 tháng, ngày 01/02/2025 đã ký thỏa thuận tái tục thời hạn sử dụng hạn mức 12 tháng. Ngày 01/04/2026 (khoản vay vẫn còn Giấy nhận nợ trong hạn), KH tiếp tục được tái cấp hạn mức 12 tháng. Vậy thời hạn duy trì HMTD lần này của KH sẽ được tính từ ngày 01/02/2026 hay tính từ ngày 01/04/2026? ​​</td>
+</tr>
+<tr>
+<td>Nội dung tư vấn</td>
+<td>Thời hạn duy trì HMTD nêu tại HĐTD là khoảng thời gian mà KH được quyền đề nghị Ngân hàng giải ngân, khi hết thời gian này KH không được sử dụng HMTD (không được giải ngân) mà chỉ có nghĩa vụ trả nợ theo thời hạn vay của GNN. =&gt; Vì vậy Đơn vị không tính các khoảng thời gian mà KH không được giải ngân (từ ngày 01/02/2026 đến ngày 31/03/2026) khi xét điều kiện về tổng thời hạn sử dụng hạn mức.<br>Khi lập Thỏa thuận sửa đổi, bổ sung HĐTD theo hướng dẫn Phụ lục 1.3 Quyết định 99/2024/QĐ-VBLQ (và các văn bản sửa đổi bổ sung), Đơn vị xác định: “Thời hạn duy trì HMTD là 12 tháng kể từ ngày ký Thỏa thuận này”.<br>Nếu KH ký Thỏa thuận sửa đổi bổ sung HĐTD vào ngày 01/04/2026, thời gian sử dụng hạn mức sẽ được tính từ ngày 01/04/2026.</td>
+</tr>
+<tr>
+<td>Lĩnh vực</td>
+<td>Thiết lập Hợp đồng</td>
+</tr>
+<tr>
+<td>VBPL tham chiếu</td>
+<td></td>
+</tr>
+<tr>
+<td>CCPL tham chiếu</td>
+<td></td>
+</tr>
+<tr>
+<td>Liên quan về hiệu lực</td>
+<td></td>
+</tr>
+<tr>
+<td>File đính kèm</td>
+<td></td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| 75/2026/THM - Thiết lập thời hạn duy trì hạn mức khi Khách hàng được tái tục   | 75/2026/THM - Thiết lập thời hạn duy trì hạn mức khi Khách hàng được tái tục                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tình trạng                                                                     | Còn áp dụng                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Chi tiết tình trạng                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Ngày ban hành                                                                  | 29/10/2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Ngày ngừng áp dụng                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Nội dung tình huống:                                                           | HĐTD hạn mức ký lần đầu ngày 01/02/2024 có thời hạn duy trì HMTD 12 tháng, ngày 01/02/2025 đã ký thỏa thuận tái tục thời hạn sử dụng hạn mức 12 tháng. Ngày 01/04/2026 (khoản vay vẫn còn Giấy nhận nợ trong hạn), KH tiếp tục được tái cấp hạn mức 12 tháng. Vậy thời hạn duy trì HMTD lần này của KH sẽ được tính từ ngày 01/02/2026 hay tính từ ngày 01/04/2026?                                                                                                                                                                                                                                                                                                                                                                                             |
+| Nội dung tư vấn                                                                | Thời hạn duy trì HMTD nêu tại HĐTD là khoảng thời gian mà KH được quyền đề nghị Ngân hàng giải ngân, khi hết thời gian này KH không được sử dụng HMTD (không được giải ngân) mà chỉ có nghĩa vụ trả nợ theo thời hạn vay của GNN. =&gt; Vì vậy Đơn vị không tính các khoảng thời gian mà KH không được giải ngân (từ ngày 01/02/2026 đến ngày 31/03/2026) khi xét điều kiện về tổng thời hạn sử dụng hạn mức.   Khi lập Thỏa thuận sửa đổi, bổ sung HĐTD theo hướng dẫn Phụ lục 1.3 Quyết định 99/2024/QĐ-VBLQ (và các văn bản sửa đổi bổ sung), Đơn vị xác định: "Thời hạn duy trì HMTD là 12 tháng kể từ ngày ký Thỏa thuận này".   Nếu KH ký Thỏa thuận sửa đổi bổ sung HĐTD vào ngày 01/04/2026, thời gian sử dụng hạn mức sẽ được tính từ ngày 01/04/2026. |
+| Lĩnh vực                                                                       | Thiết lập Hợp đồng                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| VBPL tham chiếu                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| CCPL tham chiếu                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Liên quan về hiệu lực                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| File đính kèm                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+================================================================================
+✗ Failed: 602026thm/752026thm_20261106_173810.docx
+  Error: Unsupported table type: UNKNOWN
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 5
+Modified  : 0
+Unchanged : 0
+Deleted   : 0
+Failed    : 2
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

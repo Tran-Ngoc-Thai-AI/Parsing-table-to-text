@@ -1,0 +1,2786 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/2] sample.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] test.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1373
+Tables skipped: 15
+[TABLE 0] Detected type: BLOCK
+Table 0: processed successfully.
+[TABLE 1] Detected type: BLOCK
+Table 1: processed successfully.
+[TABLE 2] Detected type: BLOCK
+Table 2: processed successfully.
+[TABLE 3] Detected type: JOB_DESCRIPTION
+Table 3: processed successfully.
+[TABLE 4] Detected type: LIST
+Table 4: processed successfully.
+[TABLE 5] Detected type: JOB_DESCRIPTION
+Table 5: processed successfully.
+[TABLE 6] Detected type: LIST
+Table 6: processed successfully.
+[TABLE 7] Detected type: JOB_DESCRIPTION
+Table 7: processed successfully.
+[TABLE 8] Detected type: LIST
+Table 8: processed successfully.
+[TABLE 9] Detected type: JOB_DESCRIPTION
+Table 9: processed successfully.
+[TABLE 10] Detected type: LIST
+Table 10: processed successfully.
+[TABLE 11] Detected type: JOB_DESCRIPTION
+Table 11: processed successfully.
+[TABLE 12] Detected type: LIST
+Table 12: processed successfully.
+[TABLE 13] Detected type: JOB_DESCRIPTION
+Table 13: processed successfully.
+[TABLE 14] Detected type: LIST
+Table 14: processed successfully.
+[TABLE 15] Detected type: JOB_DESCRIPTION
+Table 15: processed successfully.
+[TABLE 16] Detected type: LIST
+Table 16: processed successfully.
+[TABLE 17] Detected type: JOB_DESCRIPTION
+Table 17: processed successfully.
+[TABLE 18] Detected type: LIST
+Table 18: processed successfully.
+[TABLE 19] Detected type: JOB_DESCRIPTION
+Table 19: processed successfully.
+[TABLE 20] Detected type: LIST
+Table 20: processed successfully.
+[TABLE 21] Detected type: JOB_DESCRIPTION
+Table 21: processed successfully.
+[TABLE 22] Detected type: LIST
+Table 22: processed successfully.
+[TABLE 23] Detected type: JOB_DESCRIPTION
+Table 23: processed successfully.
+[TABLE 24] Detected type: LIST
+Table 24: processed successfully.
+[TABLE 25] Detected type: JOB_DESCRIPTION
+Table 25: processed successfully.
+[TABLE 26] Detected type: LIST
+Table 26: processed successfully.
+[TABLE 27] Detected type: JOB_DESCRIPTION
+Table 27: processed successfully.
+[TABLE 28] Detected type: LIST
+Table 28: processed successfully.
+[TABLE 29] Detected type: JOB_DESCRIPTION
+Table 29: processed successfully.
+[TABLE 30] Detected type: LIST
+Table 30: processed successfully.
+[TABLE 31] Detected type: JOB_DESCRIPTION
+Table 31: processed successfully.
+[TABLE 32] Detected type: LIST
+Table 32: processed successfully.
+[TABLE 33] Detected type: JOB_DESCRIPTION
+Table 33: processed successfully.
+[TABLE 34] Detected type: LIST
+Table 34: processed successfully.
+[TABLE 35] Detected type: JOB_DESCRIPTION
+Table 35: processed successfully.
+[TABLE 36] Detected type: LIST
+Table 36: processed successfully.
+[TABLE 37] Detected type: JOB_DESCRIPTION
+Table 37: processed successfully.
+[TABLE 38] Detected type: LIST
+Table 38: processed successfully.
+[TABLE 39] Detected type: BLOCK
+Table 39: processed successfully.
+[TABLE 40] Detected type: BLOCK
+Table 40: processed successfully.
+[TABLE 41] Detected type: BLOCK
+Table 41: processed successfully.
+[TABLE 42] Detected type: BLOCK
+Table 42: processed successfully.
+[TABLE 43] Detected type: BLOCK
+Table 43: processed successfully.
+[TABLE 44] Detected type: JOB_DESCRIPTION
+Table 44: processed successfully.
+[TABLE 46] Detected type: LIST
+Table 46: processed successfully.
+[TABLE 47] Detected type: JOB_DESCRIPTION
+Table 47: processed successfully.
+[TABLE 49] Detected type: LIST
+Table 49: processed successfully.
+[TABLE 50] Detected type: JOB_DESCRIPTION
+Table 50: processed successfully.
+[TABLE 51] Detected type: LIST
+Table 51: processed successfully.
+[TABLE 52] Detected type: JOB_DESCRIPTION
+Table 52: processed successfully.
+[TABLE 53] Detected type: LIST
+Table 53: processed successfully.
+[TABLE 54] Detected type: JOB_DESCRIPTION
+Table 54: processed successfully.
+[TABLE 55] Detected type: JOB_DESCRIPTION
+Table 55: processed successfully.
+[TABLE 56] Detected type: LIST
+Table 56: processed successfully.
+[TABLE 57] Detected type: JOB_DESCRIPTION
+Table 57: processed successfully.
+[TABLE 58] Detected type: LIST
+Table 58: processed successfully.
+[TABLE 59] Detected type: JOB_DESCRIPTION
+Table 59: processed successfully.
+[TABLE 60] Detected type: LIST
+Table 60: processed successfully.
+[TABLE 61] Detected type: JOB_DESCRIPTION
+Table 61: processed successfully.
+[TABLE 62] Detected type: LIST
+Table 62: processed successfully.
+[TABLE 63] Detected type: JOB_DESCRIPTION
+Table 63: processed successfully.
+[TABLE 64] Detected type: JOB_DESCRIPTION
+Table 64: processed successfully.
+[TABLE 65] Detected type: LIST
+Table 65: processed successfully.
+[TABLE 66] Detected type: JOB_DESCRIPTION
+Table 66: processed successfully.
+[TABLE 67] Detected type: JOB_DESCRIPTION
+Table 67: processed successfully.
+[TABLE 68] Detected type: LIST
+Table 68: processed successfully.
+[TABLE 69] Detected type: JOB_DESCRIPTION
+Table 69: processed successfully.
+[TABLE 70] Detected type: LIST
+Table 70: processed successfully.
+[TABLE 71] Detected type: JOB_DESCRIPTION
+Table 71: processed successfully.
+[TABLE 72] Detected type: LIST
+Table 72: processed successfully.
+[TABLE 73] Detected type: JOB_DESCRIPTION
+Table 73: processed successfully.
+[TABLE 74] Detected type: LIST
+Table 74: processed successfully.
+[TABLE 75] Detected type: JOB_DESCRIPTION
+Table 75: processed successfully.
+[TABLE 76] Detected type: LIST
+Table 76: processed successfully.
+[TABLE 77] Detected type: JOB_DESCRIPTION
+Table 77: processed successfully.
+[TABLE 78] Detected type: LIST
+Table 78: processed successfully.
+[TABLE 79] Detected type: JOB_DESCRIPTION
+Table 79: processed successfully.
+[TABLE 80] Detected type: LIST
+Table 80: processed successfully.
+[TABLE 81] Detected type: JOB_DESCRIPTION
+Table 81: processed successfully.
+[TABLE 82] Detected type: LIST
+Table 82: processed successfully.
+[TABLE 83] Detected type: LIST
+Table 83: processed successfully.
+[TABLE 84] Detected type: JOB_DESCRIPTION
+Table 84: processed successfully.
+[TABLE 85] Detected type: LIST
+Table 85: processed successfully.
+[TABLE 86] Detected type: JOB_DESCRIPTION
+Table 86: processed successfully.
+[TABLE 87] Detected type: LIST
+Table 87: processed successfully.
+[TABLE 88] Detected type: JOB_DESCRIPTION
+Table 88: processed successfully.
+[TABLE 89] Detected type: LIST
+Table 89: processed successfully.
+[TABLE 90] Detected type: JOB_DESCRIPTION
+Table 90: processed successfully.
+[TABLE 91] Detected type: JOB_DESCRIPTION
+Table 91: processed successfully.
+[TABLE 92] Detected type: LIST
+Table 92: processed successfully.
+[TABLE 93] Detected type: JOB_DESCRIPTION
+Table 93: processed successfully.
+[TABLE 94] Detected type: LIST
+Table 94: processed successfully.
+[TABLE 95] Detected type: JOB_DESCRIPTION
+Table 95: processed successfully.
+[TABLE 96] Detected type: LIST
+Table 96: processed successfully.
+[TABLE 97] Detected type: JOB_DESCRIPTION
+Table 97: processed successfully.
+[TABLE 98] Detected type: LIST
+Table 98: processed successfully.
+[TABLE 99] Detected type: JOB_DESCRIPTION
+Table 99: processed successfully.
+[TABLE 100] Detected type: LIST
+Table 100: processed successfully.
+[TABLE 101] Detected type: JOB_DESCRIPTION
+Table 101: processed successfully.
+[TABLE 102] Detected type: LIST
+Table 102: processed successfully.
+[TABLE 103] Detected type: JOB_DESCRIPTION
+Table 103: processed successfully.
+[TABLE 104] Detected type: LIST
+Table 104: processed successfully.
+[TABLE 105] Detected type: JOB_DESCRIPTION
+Table 105: processed successfully.
+[TABLE 106] Detected type: LIST
+Table 106: processed successfully.
+[TABLE 107] Detected type: JOB_DESCRIPTION
+Table 107: processed successfully.
+[TABLE 108] Detected type: JOB_DESCRIPTION
+Table 108: processed successfully.
+[TABLE 109] Detected type: LIST
+Table 109: processed successfully.
+[TABLE 110] Detected type: JOB_DESCRIPTION
+Table 110: processed successfully.
+[TABLE 111] Detected type: LIST
+Table 111: processed successfully.
+[TABLE 112] Detected type: JOB_DESCRIPTION
+Table 112: processed successfully.
+[TABLE 113] Detected type: LIST
+Table 113: processed successfully.
+[TABLE 114] Detected type: JOB_DESCRIPTION
+Table 114: processed successfully.
+[TABLE 115] Detected type: LIST
+Table 115: processed successfully.
+[TABLE 116] Detected type: JOB_DESCRIPTION
+Table 116: processed successfully.
+[TABLE 117] Detected type: LIST
+Table 117: processed successfully.
+[TABLE 118] Detected type: JOB_DESCRIPTION
+Table 118: processed successfully.
+[TABLE 119] Detected type: LIST
+Table 119: processed successfully.
+[TABLE 120] Detected type: JOB_DESCRIPTION
+Table 120: processed successfully.
+[TABLE 121] Detected type: LIST
+Table 121: processed successfully.
+[TABLE 122] Detected type: JOB_DESCRIPTION
+Table 122: processed successfully.
+[TABLE 123] Detected type: LIST
+Table 123: processed successfully.
+[TABLE 124] Detected type: JOB_DESCRIPTION
+Table 124: processed successfully.
+[TABLE 125] Detected type: LIST
+Table 125: processed successfully.
+[TABLE 126] Detected type: JOB_DESCRIPTION
+Table 126: processed successfully.
+[TABLE 127] Detected type: LIST
+Table 127: processed successfully.
+[TABLE 128] Detected type: LIST
+Table 128: processed successfully.
+[TABLE 129] Detected type: LIST
+Table 129: processed successfully.
+[TABLE 130] Detected type: JOB_DESCRIPTION
+Table 130: processed successfully.
+[TABLE 131] Detected type: JOB_DESCRIPTION
+Table 131: processed successfully.
+[TABLE 132] Detected type: LIST
+Table 132: processed successfully.
+[TABLE 133] Detected type: JOB_DESCRIPTION
+Table 133: processed successfully.
+[TABLE 134] Detected type: LIST
+Table 134: processed successfully.
+[TABLE 135] Detected type: JOB_DESCRIPTION
+Table 135: processed successfully.
+[TABLE 136] Detected type: LIST
+Table 136: processed successfully.
+[TABLE 137] Detected type: JOB_DESCRIPTION
+Table 137: processed successfully.
+[TABLE 138] Detected type: LIST
+Table 138: processed successfully.
+[TABLE 139] Detected type: BLOCK
+Table 139: processed successfully.
+[TABLE 140] Detected type: BLOCK
+Table 140: processed successfully.
+[TABLE 141] Detected type: BLOCK
+Table 141: processed successfully.
+[TABLE 142] Detected type: BLOCK
+Table 142: processed successfully.
+[TABLE 143] Detected type: BLOCK
+Table 143: processed successfully.
+[TABLE 144] Detected type: BLOCK
+Table 144: processed successfully.
+[TABLE 145] Detected type: BLOCK
+Table 145: processed successfully.
+[TABLE 146] Detected type: JOB_DESCRIPTION
+Table 146: processed successfully.
+[TABLE 148] Detected type: LIST
+Table 148: processed successfully.
+[TABLE 149] Detected type: JOB_DESCRIPTION
+Table 149: processed successfully.
+[TABLE 151] Detected type: LIST
+Table 151: processed successfully.
+[TABLE 152] Detected type: JOB_DESCRIPTION
+Table 152: processed successfully.
+[TABLE 153] Detected type: LIST
+Table 153: processed successfully.
+[TABLE 154] Detected type: JOB_DESCRIPTION
+Table 154: processed successfully.
+[TABLE 155] Detected type: LIST
+Table 155: processed successfully.
+[TABLE 156] Detected type: JOB_DESCRIPTION
+Table 156: processed successfully.
+[TABLE 157] Detected type: LIST
+Table 157: processed successfully.
+[TABLE 158] Detected type: JOB_DESCRIPTION
+Table 158: processed successfully.
+[TABLE 159] Detected type: LIST
+Table 159: processed successfully.
+[TABLE 160] Detected type: JOB_DESCRIPTION
+Table 160: processed successfully.
+[TABLE 161] Detected type: LIST
+Table 161: processed successfully.
+[TABLE 162] Detected type: JOB_DESCRIPTION
+Table 162: processed successfully.
+[TABLE 163] Detected type: LIST
+Table 163: processed successfully.
+[TABLE 164] Detected type: JOB_DESCRIPTION
+Table 164: processed successfully.
+[TABLE 165] Detected type: LIST
+Table 165: processed successfully.
+[TABLE 166] Detected type: JOB_DESCRIPTION
+Table 166: processed successfully.
+[TABLE 167] Detected type: LIST
+Table 167: processed successfully.
+[TABLE 168] Detected type: JOB_DESCRIPTION
+Table 168: processed successfully.
+[TABLE 169] Detected type: LIST
+Table 169: processed successfully.
+[TABLE 170] Detected type: JOB_DESCRIPTION
+Table 170: processed successfully.
+[TABLE 171] Detected type: LIST
+Table 171: processed successfully.
+[TABLE 172] Detected type: JOB_DESCRIPTION
+Table 172: processed successfully.
+[TABLE 173] Detected type: LIST
+Table 173: processed successfully.
+[TABLE 174] Detected type: JOB_DESCRIPTION
+Table 174: processed successfully.
+[TABLE 175] Detected type: LIST
+Table 175: processed successfully.
+[TABLE 176] Detected type: JOB_DESCRIPTION
+Table 176: processed successfully.
+[TABLE 177] Detected type: LIST
+Table 177: processed successfully.
+[TABLE 178] Detected type: JOB_DESCRIPTION
+Table 178: processed successfully.
+[TABLE 179] Detected type: LIST
+Table 179: processed successfully.
+[TABLE 180] Detected type: JOB_DESCRIPTION
+Table 180: processed successfully.
+[TABLE 181] Detected type: LIST
+Table 181: processed successfully.
+[TABLE 182] Detected type: JOB_DESCRIPTION
+Table 182: processed successfully.
+[TABLE 183] Detected type: LIST
+Table 183: processed successfully.
+[TABLE 184] Detected type: JOB_DESCRIPTION
+Table 184: processed successfully.
+[TABLE 185] Detected type: LIST
+Table 185: processed successfully.
+[TABLE 186] Detected type: JOB_DESCRIPTION
+Table 186: processed successfully.
+[TABLE 187] Detected type: LIST
+Table 187: processed successfully.
+[TABLE 188] Detected type: JOB_DESCRIPTION
+Table 188: processed successfully.
+[TABLE 189] Detected type: LIST
+Table 189: processed successfully.
+[TABLE 190] Detected type: JOB_DESCRIPTION
+Table 190: processed successfully.
+[TABLE 191] Detected type: LIST
+Table 191: processed successfully.
+[TABLE 192] Detected type: JOB_DESCRIPTION
+Table 192: processed successfully.
+[TABLE 193] Detected type: LIST
+Table 193: processed successfully.
+[TABLE 194] Detected type: JOB_DESCRIPTION
+Table 194: processed successfully.
+[TABLE 195] Detected type: JOB_DESCRIPTION
+Table 195: processed successfully.
+[TABLE 196] Detected type: LIST
+Table 196: processed successfully.
+[TABLE 197] Detected type: JOB_DESCRIPTION
+Table 197: processed successfully.
+[TABLE 198] Detected type: LIST
+Table 198: processed successfully.
+[TABLE 199] Detected type: JOB_DESCRIPTION
+Table 199: processed successfully.
+[TABLE 200] Detected type: LIST
+Table 200: processed successfully.
+[TABLE 201] Detected type: JOB_DESCRIPTION
+Table 201: processed successfully.
+[TABLE 202] Detected type: LIST
+Table 202: processed successfully.
+[TABLE 203] Detected type: JOB_DESCRIPTION
+Table 203: processed successfully.
+[TABLE 204] Detected type: LIST
+Table 204: processed successfully.
+[TABLE 205] Detected type: JOB_DESCRIPTION
+Table 205: processed successfully.
+[TABLE 206] Detected type: LIST
+Table 206: processed successfully.
+[TABLE 207] Detected type: JOB_DESCRIPTION
+Table 207: processed successfully.
+[TABLE 208] Detected type: LIST
+Table 208: processed successfully.
+[TABLE 209] Detected type: JOB_DESCRIPTION
+Table 209: processed successfully.
+[TABLE 210] Detected type: LIST
+Table 210: processed successfully.
+[TABLE 211] Detected type: JOB_DESCRIPTION
+Table 211: processed successfully.
+[TABLE 212] Detected type: JOB_DESCRIPTION
+Table 212: processed successfully.
+[TABLE 213] Detected type: LIST
+Table 213: processed successfully.
+[TABLE 214] Detected type: JOB_DESCRIPTION
+Table 214: processed successfully.
+[TABLE 215] Detected type: LIST
+Table 215: processed successfully.
+[TABLE 216] Detected type: JOB_DESCRIPTION
+Table 216: processed successfully.
+[TABLE 217] Detected type: LIST
+Table 217: processed successfully.
+[TABLE 218] Detected type: JOB_DESCRIPTION
+Table 218: processed successfully.
+[TABLE 219] Detected type: LIST
+Table 219: processed successfully.
+[TABLE 220] Detected type: JOB_DESCRIPTION
+Table 220: processed successfully.
+[TABLE 221] Detected type: LIST
+Table 221: processed successfully.
+[TABLE 222] Detected type: JOB_DESCRIPTION
+Table 222: processed successfully.
+[TABLE 223] Detected type: LIST
+Table 223: processed successfully.
+[TABLE 224] Detected type: JOB_DESCRIPTION
+Table 224: processed successfully.
+[TABLE 225] Detected type: LIST
+Table 225: processed successfully.
+[TABLE 226] Detected type: JOB_DESCRIPTION
+Table 226: processed successfully.
+[TABLE 227] Detected type: LIST
+Table 227: processed successfully.
+[TABLE 228] Detected type: JOB_DESCRIPTION
+Table 228: processed successfully.
+[TABLE 229] Detected type: LIST
+Table 229: processed successfully.
+[TABLE 230] Detected type: JOB_DESCRIPTION
+Table 230: processed successfully.
+[TABLE 231] Detected type: LIST
+Table 231: processed successfully.
+[TABLE 232] Detected type: JOB_DESCRIPTION
+Table 232: processed successfully.
+[TABLE 233] Detected type: LIST
+Table 233: processed successfully.
+[TABLE 234] Detected type: JOB_DESCRIPTION
+Table 234: processed successfully.
+[TABLE 235] Detected type: LIST
+Table 235: processed successfully.
+[TABLE 236] Detected type: JOB_DESCRIPTION
+Table 236: processed successfully.
+[TABLE 237] Detected type: LIST
+Table 237: processed successfully.
+[TABLE 238] Detected type: JOB_DESCRIPTION
+Table 238: processed successfully.
+[TABLE 239] Detected type: LIST
+Table 239: processed successfully.
+[TABLE 240] Detected type: JOB_DESCRIPTION
+Table 240: processed successfully.
+[TABLE 241] Detected type: LIST
+Table 241: processed successfully.
+[TABLE 242] Detected type: JOB_DESCRIPTION
+Table 242: processed successfully.
+[TABLE 243] Detected type: LIST
+Table 243: processed successfully.
+[TABLE 244] Detected type: JOB_DESCRIPTION
+Table 244: processed successfully.
+[TABLE 245] Detected type: LIST
+Table 245: processed successfully.
+[TABLE 246] Detected type: JOB_DESCRIPTION
+Table 246: processed successfully.
+[TABLE 247] Detected type: LIST
+Table 247: processed successfully.
+[TABLE 248] Detected type: JOB_DESCRIPTION
+Table 248: processed successfully.
+[TABLE 249] Detected type: LIST
+Table 249: processed successfully.
+[TABLE 250] Detected type: JOB_DESCRIPTION
+Table 250: processed successfully.
+[TABLE 251] Detected type: LIST
+Table 251: processed successfully.
+[TABLE 252] Detected type: JOB_DESCRIPTION
+Table 252: processed successfully.
+[TABLE 253] Detected type: LIST
+Table 253: processed successfully.
+[TABLE 254] Detected type: JOB_DESCRIPTION
+Table 254: processed successfully.
+[TABLE 255] Detected type: LIST
+Table 255: processed successfully.
+[TABLE 256] Detected type: JOB_DESCRIPTION
+Table 256: processed successfully.
+[TABLE 257] Detected type: LIST
+Table 257: processed successfully.
+[TABLE 258] Detected type: JOB_DESCRIPTION
+Table 258: processed successfully.
+[TABLE 259] Detected type: LIST
+Table 259: processed successfully.
+[TABLE 260] Detected type: JOB_DESCRIPTION
+Table 260: processed successfully.
+[TABLE 261] Detected type: LIST
+Table 261: processed successfully.
+[TABLE 262] Detected type: JOB_DESCRIPTION
+Table 262: processed successfully.
+[TABLE 263] Detected type: LIST
+Table 263: processed successfully.
+[TABLE 264] Detected type: JOB_DESCRIPTION
+Table 264: processed successfully.
+[TABLE 265] Detected type: LIST
+Table 265: processed successfully.
+[TABLE 266] Detected type: JOB_DESCRIPTION
+Table 266: processed successfully.
+[TABLE 267] Detected type: LIST
+Table 267: processed successfully.
+[TABLE 268] Detected type: JOB_DESCRIPTION
+Table 268: processed successfully.
+[TABLE 269] Detected type: JOB_DESCRIPTION
+Table 269: processed successfully.
+[TABLE 270] Detected type: LIST
+Table 270: processed successfully.
+[TABLE 271] Detected type: JOB_DESCRIPTION
+Table 271: processed successfully.
+[TABLE 272] Detected type: LIST
+Table 272: processed successfully.
+[TABLE 273] Detected type: JOB_DESCRIPTION
+Table 273: processed successfully.
+[TABLE 274] Detected type: LIST
+Table 274: processed successfully.
+[TABLE 275] Detected type: JOB_DESCRIPTION
+Table 275: processed successfully.
+[TABLE 276] Detected type: LIST
+Table 276: processed successfully.
+[TABLE 277] Detected type: JOB_DESCRIPTION
+Table 277: processed successfully.
+[TABLE 278] Detected type: LIST
+Table 278: processed successfully.
+[TABLE 279] Detected type: BLOCK
+Table 279: processed successfully.
+[TABLE 280] Detected type: BLOCK
+Table 280: processed successfully.
+[TABLE 281] Detected type: BLOCK
+Table 281: processed successfully.
+[TABLE 282] Detected type: BLOCK
+Table 282: processed successfully.
+[TABLE 283] Detected type: BLOCK
+Table 283: processed successfully.
+[TABLE 284] Detected type: JOB_DESCRIPTION
+Table 284: processed successfully.
+[TABLE 285] Detected type: LIST
+Table 285: processed successfully.
+[TABLE 286] Detected type: JOB_DESCRIPTION
+Table 286: processed successfully.
+[TABLE 288] Detected type: LIST
+Table 288: processed successfully.
+[TABLE 289] Detected type: JOB_DESCRIPTION
+Table 289: processed successfully.
+[TABLE 290] Detected type: LIST
+Table 290: processed successfully.
+[TABLE 291] Detected type: JOB_DESCRIPTION
+Table 291: processed successfully.
+[TABLE 292] Detected type: LIST
+Table 292: processed successfully.
+[TABLE 293] Detected type: JOB_DESCRIPTION
+Table 293: processed successfully.
+[TABLE 294] Detected type: LIST
+Table 294: processed successfully.
+[TABLE 295] Detected type: JOB_DESCRIPTION
+Table 295: processed successfully.
+[TABLE 296] Detected type: LIST
+Table 296: processed successfully.
+[TABLE 297] Detected type: JOB_DESCRIPTION
+Table 297: processed successfully.
+[TABLE 298] Detected type: LIST
+Table 298: processed successfully.
+[TABLE 299] Detected type: JOB_DESCRIPTION
+Table 299: processed successfully.
+[TABLE 300] Detected type: LIST
+Table 300: processed successfully.
+[TABLE 301] Detected type: JOB_DESCRIPTION
+Table 301: processed successfully.
+[TABLE 302] Detected type: LIST
+Table 302: processed successfully.
+[TABLE 303] Detected type: JOB_DESCRIPTION
+Table 303: processed successfully.
+[TABLE 304] Detected type: LIST
+Table 304: processed successfully.
+[TABLE 305] Detected type: JOB_DESCRIPTION
+Table 305: processed successfully.
+[TABLE 306] Detected type: LIST
+Table 306: processed successfully.
+[TABLE 307] Detected type: JOB_DESCRIPTION
+Table 307: processed successfully.
+[TABLE 308] Detected type: LIST
+Table 308: processed successfully.
+[TABLE 309] Detected type: JOB_DESCRIPTION
+Table 309: processed successfully.
+[TABLE 310] Detected type: LIST
+Table 310: processed successfully.
+[TABLE 311] Detected type: JOB_DESCRIPTION
+Table 311: processed successfully.
+[TABLE 312] Detected type: LIST
+Table 312: processed successfully.
+[TABLE 313] Detected type: JOB_DESCRIPTION
+Table 313: processed successfully.
+[TABLE 314] Detected type: LIST
+Table 314: processed successfully.
+[TABLE 315] Detected type: JOB_DESCRIPTION
+Table 315: processed successfully.
+[TABLE 316] Detected type: LIST
+Table 316: processed successfully.
+[TABLE 317] Detected type: JOB_DESCRIPTION
+Table 317: processed successfully.
+[TABLE 318] Detected type: LIST
+Table 318: processed successfully.
+[TABLE 319] Detected type: JOB_DESCRIPTION
+Table 319: processed successfully.
+[TABLE 320] Detected type: LIST
+Table 320: processed successfully.
+[TABLE 321] Detected type: JOB_DESCRIPTION
+Table 321: processed successfully.
+[TABLE 322] Detected type: LIST
+Table 322: processed successfully.
+[TABLE 323] Detected type: JOB_DESCRIPTION
+Table 323: processed successfully.
+[TABLE 324] Detected type: LIST
+Table 324: processed successfully.
+[TABLE 325] Detected type: JOB_DESCRIPTION
+Table 325: processed successfully.
+[TABLE 326] Detected type: LIST
+Table 326: processed successfully.
+[TABLE 327] Detected type: JOB_DESCRIPTION
+Table 327: processed successfully.
+[TABLE 328] Detected type: LIST
+Table 328: processed successfully.
+[TABLE 329] Detected type: JOB_DESCRIPTION
+Table 329: processed successfully.
+[TABLE 330] Detected type: LIST
+Table 330: processed successfully.
+[TABLE 331] Detected type: JOB_DESCRIPTION
+Table 331: processed successfully.
+[TABLE 332] Detected type: LIST
+Table 332: processed successfully.
+[TABLE 333] Detected type: JOB_DESCRIPTION
+Table 333: processed successfully.
+[TABLE 334] Detected type: LIST
+Table 334: processed successfully.
+[TABLE 335] Detected type: JOB_DESCRIPTION
+Table 335: processed successfully.
+[TABLE 336] Detected type: LIST
+Table 336: processed successfully.
+[TABLE 337] Detected type: JOB_DESCRIPTION
+Table 337: processed successfully.
+[TABLE 338] Detected type: LIST
+Table 338: processed successfully.
+[TABLE 339] Detected type: JOB_DESCRIPTION
+Table 339: processed successfully.
+[TABLE 340] Detected type: LIST
+Table 340: processed successfully.
+[TABLE 341] Detected type: JOB_DESCRIPTION
+Table 341: processed successfully.
+[TABLE 342] Detected type: LIST
+Table 342: processed successfully.
+[TABLE 343] Detected type: JOB_DESCRIPTION
+Table 343: processed successfully.
+[TABLE 344] Detected type: LIST
+Table 344: processed successfully.
+[TABLE 345] Detected type: JOB_DESCRIPTION
+Table 345: processed successfully.
+[TABLE 346] Detected type: LIST
+Table 346: processed successfully.
+[TABLE 347] Detected type: JOB_DESCRIPTION
+Table 347: processed successfully.
+[TABLE 348] Detected type: LIST
+Table 348: processed successfully.
+[TABLE 349] Detected type: JOB_DESCRIPTION
+Table 349: processed successfully.
+[TABLE 350] Detected type: LIST
+Table 350: processed successfully.
+[TABLE 351] Detected type: LIST
+Table 351: processed successfully.
+[TABLE 352] Detected type: LIST
+Table 352: processed successfully.
+[TABLE 353] Detected type: JOB_DESCRIPTION
+Table 353: processed successfully.
+[TABLE 354] Detected type: LIST
+Table 354: processed successfully.
+[TABLE 355] Detected type: JOB_DESCRIPTION
+Table 355: processed successfully.
+[TABLE 356] Detected type: LIST
+Table 356: processed successfully.
+[TABLE 357] Detected type: JOB_DESCRIPTION
+Table 357: processed successfully.
+[TABLE 358] Detected type: LIST
+Table 358: processed successfully.
+[TABLE 359] Detected type: JOB_DESCRIPTION
+Table 359: processed successfully.
+[TABLE 360] Detected type: LIST
+Table 360: processed successfully.
+[TABLE 361] Detected type: JOB_DESCRIPTION
+Table 361: processed successfully.
+[TABLE 362] Detected type: LIST
+Table 362: processed successfully.
+[TABLE 363] Detected type: JOB_DESCRIPTION
+Table 363: processed successfully.
+[TABLE 364] Detected type: LIST
+Table 364: processed successfully.
+[TABLE 365] Detected type: JOB_DESCRIPTION
+Table 365: processed successfully.
+[TABLE 366] Detected type: LIST
+Table 366: processed successfully.
+[TABLE 367] Detected type: LIST
+Table 367: processed successfully.
+[TABLE 368] Detected type: JOB_DESCRIPTION
+Table 368: processed successfully.
+[TABLE 369] Detected type: LIST
+Table 369: processed successfully.
+[TABLE 370] Detected type: JOB_DESCRIPTION
+Table 370: processed successfully.
+[TABLE 371] Detected type: LIST
+Table 371: processed successfully.
+[TABLE 372] Detected type: JOB_DESCRIPTION
+Table 372: processed successfully.
+[TABLE 373] Detected type: LIST
+Table 373: processed successfully.
+[TABLE 374] Detected type: JOB_DESCRIPTION
+Table 374: processed successfully.
+[TABLE 375] Detected type: LIST
+Table 375: processed successfully.
+[TABLE 376] Detected type: LIST
+Table 376: processed successfully.
+[TABLE 377] Detected type: LIST
+Table 377: processed successfully.
+[TABLE 378] Detected type: LIST
+Table 378: processed successfully.
+[TABLE 379] Detected type: LIST
+Table 379: processed successfully.
+[TABLE 380] Detected type: BLOCK
+Table 380: processed successfully.
+[TABLE 381] Detected type: BLOCK
+Table 381: processed successfully.
+[TABLE 382] Detected type: BLOCK
+Table 382: processed successfully.
+[TABLE 383] Detected type: BLOCK
+Table 383: processed successfully.
+[TABLE 384] Detected type: BLOCK
+Table 384: processed successfully.
+[TABLE 385] Detected type: BLOCK
+Table 385: processed successfully.
+[TABLE 386] Detected type: BLOCK
+Table 386: processed successfully.
+[TABLE 387] Detected type: BLOCK
+Table 387: processed successfully.
+[TABLE 388] Detected type: JOB_DESCRIPTION
+Table 388: processed successfully.
+[TABLE 390] Detected type: LIST
+Table 390: processed successfully.
+[TABLE 391] Detected type: JOB_DESCRIPTION
+Table 391: processed successfully.
+[TABLE 393] Detected type: LIST
+Table 393: processed successfully.
+[TABLE 394] Detected type: JOB_DESCRIPTION
+Table 394: processed successfully.
+[TABLE 395] Detected type: LIST
+Table 395: processed successfully.
+[TABLE 396] Detected type: JOB_DESCRIPTION
+Table 396: processed successfully.
+[TABLE 397] Detected type: LIST
+Table 397: processed successfully.
+[TABLE 398] Detected type: LIST
+Table 398: processed successfully.
+[TABLE 399] Detected type: LIST
+Table 399: processed successfully.
+[TABLE 400] Detected type: LIST
+Table 400: processed successfully.
+[TABLE 401] Detected type: LIST
+Table 401: processed successfully.
+[TABLE 402] Detected type: LIST
+Table 402: processed successfully.
+[TABLE 403] Detected type: JOB_DESCRIPTION
+Table 403: processed successfully.
+[TABLE 404] Detected type: LIST
+Table 404: processed successfully.
+[TABLE 405] Detected type: JOB_DESCRIPTION
+Table 405: processed successfully.
+[TABLE 406] Detected type: LIST
+Table 406: processed successfully.
+[TABLE 407] Detected type: JOB_DESCRIPTION
+Table 407: processed successfully.
+[TABLE 408] Detected type: LIST
+Table 408: processed successfully.
+[TABLE 409] Detected type: JOB_DESCRIPTION
+Table 409: processed successfully.
+[TABLE 410] Detected type: LIST
+Table 410: processed successfully.
+[TABLE 411] Detected type: JOB_DESCRIPTION
+Table 411: processed successfully.
+[TABLE 412] Detected type: LIST
+Table 412: processed successfully.
+[TABLE 413] Detected type: JOB_DESCRIPTION
+Table 413: processed successfully.
+[TABLE 414] Detected type: LIST
+Table 414: processed successfully.
+[TABLE 415] Detected type: JOB_DESCRIPTION
+Table 415: processed successfully.
+[TABLE 416] Detected type: LIST
+Table 416: processed successfully.
+[TABLE 417] Detected type: JOB_DESCRIPTION
+Table 417: processed successfully.
+[TABLE 418] Detected type: LIST
+Table 418: processed successfully.
+[TABLE 419] Detected type: JOB_DESCRIPTION
+Table 419: processed successfully.
+[TABLE 420] Detected type: LIST
+Table 420: processed successfully.
+[TABLE 421] Detected type: JOB_DESCRIPTION
+Table 421: processed successfully.
+[TABLE 422] Detected type: LIST
+Table 422: processed successfully.
+[TABLE 423] Detected type: JOB_DESCRIPTION
+Table 423: processed successfully.
+[TABLE 424] Detected type: LIST
+Table 424: processed successfully.
+[TABLE 425] Detected type: JOB_DESCRIPTION
+Table 425: processed successfully.
+[TABLE 426] Detected type: LIST
+Table 426: processed successfully.
+[TABLE 427] Detected type: JOB_DESCRIPTION
+Table 427: processed successfully.
+[TABLE 428] Detected type: LIST
+Table 428: processed successfully.
+[TABLE 429] Detected type: JOB_DESCRIPTION
+Table 429: processed successfully.
+[TABLE 430] Detected type: LIST
+Table 430: processed successfully.
+[TABLE 431] Detected type: JOB_DESCRIPTION
+Table 431: processed successfully.
+[TABLE 432] Detected type: LIST
+Table 432: processed successfully.
+[TABLE 433] Detected type: JOB_DESCRIPTION
+Table 433: processed successfully.
+[TABLE 434] Detected type: LIST
+Table 434: processed successfully.
+[TABLE 435] Detected type: JOB_DESCRIPTION
+Table 435: processed successfully.
+[TABLE 436] Detected type: LIST
+Table 436: processed successfully.
+[TABLE 437] Detected type: JOB_DESCRIPTION
+Table 437: processed successfully.
+[TABLE 438] Detected type: LIST
+Table 438: processed successfully.
+[TABLE 439] Detected type: JOB_DESCRIPTION
+Table 439: processed successfully.
+[TABLE 440] Detected type: LIST
+Table 440: processed successfully.
+[TABLE 441] Detected type: JOB_DESCRIPTION
+Table 441: processed successfully.
+[TABLE 442] Detected type: LIST
+Table 442: processed successfully.
+[TABLE 443] Detected type: JOB_DESCRIPTION
+Table 443: processed successfully.
+[TABLE 444] Detected type: LIST
+Table 444: processed successfully.
+[TABLE 445] Detected type: JOB_DESCRIPTION
+Table 445: processed successfully.
+[TABLE 446] Detected type: LIST
+Table 446: processed successfully.
+[TABLE 447] Detected type: JOB_DESCRIPTION
+Table 447: processed successfully.
+[TABLE 448] Detected type: LIST
+Table 448: processed successfully.
+[TABLE 449] Detected type: JOB_DESCRIPTION
+Table 449: processed successfully.
+[TABLE 450] Detected type: LIST
+Table 450: processed successfully.
+[TABLE 451] Detected type: JOB_DESCRIPTION
+Table 451: processed successfully.
+[TABLE 452] Detected type: LIST
+Table 452: processed successfully.
+[TABLE 453] Detected type: JOB_DESCRIPTION
+Table 453: processed successfully.
+[TABLE 454] Detected type: LIST
+Table 454: processed successfully.
+[TABLE 455] Detected type: JOB_DESCRIPTION
+Table 455: processed successfully.
+[TABLE 456] Detected type: LIST
+Table 456: processed successfully.
+[TABLE 457] Detected type: LIST
+Table 457: processed successfully.
+[TABLE 458] Detected type: LIST
+Table 458: processed successfully.
+[TABLE 459] Detected type: LIST
+Table 459: processed successfully.
+[TABLE 460] Detected type: LIST
+Table 460: processed successfully.
+[TABLE 461] Detected type: LIST
+Table 461: processed successfully.
+[TABLE 462] Detected type: LIST
+Table 462: processed successfully.
+[TABLE 463] Detected type: LIST
+Table 463: processed successfully.
+[TABLE 464] Detected type: LIST
+Table 464: processed successfully.
+[TABLE 465] Detected type: LIST
+Table 465: processed successfully.
+[TABLE 466] Detected type: JOB_DESCRIPTION
+Table 466: processed successfully.
+[TABLE 467] Detected type: LIST
+Table 467: processed successfully.
+[TABLE 468] Detected type: JOB_DESCRIPTION
+Table 468: processed successfully.
+[TABLE 469] Detected type: LIST
+Table 469: processed successfully.
+[TABLE 470] Detected type: LIST
+Table 470: processed successfully.
+[TABLE 471] Detected type: LIST
+Table 471: processed successfully.
+[TABLE 472] Detected type: LIST
+Table 472: processed successfully.
+[TABLE 473] Detected type: LIST
+Table 473: processed successfully.
+[TABLE 474] Detected type: JOB_DESCRIPTION
+Table 474: processed successfully.
+[TABLE 475] Detected type: LIST
+Table 475: processed successfully.
+[TABLE 476] Detected type: JOB_DESCRIPTION
+Table 476: processed successfully.
+[TABLE 477] Detected type: LIST
+Table 477: processed successfully.
+[TABLE 478] Detected type: LIST
+Table 478: processed successfully.
+[TABLE 479] Detected type: LIST
+Table 479: processed successfully.
+[TABLE 480] Detected type: LIST
+Table 480: processed successfully.
+[TABLE 481] Detected type: JOB_DESCRIPTION
+Table 481: processed successfully.
+[TABLE 482] Detected type: LIST
+Table 482: processed successfully.
+[TABLE 483] Detected type: JOB_DESCRIPTION
+Table 483: processed successfully.
+[TABLE 484] Detected type: LIST
+Table 484: processed successfully.
+[TABLE 485] Detected type: JOB_DESCRIPTION
+Table 485: processed successfully.
+[TABLE 486] Detected type: LIST
+Table 486: processed successfully.
+[TABLE 487] Detected type: JOB_DESCRIPTION
+Table 487: processed successfully.
+[TABLE 488] Detected type: LIST
+Table 488: processed successfully.
+[TABLE 489] Detected type: JOB_DESCRIPTION
+Table 489: processed successfully.
+[TABLE 490] Detected type: LIST
+Table 490: processed successfully.
+[TABLE 491] Detected type: JOB_DESCRIPTION
+Table 491: processed successfully.
+[TABLE 492] Detected type: LIST
+Table 492: processed successfully.
+[TABLE 493] Detected type: JOB_DESCRIPTION
+Table 493: processed successfully.
+[TABLE 494] Detected type: LIST
+Table 494: processed successfully.
+[TABLE 495] Detected type: JOB_DESCRIPTION
+Table 495: processed successfully.
+[TABLE 496] Detected type: LIST
+Table 496: processed successfully.
+[TABLE 497] Detected type: JOB_DESCRIPTION
+Table 497: processed successfully.
+[TABLE 498] Detected type: LIST
+Table 498: processed successfully.
+[TABLE 499] Detected type: JOB_DESCRIPTION
+Table 499: processed successfully.
+[TABLE 500] Detected type: JOB_DESCRIPTION
+Table 500: processed successfully.
+[TABLE 501] Detected type: LIST
+Table 501: processed successfully.
+[TABLE 502] Detected type: JOB_DESCRIPTION
+Table 502: processed successfully.
+[TABLE 503] Detected type: LIST
+Table 503: processed successfully.
+[TABLE 504] Detected type: JOB_DESCRIPTION
+Table 504: processed successfully.
+[TABLE 505] Detected type: LIST
+Table 505: processed successfully.
+[TABLE 506] Detected type: JOB_DESCRIPTION
+Table 506: processed successfully.
+[TABLE 507] Detected type: LIST
+Table 507: processed successfully.
+[TABLE 508] Detected type: JOB_DESCRIPTION
+Table 508: processed successfully.
+[TABLE 509] Detected type: LIST
+Table 509: processed successfully.
+[TABLE 510] Detected type: JOB_DESCRIPTION
+Table 510: processed successfully.
+[TABLE 511] Detected type: LIST
+Table 511: processed successfully.
+[TABLE 512] Detected type: JOB_DESCRIPTION
+Table 512: processed successfully.
+[TABLE 513] Detected type: LIST
+Table 513: processed successfully.
+[TABLE 514] Detected type: JOB_DESCRIPTION
+Table 514: processed successfully.
+[TABLE 515] Detected type: LIST
+Table 515: processed successfully.
+[TABLE 516] Detected type: JOB_DESCRIPTION
+Table 516: processed successfully.
+[TABLE 517] Detected type: LIST
+Table 517: processed successfully.
+[TABLE 518] Detected type: BLOCK
+Table 518: processed successfully.
+[TABLE 519] Detected type: BLOCK
+Table 519: processed successfully.
+[TABLE 520] Detected type: BLOCK
+Table 520: processed successfully.
+[TABLE 521] Detected type: BLOCK
+Table 521: processed successfully.
+[TABLE 522] Detected type: BLOCK
+Table 522: processed successfully.
+[TABLE 523] Detected type: BLOCK
+Table 523: processed successfully.
+[TABLE 524] Detected type: BLOCK
+Table 524: processed successfully.
+[TABLE 525] Detected type: JOB_DESCRIPTION
+Table 525: processed successfully.
+[TABLE 526] Detected type: LIST
+Table 526: processed successfully.
+[TABLE 527] Detected type: JOB_DESCRIPTION
+Table 527: processed successfully.
+[TABLE 529] Detected type: LIST
+Table 529: processed successfully.
+[TABLE 530] Detected type: JOB_DESCRIPTION
+Table 530: processed successfully.
+[TABLE 531] Detected type: LIST
+Table 531: processed successfully.
+[TABLE 532] Detected type: JOB_DESCRIPTION
+Table 532: processed successfully.
+[TABLE 533] Detected type: LIST
+Table 533: processed successfully.
+[TABLE 534] Detected type: JOB_DESCRIPTION
+Table 534: processed successfully.
+[TABLE 535] Detected type: LIST
+Table 535: processed successfully.
+[TABLE 536] Detected type: JOB_DESCRIPTION
+Table 536: processed successfully.
+[TABLE 537] Detected type: LIST
+Table 537: processed successfully.
+[TABLE 538] Detected type: JOB_DESCRIPTION
+Table 538: processed successfully.
+[TABLE 539] Detected type: LIST
+Table 539: processed successfully.
+[TABLE 540] Detected type: JOB_DESCRIPTION
+Table 540: processed successfully.
+[TABLE 541] Detected type: LIST
+Table 541: processed successfully.
+[TABLE 542] Detected type: JOB_DESCRIPTION
+Table 542: processed successfully.
+[TABLE 543] Detected type: LIST
+Table 543: processed successfully.
+[TABLE 544] Detected type: JOB_DESCRIPTION
+Table 544: processed successfully.
+[TABLE 545] Detected type: LIST
+Table 545: processed successfully.
+[TABLE 546] Detected type: JOB_DESCRIPTION
+Table 546: processed successfully.
+[TABLE 547] Detected type: LIST
+Table 547: processed successfully.
+[TABLE 548] Detected type: JOB_DESCRIPTION
+Table 548: processed successfully.
+[TABLE 549] Detected type: LIST
+Table 549: processed successfully.
+[TABLE 550] Detected type: JOB_DESCRIPTION
+Table 550: processed successfully.
+[TABLE 551] Detected type: LIST
+Table 551: processed successfully.
+[TABLE 552] Detected type: JOB_DESCRIPTION
+Table 552: processed successfully.
+[TABLE 553] Detected type: LIST
+Table 553: processed successfully.
+[TABLE 554] Detected type: JOB_DESCRIPTION
+Table 554: processed successfully.
+[TABLE 555] Detected type: LIST
+Table 555: processed successfully.
+[TABLE 556] Detected type: JOB_DESCRIPTION
+Table 556: processed successfully.
+[TABLE 557] Detected type: LIST
+Table 557: processed successfully.
+[TABLE 558] Detected type: JOB_DESCRIPTION
+Table 558: processed successfully.
+[TABLE 559] Detected type: LIST
+Table 559: processed successfully.
+[TABLE 560] Detected type: JOB_DESCRIPTION
+Table 560: processed successfully.
+[TABLE 561] Detected type: LIST
+Table 561: processed successfully.
+[TABLE 562] Detected type: JOB_DESCRIPTION
+Table 562: processed successfully.
+[TABLE 563] Detected type: LIST
+Table 563: processed successfully.
+[TABLE 564] Detected type: JOB_DESCRIPTION
+Table 564: processed successfully.
+[TABLE 565] Detected type: LIST
+Table 565: processed successfully.
+[TABLE 566] Detected type: JOB_DESCRIPTION
+Table 566: processed successfully.
+[TABLE 567] Detected type: LIST
+Table 567: processed successfully.
+[TABLE 568] Detected type: JOB_DESCRIPTION
+Table 568: processed successfully.
+[TABLE 569] Detected type: LIST
+Table 569: processed successfully.
+[TABLE 570] Detected type: JOB_DESCRIPTION
+Table 570: processed successfully.
+[TABLE 571] Detected type: LIST
+Table 571: processed successfully.
+[TABLE 572] Detected type: JOB_DESCRIPTION
+Table 572: processed successfully.
+[TABLE 573] Detected type: LIST
+Table 573: processed successfully.
+[TABLE 574] Detected type: JOB_DESCRIPTION
+Table 574: processed successfully.
+[TABLE 575] Detected type: LIST
+Table 575: processed successfully.
+[TABLE 576] Detected type: JOB_DESCRIPTION
+Table 576: processed successfully.
+[TABLE 577] Detected type: JOB_DESCRIPTION
+Table 577: processed successfully.
+[TABLE 578] Detected type: LIST
+Table 578: processed successfully.
+[TABLE 579] Detected type: JOB_DESCRIPTION
+Table 579: processed successfully.
+[TABLE 580] Detected type: LIST
+Table 580: processed successfully.
+[TABLE 581] Detected type: JOB_DESCRIPTION
+Table 581: processed successfully.
+[TABLE 582] Detected type: LIST
+Table 582: processed successfully.
+[TABLE 583] Detected type: JOB_DESCRIPTION
+Table 583: processed successfully.
+[TABLE 584] Detected type: LIST
+Table 584: processed successfully.
+[TABLE 585] Detected type: JOB_DESCRIPTION
+Table 585: processed successfully.
+[TABLE 586] Detected type: LIST
+Table 586: processed successfully.
+[TABLE 587] Detected type: JOB_DESCRIPTION
+Table 587: processed successfully.
+[TABLE 588] Detected type: LIST
+Table 588: processed successfully.
+[TABLE 589] Detected type: JOB_DESCRIPTION
+Table 589: processed successfully.
+[TABLE 590] Detected type: LIST
+Table 590: processed successfully.
+[TABLE 591] Detected type: JOB_DESCRIPTION
+Table 591: processed successfully.
+[TABLE 592] Detected type: LIST
+Table 592: processed successfully.
+[TABLE 593] Detected type: JOB_DESCRIPTION
+Table 593: processed successfully.
+[TABLE 594] Detected type: LIST
+Table 594: processed successfully.
+[TABLE 595] Detected type: JOB_DESCRIPTION
+Table 595: processed successfully.
+[TABLE 596] Detected type: LIST
+Table 596: processed successfully.
+[TABLE 597] Detected type: JOB_DESCRIPTION
+Table 597: processed successfully.
+[TABLE 598] Detected type: LIST
+Table 598: processed successfully.
+[TABLE 599] Detected type: JOB_DESCRIPTION
+Table 599: processed successfully.
+[TABLE 600] Detected type: JOB_DESCRIPTION
+Table 600: processed successfully.
+[TABLE 601] Detected type: LIST
+Table 601: processed successfully.
+[TABLE 602] Detected type: JOB_DESCRIPTION
+Table 602: processed successfully.
+[TABLE 603] Detected type: JOB_DESCRIPTION
+Table 603: processed successfully.
+[TABLE 604] Detected type: LIST
+Table 604: processed successfully.
+[TABLE 605] Detected type: JOB_DESCRIPTION
+Table 605: processed successfully.
+[TABLE 606] Detected type: LIST
+Table 606: processed successfully.
+[TABLE 607] Detected type: JOB_DESCRIPTION
+Table 607: processed successfully.
+[TABLE 608] Detected type: LIST
+Table 608: processed successfully.
+[TABLE 609] Detected type: JOB_DESCRIPTION
+Table 609: processed successfully.
+[TABLE 610] Detected type: LIST
+Table 610: processed successfully.
+[TABLE 611] Detected type: JOB_DESCRIPTION
+Table 611: processed successfully.
+[TABLE 612] Detected type: LIST
+Table 612: processed successfully.
+[TABLE 613] Detected type: JOB_DESCRIPTION
+Table 613: processed successfully.
+[TABLE 614] Detected type: LIST
+Table 614: processed successfully.
+[TABLE 615] Detected type: JOB_DESCRIPTION
+Table 615: processed successfully.
+[TABLE 616] Detected type: LIST
+Table 616: processed successfully.
+[TABLE 617] Detected type: JOB_DESCRIPTION
+Table 617: processed successfully.
+[TABLE 618] Detected type: LIST
+Table 618: processed successfully.
+[TABLE 619] Detected type: JOB_DESCRIPTION
+Table 619: processed successfully.
+[TABLE 620] Detected type: LIST
+Table 620: processed successfully.
+[TABLE 621] Detected type: JOB_DESCRIPTION
+Table 621: processed successfully.
+[TABLE 622] Detected type: LIST
+Table 622: processed successfully.
+[TABLE 623] Detected type: JOB_DESCRIPTION
+Table 623: processed successfully.
+[TABLE 624] Detected type: LIST
+Table 624: processed successfully.
+[TABLE 625] Detected type: JOB_DESCRIPTION
+Table 625: processed successfully.
+[TABLE 626] Detected type: LIST
+Table 626: processed successfully.
+[TABLE 627] Detected type: JOB_DESCRIPTION
+Table 627: processed successfully.
+[TABLE 628] Detected type: LIST
+Table 628: processed successfully.
+[TABLE 629] Detected type: JOB_DESCRIPTION
+Table 629: processed successfully.
+[TABLE 630] Detected type: LIST
+Table 630: processed successfully.
+[TABLE 631] Detected type: JOB_DESCRIPTION
+Table 631: processed successfully.
+[TABLE 632] Detected type: LIST
+Table 632: processed successfully.
+[TABLE 633] Detected type: JOB_DESCRIPTION
+Table 633: processed successfully.
+[TABLE 634] Detected type: LIST
+Table 634: processed successfully.
+[TABLE 635] Detected type: JOB_DESCRIPTION
+Table 635: processed successfully.
+[TABLE 636] Detected type: LIST
+Table 636: processed successfully.
+[TABLE 637] Detected type: JOB_DESCRIPTION
+Table 637: processed successfully.
+[TABLE 638] Detected type: LIST
+Table 638: processed successfully.
+[TABLE 639] Detected type: JOB_DESCRIPTION
+Table 639: processed successfully.
+[TABLE 640] Detected type: LIST
+Table 640: processed successfully.
+[TABLE 641] Detected type: JOB_DESCRIPTION
+Table 641: processed successfully.
+[TABLE 642] Detected type: LIST
+Table 642: processed successfully.
+[TABLE 643] Detected type: JOB_DESCRIPTION
+Table 643: processed successfully.
+[TABLE 644] Detected type: LIST
+Table 644: processed successfully.
+[TABLE 645] Detected type: JOB_DESCRIPTION
+Table 645: processed successfully.
+[TABLE 646] Detected type: LIST
+Table 646: processed successfully.
+[TABLE 647] Detected type: JOB_DESCRIPTION
+Table 647: processed successfully.
+[TABLE 648] Detected type: LIST
+Table 648: processed successfully.
+[TABLE 649] Detected type: JOB_DESCRIPTION
+Table 649: processed successfully.
+[TABLE 650] Detected type: LIST
+Table 650: processed successfully.
+[TABLE 651] Detected type: LIST
+Table 651: processed successfully.
+[TABLE 652] Detected type: LIST
+Table 652: processed successfully.
+[TABLE 653] Detected type: LIST
+Table 653: processed successfully.
+[TABLE 654] Detected type: LIST
+Table 654: processed successfully.
+[TABLE 655] Detected type: JOB_DESCRIPTION
+Table 655: processed successfully.
+[TABLE 656] Detected type: LIST
+Table 656: processed successfully.
+[TABLE 657] Detected type: LIST
+Table 657: processed successfully.
+[TABLE 658] Detected type: JOB_DESCRIPTION
+Table 658: processed successfully.
+[TABLE 659] Detected type: LIST
+Table 659: processed successfully.
+[TABLE 660] Detected type: JOB_DESCRIPTION
+Table 660: processed successfully.
+[TABLE 661] Detected type: LIST
+Table 661: processed successfully.
+[TABLE 662] Detected type: JOB_DESCRIPTION
+Table 662: processed successfully.
+[TABLE 663] Detected type: LIST
+Table 663: processed successfully.
+[TABLE 664] Detected type: JOB_DESCRIPTION
+Table 664: processed successfully.
+[TABLE 665] Detected type: LIST
+Table 665: processed successfully.
+[TABLE 666] Detected type: LIST
+Table 666: processed successfully.
+[TABLE 667] Detected type: JOB_DESCRIPTION
+Table 667: processed successfully.
+[TABLE 668] Detected type: LIST
+Table 668: processed successfully.
+[TABLE 669] Detected type: LIST
+Table 669: processed successfully.
+[TABLE 670] Detected type: LIST
+Table 670: processed successfully.
+[TABLE 671] Detected type: LIST
+Table 671: processed successfully.
+[TABLE 672] Detected type: LIST
+Table 672: processed successfully.
+[TABLE 673] Detected type: BLOCK
+Table 673: processed successfully.
+[TABLE 674] Detected type: BLOCK
+Table 674: processed successfully.
+[TABLE 675] Detected type: BLOCK
+Table 675: processed successfully.
+[TABLE 676] Detected type: BLOCK
+Table 676: processed successfully.
+[TABLE 677] Detected type: JOB_DESCRIPTION
+Table 677: processed successfully.
+[TABLE 679] Detected type: LIST
+Table 679: processed successfully.
+[TABLE 680] Detected type: JOB_DESCRIPTION
+Table 680: processed successfully.
+[TABLE 682] Detected type: LIST
+Table 682: processed successfully.
+[TABLE 683] Detected type: JOB_DESCRIPTION
+Table 683: processed successfully.
+[TABLE 684] Detected type: JOB_DESCRIPTION
+Table 684: processed successfully.
+[TABLE 685] Detected type: LIST
+Table 685: processed successfully.
+[TABLE 686] Detected type: JOB_DESCRIPTION
+Table 686: processed successfully.
+[TABLE 687] Detected type: LIST
+Table 687: processed successfully.
+[TABLE 688] Detected type: JOB_DESCRIPTION
+Table 688: processed successfully.
+[TABLE 689] Detected type: LIST
+Table 689: processed successfully.
+[TABLE 690] Detected type: JOB_DESCRIPTION
+Table 690: processed successfully.
+[TABLE 691] Detected type: LIST
+Table 691: processed successfully.
+[TABLE 692] Detected type: JOB_DESCRIPTION
+Table 692: processed successfully.
+[TABLE 693] Detected type: LIST
+Table 693: processed successfully.
+[TABLE 694] Detected type: JOB_DESCRIPTION
+Table 694: processed successfully.
+[TABLE 695] Detected type: LIST
+Table 695: processed successfully.
+[TABLE 696] Detected type: JOB_DESCRIPTION
+Table 696: processed successfully.
+[TABLE 697] Detected type: LIST
+Table 697: processed successfully.
+[TABLE 698] Detected type: JOB_DESCRIPTION
+Table 698: processed successfully.
+[TABLE 699] Detected type: LIST
+Table 699: processed successfully.
+[TABLE 700] Detected type: JOB_DESCRIPTION
+Table 700: processed successfully.
+[TABLE 701] Detected type: LIST
+Table 701: processed successfully.
+[TABLE 702] Detected type: JOB_DESCRIPTION
+Table 702: processed successfully.
+[TABLE 703] Detected type: LIST
+Table 703: processed successfully.
+[TABLE 704] Detected type: JOB_DESCRIPTION
+Table 704: processed successfully.
+[TABLE 705] Detected type: LIST
+Table 705: processed successfully.
+[TABLE 706] Detected type: JOB_DESCRIPTION
+Table 706: processed successfully.
+[TABLE 707] Detected type: LIST
+Table 707: processed successfully.
+[TABLE 708] Detected type: JOB_DESCRIPTION
+Table 708: processed successfully.
+[TABLE 709] Detected type: LIST
+Table 709: processed successfully.
+[TABLE 710] Detected type: JOB_DESCRIPTION
+Table 710: processed successfully.
+[TABLE 711] Detected type: LIST
+Table 711: processed successfully.
+[TABLE 712] Detected type: JOB_DESCRIPTION
+Table 712: processed successfully.
+[TABLE 713] Detected type: LIST
+Table 713: processed successfully.
+[TABLE 714] Detected type: JOB_DESCRIPTION
+Table 714: processed successfully.
+[TABLE 715] Detected type: LIST
+Table 715: processed successfully.
+[TABLE 716] Detected type: JOB_DESCRIPTION
+Table 716: processed successfully.
+[TABLE 717] Detected type: LIST
+Table 717: processed successfully.
+[TABLE 718] Detected type: JOB_DESCRIPTION
+Table 718: processed successfully.
+[TABLE 719] Detected type: LIST
+Table 719: processed successfully.
+[TABLE 720] Detected type: JOB_DESCRIPTION
+Table 720: processed successfully.
+[TABLE 721] Detected type: LIST
+Table 721: processed successfully.
+[TABLE 722] Detected type: JOB_DESCRIPTION
+Table 722: processed successfully.
+[TABLE 723] Detected type: LIST
+Table 723: processed successfully.
+[TABLE 724] Detected type: JOB_DESCRIPTION
+Table 724: processed successfully.
+[TABLE 725] Detected type: LIST
+Table 725: processed successfully.
+[TABLE 726] Detected type: JOB_DESCRIPTION
+Table 726: processed successfully.
+[TABLE 727] Detected type: LIST
+Table 727: processed successfully.
+[TABLE 728] Detected type: JOB_DESCRIPTION
+Table 728: processed successfully.
+[TABLE 729] Detected type: LIST
+Table 729: processed successfully.
+[TABLE 730] Detected type: JOB_DESCRIPTION
+Table 730: processed successfully.
+[TABLE 731] Detected type: LIST
+Table 731: processed successfully.
+[TABLE 732] Detected type: JOB_DESCRIPTION
+Table 732: processed successfully.
+[TABLE 733] Detected type: LIST
+Table 733: processed successfully.
+[TABLE 734] Detected type: JOB_DESCRIPTION
+Table 734: processed successfully.
+[TABLE 735] Detected type: LIST
+Table 735: processed successfully.
+[TABLE 736] Detected type: JOB_DESCRIPTION
+Table 736: processed successfully.
+[TABLE 737] Detected type: LIST
+Table 737: processed successfully.
+[TABLE 738] Detected type: JOB_DESCRIPTION
+Table 738: processed successfully.
+[TABLE 739] Detected type: LIST
+Table 739: processed successfully.
+[TABLE 740] Detected type: JOB_DESCRIPTION
+Table 740: processed successfully.
+[TABLE 741] Detected type: LIST
+Table 741: processed successfully.
+[TABLE 742] Detected type: JOB_DESCRIPTION
+Table 742: processed successfully.
+[TABLE 743] Detected type: LIST
+Table 743: processed successfully.
+[TABLE 744] Detected type: JOB_DESCRIPTION
+Table 744: processed successfully.
+[TABLE 745] Detected type: LIST
+Table 745: processed successfully.
+[TABLE 746] Detected type: JOB_DESCRIPTION
+Table 746: processed successfully.
+[TABLE 747] Detected type: LIST
+Table 747: processed successfully.
+[TABLE 748] Detected type: JOB_DESCRIPTION
+Table 748: processed successfully.
+[TABLE 749] Detected type: LIST
+Table 749: processed successfully.
+[TABLE 750] Detected type: LIST
+Table 750: processed successfully.
+[TABLE 751] Detected type: LIST
+Table 751: processed successfully.
+[TABLE 752] Detected type: LIST
+Table 752: processed successfully.
+[TABLE 753] Detected type: LIST
+Table 753: processed successfully.
+[TABLE 754] Detected type: BLOCK
+Table 754: processed successfully.
+[TABLE 755] Detected type: BLOCK
+Table 755: processed successfully.
+[TABLE 756] Detected type: BLOCK
+Table 756: processed successfully.
+[TABLE 757] Detected type: BLOCK
+Table 757: processed successfully.
+[TABLE 758] Detected type: JOB_DESCRIPTION
+Table 758: processed successfully.
+[TABLE 760] Detected type: LIST
+Table 760: processed successfully.
+[TABLE 761] Detected type: JOB_DESCRIPTION
+Table 761: processed successfully.
+[TABLE 763] Detected type: LIST
+Table 763: processed successfully.
+[TABLE 764] Detected type: JOB_DESCRIPTION
+Table 764: processed successfully.
+[TABLE 765] Detected type: LIST
+Table 765: processed successfully.
+[TABLE 766] Detected type: LIST
+Table 766: processed successfully.
+[TABLE 767] Detected type: JOB_DESCRIPTION
+Table 767: processed successfully.
+[TABLE 768] Detected type: LIST
+Table 768: processed successfully.
+[TABLE 769] Detected type: LIST
+Table 769: processed successfully.
+[TABLE 770] Detected type: JOB_DESCRIPTION
+Table 770: processed successfully.
+[TABLE 771] Detected type: LIST
+Table 771: processed successfully.
+[TABLE 772] Detected type: LIST
+Table 772: processed successfully.
+[TABLE 773] Detected type: JOB_DESCRIPTION
+Table 773: processed successfully.
+[TABLE 774] Detected type: LIST
+Table 774: processed successfully.
+[TABLE 775] Detected type: LIST
+Table 775: processed successfully.
+[TABLE 776] Detected type: JOB_DESCRIPTION
+Table 776: processed successfully.
+[TABLE 777] Detected type: LIST
+Table 777: processed successfully.
+[TABLE 778] Detected type: LIST
+Table 778: processed successfully.
+[TABLE 779] Detected type: JOB_DESCRIPTION
+Table 779: processed successfully.
+[TABLE 780] Detected type: LIST
+Table 780: processed successfully.
+[TABLE 781] Detected type: LIST
+Table 781: processed successfully.
+[TABLE 782] Detected type: JOB_DESCRIPTION
+Table 782: processed successfully.
+[TABLE 783] Detected type: LIST
+Table 783: processed successfully.
+[TABLE 784] Detected type: LIST
+Table 784: processed successfully.
+[TABLE 785] Detected type: LIST
+Table 785: processed successfully.
+[TABLE 786] Detected type: JOB_DESCRIPTION
+Table 786: processed successfully.
+[TABLE 787] Detected type: LIST
+Table 787: processed successfully.
+[TABLE 788] Detected type: JOB_DESCRIPTION
+Table 788: processed successfully.
+[TABLE 789] Detected type: LIST
+Table 789: processed successfully.
+[TABLE 790] Detected type: LIST
+Table 790: processed successfully.
+[TABLE 791] Detected type: JOB_DESCRIPTION
+Table 791: processed successfully.
+[TABLE 792] Detected type: LIST
+Table 792: processed successfully.
+[TABLE 793] Detected type: LIST
+Table 793: processed successfully.
+[TABLE 794] Detected type: JOB_DESCRIPTION
+Table 794: processed successfully.
+[TABLE 795] Detected type: LIST
+Table 795: processed successfully.
+[TABLE 796] Detected type: JOB_DESCRIPTION
+Table 796: processed successfully.
+[TABLE 797] Detected type: LIST
+Table 797: processed successfully.
+[TABLE 798] Detected type: JOB_DESCRIPTION
+Table 798: processed successfully.
+[TABLE 799] Detected type: LIST
+Table 799: processed successfully.
+[TABLE 800] Detected type: JOB_DESCRIPTION
+Table 800: processed successfully.
+[TABLE 801] Detected type: LIST
+Table 801: processed successfully.
+[TABLE 802] Detected type: JOB_DESCRIPTION
+Table 802: processed successfully.
+[TABLE 803] Detected type: LIST
+Table 803: processed successfully.
+[TABLE 804] Detected type: JOB_DESCRIPTION
+Table 804: processed successfully.
+[TABLE 805] Detected type: LIST
+Table 805: processed successfully.
+[TABLE 806] Detected type: JOB_DESCRIPTION
+Table 806: processed successfully.
+[TABLE 807] Detected type: LIST
+Table 807: processed successfully.
+[TABLE 808] Detected type: JOB_DESCRIPTION
+Table 808: processed successfully.
+[TABLE 809] Detected type: LIST
+Table 809: processed successfully.
+[TABLE 810] Detected type: JOB_DESCRIPTION
+Table 810: processed successfully.
+[TABLE 811] Detected type: LIST
+Table 811: processed successfully.
+[TABLE 812] Detected type: JOB_DESCRIPTION
+Table 812: processed successfully.
+[TABLE 813] Detected type: LIST
+Table 813: processed successfully.
+[TABLE 814] Detected type: JOB_DESCRIPTION
+Table 814: processed successfully.
+[TABLE 815] Detected type: LIST
+Table 815: processed successfully.
+[TABLE 816] Detected type: JOB_DESCRIPTION
+Table 816: processed successfully.
+[TABLE 817] Detected type: LIST
+Table 817: processed successfully.
+[TABLE 818] Detected type: JOB_DESCRIPTION
+Table 818: processed successfully.
+[TABLE 819] Detected type: LIST
+Table 819: processed successfully.
+[TABLE 820] Detected type: JOB_DESCRIPTION
+Table 820: processed successfully.
+[TABLE 821] Detected type: LIST
+Table 821: processed successfully.
+[TABLE 822] Detected type: JOB_DESCRIPTION
+Table 822: processed successfully.
+[TABLE 823] Detected type: LIST
+Table 823: processed successfully.
+[TABLE 824] Detected type: JOB_DESCRIPTION
+Table 824: processed successfully.
+[TABLE 825] Detected type: JOB_DESCRIPTION
+Table 825: processed successfully.
+[TABLE 826] Detected type: LIST
+Table 826: processed successfully.
+[TABLE 827] Detected type: JOB_DESCRIPTION
+Table 827: processed successfully.
+[TABLE 828] Detected type: LIST
+Table 828: processed successfully.
+[TABLE 829] Detected type: JOB_DESCRIPTION
+Table 829: processed successfully.
+[TABLE 830] Detected type: LIST
+Table 830: processed successfully.
+[TABLE 831] Detected type: JOB_DESCRIPTION
+Table 831: processed successfully.
+[TABLE 832] Detected type: LIST
+Table 832: processed successfully.
+[TABLE 833] Detected type: JOB_DESCRIPTION
+Table 833: processed successfully.
+[TABLE 834] Detected type: LIST
+Table 834: processed successfully.
+[TABLE 835] Detected type: JOB_DESCRIPTION
+Table 835: processed successfully.
+[TABLE 836] Detected type: LIST
+Table 836: processed successfully.
+[TABLE 837] Detected type: JOB_DESCRIPTION
+Table 837: processed successfully.
+[TABLE 838] Detected type: LIST
+Table 838: processed successfully.
+[TABLE 839] Detected type: JOB_DESCRIPTION
+Table 839: processed successfully.
+[TABLE 840] Detected type: LIST
+Table 840: processed successfully.
+[TABLE 841] Detected type: JOB_DESCRIPTION
+Table 841: processed successfully.
+[TABLE 842] Detected type: LIST
+Table 842: processed successfully.
+[TABLE 843] Detected type: JOB_DESCRIPTION
+Table 843: processed successfully.
+[TABLE 844] Detected type: LIST
+Table 844: processed successfully.
+[TABLE 845] Detected type: JOB_DESCRIPTION
+Table 845: processed successfully.
+[TABLE 846] Detected type: LIST
+Table 846: processed successfully.
+[TABLE 847] Detected type: JOB_DESCRIPTION
+Table 847: processed successfully.
+[TABLE 848] Detected type: LIST
+Table 848: processed successfully.
+[TABLE 849] Detected type: JOB_DESCRIPTION
+Table 849: processed successfully.
+[TABLE 850] Detected type: LIST
+Table 850: processed successfully.
+[TABLE 851] Detected type: JOB_DESCRIPTION
+Table 851: processed successfully.
+[TABLE 852] Detected type: LIST
+Table 852: processed successfully.
+[TABLE 853] Detected type: JOB_DESCRIPTION
+Table 853: processed successfully.
+[TABLE 854] Detected type: LIST
+Table 854: processed successfully.
+[TABLE 855] Detected type: LIST
+Table 855: processed successfully.
+[TABLE 856] Detected type: LIST
+Table 856: processed successfully.
+[TABLE 857] Detected type: LIST
+Table 857: processed successfully.
+[TABLE 858] Detected type: BLOCK
+Table 858: processed successfully.
+[TABLE 859] Detected type: BLOCK
+Table 859: processed successfully.
+[TABLE 860] Detected type: BLOCK
+Table 860: processed successfully.
+[TABLE 861] Detected type: BLOCK
+Table 861: processed successfully.
+[TABLE 862] Detected type: BLOCK
+Table 862: processed successfully.
+[TABLE 863] Detected type: BLOCK
+Table 863: processed successfully.
+[TABLE 864] Detected type: JOB_DESCRIPTION
+Table 864: processed successfully.
+[TABLE 866] Detected type: LIST
+Table 866: processed successfully.
+[TABLE 867] Detected type: JOB_DESCRIPTION
+Table 867: processed successfully.
+[TABLE 869] Detected type: LIST
+Table 869: processed successfully.
+[TABLE 870] Detected type: JOB_DESCRIPTION
+Table 870: processed successfully.
+[TABLE 871] Detected type: LIST
+Table 871: processed successfully.
+[TABLE 872] Detected type: JOB_DESCRIPTION
+Table 872: processed successfully.
+[TABLE 873] Detected type: LIST
+Table 873: processed successfully.
+[TABLE 874] Detected type: JOB_DESCRIPTION
+Table 874: processed successfully.
+[TABLE 875] Detected type: LIST
+Table 875: processed successfully.
+[TABLE 876] Detected type: JOB_DESCRIPTION
+Table 876: processed successfully.
+[TABLE 877] Detected type: LIST
+Table 877: processed successfully.
+[TABLE 878] Detected type: JOB_DESCRIPTION
+Table 878: processed successfully.
+[TABLE 879] Detected type: LIST
+Table 879: processed successfully.
+[TABLE 880] Detected type: JOB_DESCRIPTION
+Table 880: processed successfully.
+[TABLE 881] Detected type: LIST
+Table 881: processed successfully.
+[TABLE 882] Detected type: JOB_DESCRIPTION
+Table 882: processed successfully.
+[TABLE 883] Detected type: LIST
+Table 883: processed successfully.
+[TABLE 884] Detected type: JOB_DESCRIPTION
+Table 884: processed successfully.
+[TABLE 885] Detected type: LIST
+Table 885: processed successfully.
+[TABLE 886] Detected type: JOB_DESCRIPTION
+Table 886: processed successfully.
+[TABLE 887] Detected type: LIST
+Table 887: processed successfully.
+[TABLE 888] Detected type: JOB_DESCRIPTION
+Table 888: processed successfully.
+[TABLE 889] Detected type: LIST
+Table 889: processed successfully.
+[TABLE 890] Detected type: JOB_DESCRIPTION
+Table 890: processed successfully.
+[TABLE 891] Detected type: LIST
+Table 891: processed successfully.
+[TABLE 892] Detected type: JOB_DESCRIPTION
+Table 892: processed successfully.
+[TABLE 893] Detected type: JOB_DESCRIPTION
+Table 893: processed successfully.
+[TABLE 894] Detected type: LIST
+Table 894: processed successfully.
+[TABLE 895] Detected type: JOB_DESCRIPTION
+Table 895: processed successfully.
+[TABLE 896] Detected type: LIST
+Table 896: processed successfully.
+[TABLE 897] Detected type: JOB_DESCRIPTION
+Table 897: processed successfully.
+[TABLE 898] Detected type: LIST
+Table 898: processed successfully.
+[TABLE 899] Detected type: JOB_DESCRIPTION
+Table 899: processed successfully.
+[TABLE 900] Detected type: JOB_DESCRIPTION
+Table 900: processed successfully.
+[TABLE 901] Detected type: LIST
+Table 901: processed successfully.
+[TABLE 902] Detected type: JOB_DESCRIPTION
+Table 902: processed successfully.
+[TABLE 903] Detected type: LIST
+Table 903: processed successfully.
+[TABLE 904] Detected type: JOB_DESCRIPTION
+Table 904: processed successfully.
+[TABLE 905] Detected type: LIST
+Table 905: processed successfully.
+[TABLE 906] Detected type: JOB_DESCRIPTION
+Table 906: processed successfully.
+[TABLE 907] Detected type: JOB_DESCRIPTION
+Table 907: processed successfully.
+[TABLE 908] Detected type: LIST
+Table 908: processed successfully.
+[TABLE 909] Detected type: JOB_DESCRIPTION
+Table 909: processed successfully.
+[TABLE 910] Detected type: LIST
+Table 910: processed successfully.
+[TABLE 911] Detected type: JOB_DESCRIPTION
+Table 911: processed successfully.
+[TABLE 912] Detected type: LIST
+Table 912: processed successfully.
+[TABLE 913] Detected type: JOB_DESCRIPTION
+Table 913: processed successfully.
+[TABLE 914] Detected type: LIST
+Table 914: processed successfully.
+[TABLE 915] Detected type: JOB_DESCRIPTION
+Table 915: processed successfully.
+[TABLE 916] Detected type: LIST
+Table 916: processed successfully.
+[TABLE 917] Detected type: JOB_DESCRIPTION
+Table 917: processed successfully.
+[TABLE 918] Detected type: LIST
+Table 918: processed successfully.
+[TABLE 919] Detected type: JOB_DESCRIPTION
+Table 919: processed successfully.
+[TABLE 920] Detected type: LIST
+Table 920: processed successfully.
+[TABLE 921] Detected type: JOB_DESCRIPTION
+Table 921: processed successfully.
+[TABLE 922] Detected type: LIST
+Table 922: processed successfully.
+[TABLE 923] Detected type: JOB_DESCRIPTION
+Table 923: processed successfully.
+[TABLE 924] Detected type: LIST
+Table 924: processed successfully.
+[TABLE 925] Detected type: JOB_DESCRIPTION
+Table 925: processed successfully.
+[TABLE 926] Detected type: LIST
+Table 926: processed successfully.
+[TABLE 927] Detected type: JOB_DESCRIPTION
+Table 927: processed successfully.
+[TABLE 928] Detected type: LIST
+Table 928: processed successfully.
+[TABLE 929] Detected type: JOB_DESCRIPTION
+Table 929: processed successfully.
+[TABLE 930] Detected type: LIST
+Table 930: processed successfully.
+[TABLE 931] Detected type: JOB_DESCRIPTION
+Table 931: processed successfully.
+[TABLE 932] Detected type: LIST
+Table 932: processed successfully.
+[TABLE 933] Detected type: JOB_DESCRIPTION
+Table 933: processed successfully.
+[TABLE 934] Detected type: LIST
+Table 934: processed successfully.
+[TABLE 935] Detected type: JOB_DESCRIPTION
+Table 935: processed successfully.
+[TABLE 936] Detected type: LIST
+Table 936: processed successfully.
+[TABLE 937] Detected type: JOB_DESCRIPTION
+Table 937: processed successfully.
+[TABLE 938] Detected type: LIST
+Table 938: processed successfully.
+[TABLE 939] Detected type: JOB_DESCRIPTION
+Table 939: processed successfully.
+[TABLE 940] Detected type: LIST
+Table 940: processed successfully.
+[TABLE 941] Detected type: LIST
+Table 941: processed successfully.
+[TABLE 942] Detected type: JOB_DESCRIPTION
+Table 942: processed successfully.
+[TABLE 943] Detected type: LIST
+Table 943: processed successfully.
+[TABLE 944] Detected type: JOB_DESCRIPTION
+Table 944: processed successfully.
+[TABLE 945] Detected type: LIST
+Table 945: processed successfully.
+[TABLE 946] Detected type: JOB_DESCRIPTION
+Table 946: processed successfully.
+[TABLE 947] Detected type: LIST
+Table 947: processed successfully.
+[TABLE 948] Detected type: JOB_DESCRIPTION
+Table 948: processed successfully.
+[TABLE 949] Detected type: LIST
+Table 949: processed successfully.
+[TABLE 950] Detected type: JOB_DESCRIPTION
+Table 950: processed successfully.
+[TABLE 951] Detected type: JOB_DESCRIPTION
+Table 951: processed successfully.
+[TABLE 952] Detected type: LIST
+Table 952: processed successfully.
+[TABLE 953] Detected type: JOB_DESCRIPTION
+Table 953: processed successfully.
+[TABLE 954] Detected type: LIST
+Table 954: processed successfully.
+[TABLE 955] Detected type: JOB_DESCRIPTION
+Table 955: processed successfully.
+[TABLE 956] Detected type: JOB_DESCRIPTION
+Table 956: processed successfully.
+[TABLE 957] Detected type: LIST
+Table 957: processed successfully.
+[TABLE 958] Detected type: JOB_DESCRIPTION
+Table 958: processed successfully.
+[TABLE 959] Detected type: LIST
+Table 959: processed successfully.
+[TABLE 960] Detected type: JOB_DESCRIPTION
+Table 960: processed successfully.
+[TABLE 961] Detected type: LIST
+Table 961: processed successfully.
+[TABLE 962] Detected type: JOB_DESCRIPTION
+Table 962: processed successfully.
+[TABLE 963] Detected type: LIST
+Table 963: processed successfully.
+[TABLE 964] Detected type: JOB_DESCRIPTION
+Table 964: processed successfully.
+[TABLE 965] Detected type: JOB_DESCRIPTION
+Table 965: processed successfully.
+[TABLE 966] Detected type: JOB_DESCRIPTION
+Table 966: processed successfully.
+[TABLE 967] Detected type: LIST
+Table 967: processed successfully.
+[TABLE 968] Detected type: LIST
+Table 968: processed successfully.
+[TABLE 969] Detected type: JOB_DESCRIPTION
+Table 969: processed successfully.
+[TABLE 970] Detected type: LIST
+Table 970: processed successfully.
+[TABLE 971] Detected type: JOB_DESCRIPTION
+Table 971: processed successfully.
+[TABLE 972] Detected type: LIST
+Table 972: processed successfully.
+[TABLE 973] Detected type: JOB_DESCRIPTION
+Table 973: processed successfully.
+[TABLE 974] Detected type: LIST
+Table 974: processed successfully.
+[TABLE 975] Detected type: JOB_DESCRIPTION
+Table 975: processed successfully.
+[TABLE 976] Detected type: LIST
+Table 976: processed successfully.
+[TABLE 977] Detected type: JOB_DESCRIPTION
+Table 977: processed successfully.
+[TABLE 978] Detected type: LIST
+Table 978: processed successfully.
+[TABLE 979] Detected type: JOB_DESCRIPTION
+Table 979: processed successfully.
+[TABLE 980] Detected type: LIST
+Table 980: processed successfully.
+[TABLE 981] Detected type: JOB_DESCRIPTION
+Table 981: processed successfully.
+[TABLE 982] Detected type: LIST
+Table 982: processed successfully.
+[TABLE 983] Detected type: JOB_DESCRIPTION
+Table 983: processed successfully.
+[TABLE 984] Detected type: LIST
+Table 984: processed successfully.
+[TABLE 985] Detected type: JOB_DESCRIPTION
+Table 985: processed successfully.
+[TABLE 986] Detected type: LIST
+Table 986: processed successfully.
+[TABLE 987] Detected type: JOB_DESCRIPTION
+Table 987: processed successfully.
+[TABLE 988] Detected type: LIST
+Table 988: processed successfully.
+[TABLE 989] Detected type: JOB_DESCRIPTION
+Table 989: processed successfully.
+[TABLE 990] Detected type: LIST
+Table 990: processed successfully.
+[TABLE 991] Detected type: JOB_DESCRIPTION
+Table 991: processed successfully.
+[TABLE 992] Detected type: LIST
+Table 992: processed successfully.
+[TABLE 993] Detected type: BLOCK
+Table 993: processed successfully.
+[TABLE 994] Detected type: BLOCK
+Table 994: processed successfully.
+[TABLE 995] Detected type: BLOCK
+Table 995: processed successfully.
+[TABLE 996] Detected type: BLOCK
+Table 996: processed successfully.
+[TABLE 997] Detected type: BLOCK
+Table 997: processed successfully.
+[TABLE 998] Detected type: BLOCK
+Table 998: processed successfully.
+[TABLE 999] Detected type: BLOCK
+Table 999: processed successfully.
+[TABLE 1000] Detected type: BLOCK
+Table 1000: processed successfully.
+[TABLE 1001] Detected type: BLOCK
+Table 1001: processed successfully.
+[TABLE 1002] Detected type: BLOCK
+Table 1002: processed successfully.
+[TABLE 1003] Detected type: BLOCK
+Table 1003: processed successfully.
+[TABLE 1004] Detected type: BLOCK
+Table 1004: processed successfully.
+[TABLE 1005] Detected type: BLOCK
+Table 1005: processed successfully.
+[TABLE 1006] Detected type: BLOCK
+Table 1006: processed successfully.
+[TABLE 1007] Detected type: BLOCK
+Table 1007: processed successfully.
+[TABLE 1008] Detected type: BLOCK
+Table 1008: processed successfully.
+[TABLE 1009] Detected type: JOB_DESCRIPTION
+Table 1009: processed successfully.
+[TABLE 1010] Detected type: LIST
+Table 1010: processed successfully.
+[TABLE 1011] Detected type: JOB_DESCRIPTION
+Table 1011: processed successfully.
+[TABLE 1013] Detected type: LIST
+Table 1013: processed successfully.
+[TABLE 1014] Detected type: JOB_DESCRIPTION
+Table 1014: processed successfully.
+[TABLE 1015] Detected type: LIST
+Table 1015: processed successfully.
+[TABLE 1016] Detected type: JOB_DESCRIPTION
+Table 1016: processed successfully.
+[TABLE 1017] Detected type: LIST
+Table 1017: processed successfully.
+[TABLE 1018] Detected type: JOB_DESCRIPTION
+Table 1018: processed successfully.
+[TABLE 1019] Detected type: LIST
+Table 1019: processed successfully.
+[TABLE 1020] Detected type: JOB_DESCRIPTION
+Table 1020: processed successfully.
+[TABLE 1021] Detected type: LIST
+Table 1021: processed successfully.
+[TABLE 1022] Detected type: JOB_DESCRIPTION
+Table 1022: processed successfully.
+[TABLE 1023] Detected type: LIST
+Table 1023: processed successfully.
+[TABLE 1024] Detected type: JOB_DESCRIPTION
+Table 1024: processed successfully.
+[TABLE 1025] Detected type: LIST
+Table 1025: processed successfully.
+[TABLE 1026] Detected type: JOB_DESCRIPTION
+Table 1026: processed successfully.
+[TABLE 1027] Detected type: LIST
+Table 1027: processed successfully.
+[TABLE 1028] Detected type: JOB_DESCRIPTION
+Table 1028: processed successfully.
+[TABLE 1029] Detected type: LIST
+Table 1029: processed successfully.
+[TABLE 1030] Detected type: JOB_DESCRIPTION
+Table 1030: processed successfully.
+[TABLE 1031] Detected type: LIST
+Table 1031: processed successfully.
+[TABLE 1032] Detected type: JOB_DESCRIPTION
+Table 1032: processed successfully.
+[TABLE 1033] Detected type: LIST
+Table 1033: processed successfully.
+[TABLE 1034] Detected type: JOB_DESCRIPTION
+Table 1034: processed successfully.
+[TABLE 1035] Detected type: LIST
+Table 1035: processed successfully.
+[TABLE 1036] Detected type: JOB_DESCRIPTION
+Table 1036: processed successfully.
+[TABLE 1037] Detected type: LIST
+Table 1037: processed successfully.
+[TABLE 1038] Detected type: LIST
+Table 1038: processed successfully.
+[TABLE 1039] Detected type: JOB_DESCRIPTION
+Table 1039: processed successfully.
+[TABLE 1040] Detected type: LIST
+Table 1040: processed successfully.
+[TABLE 1041] Detected type: LIST
+Table 1041: processed successfully.
+[TABLE 1042] Detected type: JOB_DESCRIPTION
+Table 1042: processed successfully.
+[TABLE 1043] Detected type: LIST
+Table 1043: processed successfully.
+[TABLE 1044] Detected type: JOB_DESCRIPTION
+Table 1044: processed successfully.
+[TABLE 1045] Detected type: LIST
+Table 1045: processed successfully.
+[TABLE 1046] Detected type: JOB_DESCRIPTION
+Table 1046: processed successfully.
+[TABLE 1047] Detected type: LIST
+Table 1047: processed successfully.
+[TABLE 1048] Detected type: JOB_DESCRIPTION
+Table 1048: processed successfully.
+[TABLE 1049] Detected type: LIST
+Table 1049: processed successfully.
+[TABLE 1050] Detected type: JOB_DESCRIPTION
+Table 1050: processed successfully.
+[TABLE 1051] Detected type: LIST
+Table 1051: processed successfully.
+[TABLE 1052] Detected type: JOB_DESCRIPTION
+Table 1052: processed successfully.
+[TABLE 1053] Detected type: LIST
+Table 1053: processed successfully.
+[TABLE 1054] Detected type: JOB_DESCRIPTION
+Table 1054: processed successfully.
+[TABLE 1055] Detected type: LIST
+Table 1055: processed successfully.
+[TABLE 1056] Detected type: JOB_DESCRIPTION
+Table 1056: processed successfully.
+[TABLE 1057] Detected type: LIST
+Table 1057: processed successfully.
+[TABLE 1058] Detected type: JOB_DESCRIPTION
+Table 1058: processed successfully.
+[TABLE 1059] Detected type: LIST
+Table 1059: processed successfully.
+[TABLE 1060] Detected type: JOB_DESCRIPTION
+Table 1060: processed successfully.
+[TABLE 1061] Detected type: LIST
+Table 1061: processed successfully.
+[TABLE 1062] Detected type: JOB_DESCRIPTION
+Table 1062: processed successfully.
+[TABLE 1063] Detected type: LIST
+Table 1063: processed successfully.
+[TABLE 1064] Detected type: LIST
+Table 1064: processed successfully.
+[TABLE 1065] Detected type: JOB_DESCRIPTION
+Table 1065: processed successfully.
+[TABLE 1066] Detected type: LIST
+Table 1066: processed successfully.
+[TABLE 1067] Detected type: JOB_DESCRIPTION
+Table 1067: processed successfully.
+[TABLE 1068] Detected type: LIST
+Table 1068: processed successfully.
+[TABLE 1069] Detected type: JOB_DESCRIPTION
+Table 1069: processed successfully.
+[TABLE 1070] Detected type: LIST
+Table 1070: processed successfully.
+[TABLE 1071] Detected type: JOB_DESCRIPTION
+Table 1071: processed successfully.
+[TABLE 1072] Detected type: LIST
+Table 1072: processed successfully.
+[TABLE 1073] Detected type: JOB_DESCRIPTION
+Table 1073: processed successfully.
+[TABLE 1074] Detected type: LIST
+Table 1074: processed successfully.
+[TABLE 1075] Detected type: JOB_DESCRIPTION
+Table 1075: processed successfully.
+[TABLE 1076] Detected type: LIST
+Table 1076: processed successfully.
+[TABLE 1077] Detected type: LIST
+Table 1077: processed successfully.
+[TABLE 1078] Detected type: LIST
+Table 1078: processed successfully.
+[TABLE 1079] Detected type: JOB_DESCRIPTION
+Table 1079: processed successfully.
+[TABLE 1080] Detected type: LIST
+Table 1080: processed successfully.
+[TABLE 1081] Detected type: JOB_DESCRIPTION
+Table 1081: processed successfully.
+[TABLE 1082] Detected type: LIST
+Table 1082: processed successfully.
+[TABLE 1083] Detected type: JOB_DESCRIPTION
+Table 1083: processed successfully.
+[TABLE 1084] Detected type: LIST
+Table 1084: processed successfully.
+[TABLE 1085] Detected type: JOB_DESCRIPTION
+Table 1085: processed successfully.
+[TABLE 1086] Detected type: LIST
+Table 1086: processed successfully.
+[TABLE 1087] Detected type: JOB_DESCRIPTION
+Table 1087: processed successfully.
+[TABLE 1088] Detected type: LIST
+Table 1088: processed successfully.
+[TABLE 1089] Detected type: JOB_DESCRIPTION
+Table 1089: processed successfully.
+[TABLE 1090] Detected type: LIST
+Table 1090: processed successfully.
+[TABLE 1091] Detected type: JOB_DESCRIPTION
+Table 1091: processed successfully.
+[TABLE 1092] Detected type: LIST
+Table 1092: processed successfully.
+[TABLE 1093] Detected type: JOB_DESCRIPTION
+Table 1093: processed successfully.
+[TABLE 1094] Detected type: LIST
+Table 1094: processed successfully.
+[TABLE 1095] Detected type: JOB_DESCRIPTION
+Table 1095: processed successfully.
+[TABLE 1096] Detected type: LIST
+Table 1096: processed successfully.
+[TABLE 1097] Detected type: JOB_DESCRIPTION
+Table 1097: processed successfully.
+[TABLE 1098] Detected type: LIST
+Table 1098: processed successfully.
+[TABLE 1099] Detected type: JOB_DESCRIPTION
+Table 1099: processed successfully.
+[TABLE 1100] Detected type: LIST
+Table 1100: processed successfully.
+[TABLE 1101] Detected type: JOB_DESCRIPTION
+Table 1101: processed successfully.
+[TABLE 1102] Detected type: LIST
+Table 1102: processed successfully.
+[TABLE 1103] Detected type: JOB_DESCRIPTION
+Table 1103: processed successfully.
+[TABLE 1104] Detected type: LIST
+Table 1104: processed successfully.
+[TABLE 1105] Detected type: JOB_DESCRIPTION
+Table 1105: processed successfully.
+[TABLE 1106] Detected type: LIST
+Table 1106: processed successfully.
+[TABLE 1107] Detected type: JOB_DESCRIPTION
+Table 1107: processed successfully.
+[TABLE 1108] Detected type: LIST
+Table 1108: processed successfully.
+[TABLE 1109] Detected type: JOB_DESCRIPTION
+Table 1109: processed successfully.
+[TABLE 1110] Detected type: LIST
+Table 1110: processed successfully.
+[TABLE 1111] Detected type: JOB_DESCRIPTION
+Table 1111: processed successfully.
+[TABLE 1112] Detected type: LIST
+Table 1112: processed successfully.
+[TABLE 1113] Detected type: LIST
+Table 1113: processed successfully.
+[TABLE 1114] Detected type: LIST
+Table 1114: processed successfully.
+[TABLE 1115] Detected type: LIST
+Table 1115: processed successfully.
+[TABLE 1116] Detected type: JOB_DESCRIPTION
+Table 1116: processed successfully.
+[TABLE 1117] Detected type: LIST
+Table 1117: processed successfully.
+[TABLE 1118] Detected type: JOB_DESCRIPTION
+Table 1118: processed successfully.
+[TABLE 1119] Detected type: LIST
+Table 1119: processed successfully.
+[TABLE 1120] Detected type: JOB_DESCRIPTION
+Table 1120: processed successfully.
+[TABLE 1121] Detected type: LIST
+Table 1121: processed successfully.
+[TABLE 1122] Detected type: LIST
+Table 1122: processed successfully.
+[TABLE 1123] Detected type: LIST
+Table 1123: processed successfully.
+[TABLE 1124] Detected type: LIST
+Table 1124: processed successfully.
+[TABLE 1125] Detected type: LIST
+Table 1125: processed successfully.
+[TABLE 1126] Detected type: LIST
+Table 1126: processed successfully.
+[TABLE 1127] Detected type: LIST
+Table 1127: processed successfully.
+[TABLE 1128] Detected type: LIST
+Table 1128: processed successfully.
+[TABLE 1129] Detected type: JOB_DESCRIPTION
+Table 1129: processed successfully.
+[TABLE 1130] Detected type: LIST
+Table 1130: processed successfully.
+[TABLE 1131] Detected type: JOB_DESCRIPTION
+Table 1131: processed successfully.
+[TABLE 1132] Detected type: LIST
+Table 1132: processed successfully.
+[TABLE 1133] Detected type: JOB_DESCRIPTION
+Table 1133: processed successfully.
+[TABLE 1134] Detected type: LIST
+Table 1134: processed successfully.
+[TABLE 1135] Detected type: LIST
+Table 1135: processed successfully.
+[TABLE 1136] Detected type: LIST
+Table 1136: processed successfully.
+[TABLE 1137] Detected type: JOB_DESCRIPTION
+Table 1137: processed successfully.
+[TABLE 1138] Detected type: LIST
+Table 1138: processed successfully.
+[TABLE 1139] Detected type: JOB_DESCRIPTION
+Table 1139: processed successfully.
+[TABLE 1140] Detected type: LIST
+Table 1140: processed successfully.
+[TABLE 1141] Detected type: JOB_DESCRIPTION
+Table 1141: processed successfully.
+[TABLE 1142] Detected type: LIST
+Table 1142: processed successfully.
+[TABLE 1143] Detected type: JOB_DESCRIPTION
+Table 1143: processed successfully.
+[TABLE 1144] Detected type: LIST
+Table 1144: processed successfully.
+[TABLE 1145] Detected type: JOB_DESCRIPTION
+Table 1145: processed successfully.
+[TABLE 1146] Detected type: LIST
+Table 1146: processed successfully.
+[TABLE 1147] Detected type: LIST
+Table 1147: processed successfully.
+[TABLE 1148] Detected type: JOB_DESCRIPTION
+Table 1148: processed successfully.
+[TABLE 1149] Detected type: LIST
+Table 1149: processed successfully.
+[TABLE 1150] Detected type: JOB_DESCRIPTION
+Table 1150: processed successfully.
+[TABLE 1151] Detected type: LIST
+Table 1151: processed successfully.
+[TABLE 1152] Detected type: JOB_DESCRIPTION
+Table 1152: processed successfully.
+[TABLE 1153] Detected type: LIST
+Table 1153: processed successfully.
+[TABLE 1154] Detected type: JOB_DESCRIPTION
+Table 1154: processed successfully.
+[TABLE 1155] Detected type: LIST
+Table 1155: processed successfully.
+[TABLE 1156] Detected type: JOB_DESCRIPTION
+Table 1156: processed successfully.
+[TABLE 1157] Detected type: LIST
+Table 1157: processed successfully.
+[TABLE 1158] Detected type: LIST
+Table 1158: processed successfully.
+[TABLE 1159] Detected type: LIST
+Table 1159: processed successfully.
+[TABLE 1160] Detected type: JOB_DESCRIPTION
+Table 1160: processed successfully.
+[TABLE 1161] Detected type: LIST
+Table 1161: processed successfully.
+[TABLE 1162] Detected type: JOB_DESCRIPTION
+Table 1162: processed successfully.
+[TABLE 1163] Detected type: LIST
+Table 1163: processed successfully.
+[TABLE 1164] Detected type: JOB_DESCRIPTION
+Table 1164: processed successfully.
+[TABLE 1165] Detected type: LIST
+Table 1165: processed successfully.
+[TABLE 1166] Detected type: JOB_DESCRIPTION
+Table 1166: processed successfully.
+[TABLE 1167] Detected type: LIST
+Table 1167: processed successfully.
+[TABLE 1168] Detected type: JOB_DESCRIPTION
+Table 1168: processed successfully.
+[TABLE 1169] Detected type: LIST
+Table 1169: processed successfully.
+[TABLE 1170] Detected type: LIST
+Table 1170: processed successfully.
+[TABLE 1171] Detected type: JOB_DESCRIPTION
+Table 1171: processed successfully.
+[TABLE 1172] Detected type: LIST
+Table 1172: processed successfully.
+[TABLE 1173] Detected type: LIST
+Table 1173: processed successfully.
+[TABLE 1174] Detected type: LIST
+Table 1174: processed successfully.
+[TABLE 1175] Detected type: LIST
+Table 1175: processed successfully.
+[TABLE 1176] Detected type: JOB_DESCRIPTION
+Table 1176: processed successfully.
+[TABLE 1177] Detected type: LIST
+Table 1177: processed successfully.
+[TABLE 1178] Detected type: LIST
+Table 1178: processed successfully.
+[TABLE 1179] Detected type: LIST
+Table 1179: processed successfully.
+[TABLE 1180] Detected type: LIST
+Table 1180: processed successfully.
+[TABLE 1181] Detected type: LIST
+Table 1181: processed successfully.
+[TABLE 1182] Detected type: LIST
+Table 1182: processed successfully.
+[TABLE 1183] Detected type: LIST
+Table 1183: processed successfully.
+[TABLE 1184] Detected type: JOB_DESCRIPTION
+Table 1184: processed successfully.
+[TABLE 1185] Detected type: LIST
+Table 1185: processed successfully.
+[TABLE 1186] Detected type: JOB_DESCRIPTION
+Table 1186: processed successfully.
+[TABLE 1187] Detected type: LIST
+Table 1187: processed successfully.
+[TABLE 1188] Detected type: LIST
+Table 1188: processed successfully.
+[TABLE 1189] Detected type: LIST
+Table 1189: processed successfully.
+[TABLE 1190] Detected type: LIST
+Table 1190: processed successfully.
+[TABLE 1191] Detected type: LIST
+Table 1191: processed successfully.
+[TABLE 1192] Detected type: LIST
+Table 1192: processed successfully.
+[TABLE 1193] Detected type: LIST
+Table 1193: processed successfully.
+[TABLE 1194] Detected type: JOB_DESCRIPTION
+Table 1194: processed successfully.
+[TABLE 1195] Detected type: LIST
+Table 1195: processed successfully.
+[TABLE 1196] Detected type: LIST
+Table 1196: processed successfully.
+[TABLE 1197] Detected type: LIST
+Table 1197: processed successfully.
+[TABLE 1198] Detected type: LIST
+Table 1198: processed successfully.
+[TABLE 1199] Detected type: LIST
+Table 1199: processed successfully.
+[TABLE 1200] Detected type: JOB_DESCRIPTION
+Table 1200: processed successfully.
+[TABLE 1201] Detected type: LIST
+Table 1201: processed successfully.
+[TABLE 1202] Detected type: JOB_DESCRIPTION
+Table 1202: processed successfully.
+[TABLE 1203] Detected type: LIST
+Table 1203: processed successfully.
+[TABLE 1204] Detected type: LIST
+Table 1204: processed successfully.
+[TABLE 1205] Detected type: LIST
+Table 1205: processed successfully.
+[TABLE 1206] Detected type: LIST
+Table 1206: processed successfully.
+[TABLE 1207] Detected type: LIST
+Table 1207: processed successfully.
+[TABLE 1208] Detected type: LIST
+Table 1208: processed successfully.
+[TABLE 1209] Detected type: LIST
+Table 1209: processed successfully.
+[TABLE 1210] Detected type: LIST
+Table 1210: processed successfully.
+[TABLE 1211] Detected type: LIST
+Table 1211: processed successfully.
+[TABLE 1212] Detected type: JOB_DESCRIPTION
+Table 1212: processed successfully.
+[TABLE 1213] Detected type: LIST
+Table 1213: processed successfully.
+[TABLE 1214] Detected type: JOB_DESCRIPTION
+Table 1214: processed successfully.
+[TABLE 1215] Detected type: LIST
+Table 1215: processed successfully.
+[TABLE 1216] Detected type: LIST
+Table 1216: processed successfully.
+[TABLE 1217] Detected type: LIST
+Table 1217: processed successfully.
+[TABLE 1218] Detected type: LIST
+Table 1218: processed successfully.
+[TABLE 1219] Detected type: JOB_DESCRIPTION
+Table 1219: processed successfully.
+[TABLE 1220] Detected type: LIST
+Table 1220: processed successfully.
+[TABLE 1221] Detected type: JOB_DESCRIPTION
+Table 1221: processed successfully.
+[TABLE 1222] Detected type: LIST
+Table 1222: processed successfully.
+[TABLE 1223] Detected type: JOB_DESCRIPTION
+Table 1223: processed successfully.
+[TABLE 1224] Detected type: LIST
+Table 1224: processed successfully.
+[TABLE 1225] Detected type: JOB_DESCRIPTION
+Table 1225: processed successfully.
+[TABLE 1226] Detected type: LIST
+Table 1226: processed successfully.
+[TABLE 1227] Detected type: JOB_DESCRIPTION
+Table 1227: processed successfully.
+[TABLE 1228] Detected type: LIST
+Table 1228: processed successfully.
+[TABLE 1229] Detected type: JOB_DESCRIPTION
+Table 1229: processed successfully.
+[TABLE 1230] Detected type: LIST
+Table 1230: processed successfully.
+[TABLE 1231] Detected type: JOB_DESCRIPTION
+Table 1231: processed successfully.
+[TABLE 1232] Detected type: LIST
+Table 1232: processed successfully.
+[TABLE 1233] Detected type: JOB_DESCRIPTION
+Table 1233: processed successfully.
+[TABLE 1234] Detected type: JOB_DESCRIPTION
+Table 1234: processed successfully.
+[TABLE 1235] Detected type: LIST
+Table 1235: processed successfully.
+[TABLE 1236] Detected type: JOB_DESCRIPTION
+Table 1236: processed successfully.
+[TABLE 1237] Detected type: LIST
+Table 1237: processed successfully.
+[TABLE 1238] Detected type: JOB_DESCRIPTION
+Table 1238: processed successfully.
+[TABLE 1239] Detected type: LIST
+Table 1239: processed successfully.
+[TABLE 1240] Detected type: JOB_DESCRIPTION
+Table 1240: processed successfully.
+[TABLE 1241] Detected type: LIST
+Table 1241: processed successfully.
+[TABLE 1242] Detected type: JOB_DESCRIPTION
+Table 1242: processed successfully.
+[TABLE 1243] Detected type: LIST
+Table 1243: processed successfully.
+[TABLE 1244] Detected type: JOB_DESCRIPTION
+Table 1244: processed successfully.
+[TABLE 1245] Detected type: LIST
+Table 1245: processed successfully.
+[TABLE 1246] Detected type: JOB_DESCRIPTION
+Table 1246: processed successfully.
+[TABLE 1247] Detected type: LIST
+Table 1247: processed successfully.
+[TABLE 1248] Detected type: LIST
+Table 1248: processed successfully.
+[TABLE 1249] Detected type: LIST
+Table 1249: processed successfully.
+[TABLE 1250] Detected type: JOB_DESCRIPTION
+Table 1250: processed successfully.
+[TABLE 1251] Detected type: LIST
+Table 1251: processed successfully.
+[TABLE 1252] Detected type: JOB_DESCRIPTION
+Table 1252: processed successfully.
+[TABLE 1253] Detected type: LIST
+Table 1253: processed successfully.
+[TABLE 1254] Detected type: JOB_DESCRIPTION
+Table 1254: processed successfully.
+[TABLE 1255] Detected type: LIST
+Table 1255: processed successfully.
+[TABLE 1256] Detected type: JOB_DESCRIPTION
+Table 1256: processed successfully.
+[TABLE 1257] Detected type: LIST
+Table 1257: processed successfully.
+[TABLE 1258] Detected type: JOB_DESCRIPTION
+Table 1258: processed successfully.
+[TABLE 1259] Detected type: LIST
+Table 1259: processed successfully.
+[TABLE 1260] Detected type: JOB_DESCRIPTION
+Table 1260: processed successfully.
+[TABLE 1261] Detected type: LIST
+Table 1261: processed successfully.
+[TABLE 1262] Detected type: JOB_DESCRIPTION
+Table 1262: processed successfully.
+[TABLE 1263] Detected type: LIST
+Table 1263: processed successfully.
+[TABLE 1264] Detected type: JOB_DESCRIPTION
+Table 1264: processed successfully.
+[TABLE 1265] Detected type: LIST
+Table 1265: processed successfully.
+[TABLE 1266] Detected type: JOB_DESCRIPTION
+Table 1266: processed successfully.
+[TABLE 1267] Detected type: LIST
+Table 1267: processed successfully.
+[TABLE 1268] Detected type: JOB_DESCRIPTION
+Table 1268: processed successfully.
+[TABLE 1269] Detected type: LIST
+Table 1269: processed successfully.
+[TABLE 1270] Detected type: JOB_DESCRIPTION
+Table 1270: processed successfully.
+[TABLE 1271] Detected type: LIST
+Table 1271: processed successfully.
+[TABLE 1272] Detected type: JOB_DESCRIPTION
+Table 1272: processed successfully.
+[TABLE 1273] Detected type: LIST
+Table 1273: processed successfully.
+[TABLE 1274] Detected type: JOB_DESCRIPTION
+Table 1274: processed successfully.
+[TABLE 1275] Detected type: LIST
+Table 1275: processed successfully.
+[TABLE 1276] Detected type: JOB_DESCRIPTION
+Table 1276: processed successfully.
+[TABLE 1277] Detected type: LIST
+Table 1277: processed successfully.
+[TABLE 1278] Detected type: LIST
+Table 1278: processed successfully.
+[TABLE 1279] Detected type: JOB_DESCRIPTION
+Table 1279: processed successfully.
+[TABLE 1280] Detected type: LIST
+Table 1280: processed successfully.
+[TABLE 1281] Detected type: LIST
+Table 1281: processed successfully.
+[TABLE 1282] Detected type: JOB_DESCRIPTION
+Table 1282: processed successfully.
+[TABLE 1283] Detected type: LIST
+Table 1283: processed successfully.
+[TABLE 1284] Detected type: LIST
+Table 1284: processed successfully.
+[TABLE 1285] Detected type: JOB_DESCRIPTION
+Table 1285: processed successfully.
+[TABLE 1286] Detected type: LIST
+Table 1286: processed successfully.
+[TABLE 1287] Detected type: LIST
+Table 1287: processed successfully.
+[TABLE 1288] Detected type: JOB_DESCRIPTION
+Table 1288: processed successfully.
+[TABLE 1289] Detected type: LIST
+Table 1289: processed successfully.
+[TABLE 1290] Detected type: JOB_DESCRIPTION
+Table 1290: processed successfully.
+[TABLE 1291] Detected type: LIST
+Table 1291: processed successfully.
+[TABLE 1292] Detected type: JOB_DESCRIPTION
+Table 1292: processed successfully.
+[TABLE 1293] Detected type: LIST
+Table 1293: processed successfully.
+[TABLE 1294] Detected type: JOB_DESCRIPTION
+Table 1294: processed successfully.
+[TABLE 1295] Detected type: LIST
+Table 1295: processed successfully.
+[TABLE 1296] Detected type: JOB_DESCRIPTION
+Table 1296: processed successfully.
+[TABLE 1297] Detected type: LIST
+Table 1297: processed successfully.
+[TABLE 1298] Detected type: JOB_DESCRIPTION
+Table 1298: processed successfully.
+[TABLE 1299] Detected type: LIST
+Table 1299: processed successfully.
+[TABLE 1300] Detected type: JOB_DESCRIPTION
+Table 1300: processed successfully.
+[TABLE 1301] Detected type: LIST
+Table 1301: processed successfully.
+[TABLE 1302] Detected type: JOB_DESCRIPTION
+Table 1302: processed successfully.
+[TABLE 1303] Detected type: LIST
+Table 1303: processed successfully.
+[TABLE 1304] Detected type: JOB_DESCRIPTION
+Table 1304: processed successfully.
+[TABLE 1305] Detected type: LIST
+Table 1305: processed successfully.
+[TABLE 1306] Detected type: JOB_DESCRIPTION
+Table 1306: processed successfully.
+[TABLE 1307] Detected type: LIST
+Table 1307: processed successfully.
+[TABLE 1308] Detected type: JOB_DESCRIPTION
+Table 1308: processed successfully.
+[TABLE 1309] Detected type: LIST
+Table 1309: processed successfully.
+[TABLE 1310] Detected type: JOB_DESCRIPTION
+Table 1310: processed successfully.
+[TABLE 1311] Detected type: LIST
+Table 1311: processed successfully.
+[TABLE 1312] Detected type: JOB_DESCRIPTION
+Table 1312: processed successfully.
+[TABLE 1313] Detected type: LIST
+Table 1313: processed successfully.
+[TABLE 1314] Detected type: JOB_DESCRIPTION
+Table 1314: processed successfully.
+[TABLE 1315] Detected type: LIST
+Table 1315: processed successfully.
+[TABLE 1316] Detected type: JOB_DESCRIPTION
+Table 1316: processed successfully.
+[TABLE 1317] Detected type: LIST
+Table 1317: processed successfully.
+[TABLE 1318] Detected type: BLOCK
+Table 1318: processed successfully.
+[TABLE 1319] Detected type: BLOCK
+Table 1319: processed successfully.
+[TABLE 1320] Detected type: BLOCK
+Table 1320: processed successfully.
+[TABLE 1321] Detected type: JOB_DESCRIPTION
+Table 1321: processed successfully.
+[TABLE 1322] Detected type: LIST
+Table 1322: processed successfully.
+[TABLE 1323] Detected type: JOB_DESCRIPTION
+Table 1323: processed successfully.
+[TABLE 1324] Detected type: LIST
+Table 1324: processed successfully.
+[TABLE 1325] Detected type: JOB_DESCRIPTION
+Table 1325: processed successfully.
+[TABLE 1326] Detected type: LIST
+Table 1326: processed successfully.
+[TABLE 1327] Detected type: JOB_DESCRIPTION
+Table 1327: processed successfully.
+[TABLE 1328] Detected type: LIST
+Table 1328: processed successfully.
+[TABLE 1329] Detected type: JOB_DESCRIPTION
+Table 1329: processed successfully.
+[TABLE 1330] Detected type: LIST
+Table 1330: processed successfully.
+[TABLE 1331] Detected type: JOB_DESCRIPTION
+Table 1331: processed successfully.
+[TABLE 1332] Detected type: LIST
+Table 1332: processed successfully.
+[TABLE 1333] Detected type: JOB_DESCRIPTION
+Table 1333: processed successfully.
+[TABLE 1334] Detected type: LIST
+Table 1334: processed successfully.
+[TABLE 1335] Detected type: JOB_DESCRIPTION
+Table 1335: processed successfully.
+[TABLE 1336] Detected type: LIST
+Table 1336: processed successfully.
+[TABLE 1337] Detected type: JOB_DESCRIPTION
+Table 1337: processed successfully.
+[TABLE 1338] Detected type: LIST
+Table 1338: processed successfully.
+[TABLE 1339] Detected type: JOB_DESCRIPTION
+Table 1339: processed successfully.
+[TABLE 1340] Detected type: LIST
+Table 1340: processed successfully.
+[TABLE 1341] Detected type: JOB_DESCRIPTION
+Table 1341: processed successfully.
+[TABLE 1342] Detected type: LIST
+Table 1342: processed successfully.
+[TABLE 1343] Detected type: JOB_DESCRIPTION
+Table 1343: processed successfully.
+[TABLE 1344] Detected type: LIST
+Table 1344: processed successfully.
+[TABLE 1345] Detected type: JOB_DESCRIPTION
+Table 1345: processed successfully.
+[TABLE 1346] Detected type: LIST
+Table 1346: processed successfully.
+[TABLE 1347] Detected type: JOB_DESCRIPTION
+Table 1347: processed successfully.
+[TABLE 1348] Detected type: LIST
+Table 1348: processed successfully.
+[TABLE 1349] Detected type: JOB_DESCRIPTION
+Table 1349: processed successfully.
+[TABLE 1350] Detected type: LIST
+Table 1350: processed successfully.
+[TABLE 1351] Detected type: JOB_DESCRIPTION
+Table 1351: processed successfully.
+[TABLE 1352] Detected type: LIST
+Table 1352: processed successfully.
+[TABLE 1353] Detected type: JOB_DESCRIPTION
+Table 1353: processed successfully.
+[TABLE 1354] Detected type: LIST
+Table 1354: processed successfully.
+[TABLE 1355] Detected type: JOB_DESCRIPTION
+Table 1355: processed successfully.
+[TABLE 1356] Detected type: LIST
+Table 1356: processed successfully.
+[TABLE 1357] Detected type: JOB_DESCRIPTION
+Table 1357: processed successfully.
+[TABLE 1358] Detected type: LIST
+Table 1358: processed successfully.
+[TABLE 1359] Detected type: JOB_DESCRIPTION
+Table 1359: processed successfully.
+[TABLE 1360] Detected type: LIST
+Table 1360: processed successfully.
+[TABLE 1361] Detected type: JOB_DESCRIPTION
+Table 1361: processed successfully.
+[TABLE 1362] Detected type: LIST
+Table 1362: processed successfully.
+[TABLE 1363] Detected type: JOB_DESCRIPTION
+Table 1363: processed successfully.
+[TABLE 1364] Detected type: LIST
+Table 1364: processed successfully.
+[TABLE 1365] Detected type: LIST
+Table 1365: processed successfully.
+[TABLE 1366] Detected type: JOB_DESCRIPTION
+Table 1366: processed successfully.
+[TABLE 1367] Detected type: LIST
+Table 1367: processed successfully.
+[TABLE 1368] Detected type: JOB_DESCRIPTION
+Table 1368: processed successfully.
+[TABLE 1369] Detected type: LIST
+Table 1369: processed successfully.
+[TABLE 1370] Detected type: JOB_DESCRIPTION
+Table 1370: processed successfully.
+[TABLE 1371] Detected type: LIST
+Table 1371: processed successfully.
+[TABLE 1372] Detected type: LIST
+Table 1372: processed successfully.
+[TABLE 1373] Detected type: JOB_DESCRIPTION
+Table 1373: processed successfully.
+[TABLE 1374] Detected type: LIST
+Table 1374: processed successfully.
+[TABLE 1375] Detected type: LIST
+Table 1375: processed successfully.
+[TABLE 1376] Detected type: JOB_DESCRIPTION
+Table 1376: processed successfully.
+[TABLE 1377] Detected type: LIST
+Table 1377: processed successfully.
+[TABLE 1378] Detected type: JOB_DESCRIPTION
+Table 1378: processed successfully.
+[TABLE 1379] Detected type: LIST
+Table 1379: processed successfully.
+[TABLE 1380] Detected type: JOB_DESCRIPTION
+Table 1380: processed successfully.
+[TABLE 1381] Detected type: LIST
+Table 1381: processed successfully.
+[TABLE 1382] Detected type: JOB_DESCRIPTION
+Table 1382: processed successfully.
+[TABLE 1383] Detected type: LIST
+Table 1383: processed successfully.
+[TABLE 1384] Detected type: LIST
+Table 1384: processed successfully.
+[TABLE 1385] Detected type: LIST
+Table 1385: processed successfully.
+[TABLE 1386] Detected type: BLOCK
+Table 1386: processed successfully.
+[TABLE 1387] Detected type: BLOCK
+Table 1387: processed successfully.
+✗ Failed: test.docx
+  Error: 'NoneType' object has no attribute 'remove'
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 1
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

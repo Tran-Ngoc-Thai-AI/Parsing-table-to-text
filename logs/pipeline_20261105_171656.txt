@@ -1,0 +1,7 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : raw-documents/4051.LND.2026(3) - Quy dinh he thong chuc danh va mo ta cong viec cua cac chuc danh tai Hoi so, Vung, Chi nhanh, Phong giao dich 1.docx
+Output container : md-raw-documents
+Document prefix: (ALL)

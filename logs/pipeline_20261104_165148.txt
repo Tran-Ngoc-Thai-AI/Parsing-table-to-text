@@ -1,0 +1,539 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/2] sample.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] test.docx
+Status: NEW
+→ PROCESS
+
+========== EMPTY SEMANTIC TEXT ==========
+Table index: 41
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Đơn vị</td>
+<td colspan="2">Bộ máy	Tên chức danh trực thuộc</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td rowspan="9"></td>
+<td colspan="2">-	Phó phòng Phát triển kinh doanh khách hàng doanh nghiệp (phụ trách Phân tích kinh<br>doanh và quản trị hiệu suất)</td>
+<td>Deputy Head of Business Development Department - Business Analytics &amp; Performance Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Thúc đẩy bán</td>
+<td>Chuyên gia Thúc đẩy bán khách hàng doanh nghiệp</td>
+<td>Expert, Corporate Sales Enablement</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Thúc đẩy bán khách hàng doanh nghiệp</td>
+<td>Principal Specialist, Corporate Sales Enablement</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Thúc đẩy bán khách hàng doanh nghiệp</td>
+<td>Senior Specialist, Corporate Sales Enablement</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Thúc đẩy bán khách hàng doanh nghiệp</td>
+<td>Specialist, Corporate Sales Enablement</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Phát triển đối tác</td>
+<td>Chuyên gia Phát triển đối tác</td>
+<td>Expert, Partnership Development</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Phát triển đối tác</td>
+<td>Principal Specialist, Partnership Development</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Phát triển đối tác</td>
+<td>Senior Specialist, Partnership Development</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Phát triển đối tác</td>
+<td>Specialist, Partnership Development</td>
+<td>Kinh doanh<br>trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Đơn vị   | Bộ máy	Tên chức danh trực thuộc                                                                                                                    | Bộ máy	Tên chức danh trực thuộc                                                                                                                    | Tên chức danh tiếng Anh                                                                      | Phân luồng             | Phân loại            |
+|----------|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------|----------------------|
+|          | - Phó phòng Phát triển kinh doanh khách hàng doanh nghiệp (phụ trách Phân tích kinh   doanh và quản trị hiệu suất) | - Phó phòng Phát triển kinh doanh khách hàng doanh nghiệp (phụ trách Phân tích kinh   doanh và quản trị hiệu suất) | Deputy Head of Business Development Department - Business Analytics & Performance Management | Hỗ trợ kinh   doanh    | Nhân sự quản lý      |
+|          | Bộ phận Thúc đẩy bán                                                                                               | Chuyên gia Thúc đẩy bán khách hàng doanh nghiệp                                                                    | Expert, Corporate Sales Enablement                                                           | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Thúc đẩy bán                                                                                               | Chuyên viên cao cấp Thúc đẩy bán khách hàng doanh nghiệp                                                           | Principal Specialist, Corporate Sales Enablement                                             | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Thúc đẩy bán                                                                                               | Chuyên viên chính Thúc đẩy bán khách hàng doanh nghiệp                                                             | Senior Specialist, Corporate Sales Enablement                                                | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Thúc đẩy bán                                                                                               | Chuyên viên Thúc đẩy bán khách hàng doanh nghiệp                                                                   | Specialist, Corporate Sales Enablement                                                       | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Phát triển đối tác                                                                                         | Chuyên gia Phát triển đối tác                                                                                      | Expert, Partnership Development                                                              | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Phát triển đối tác                                                                                         | Chuyên viên cao cấp Phát triển đối tác                                                                             | Principal Specialist, Partnership Development                                                | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Phát triển đối tác                                                                                         | Chuyên viên chính Phát triển đối tác                                                                               | Senior Specialist, Partnership Development                                                   | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận Phát triển đối tác                                                                                         | Chuyên viên Phát triển đối tác                                                                                     | Specialist, Partnership Development                                                          | Kinh doanh   trực tiếp | Nhân sự   chuyên môn |
+=========================================
+
+
+========== EMPTY SEMANTIC TEXT ==========
+Table index: 144
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Đơn vị</td>
+<td colspan="2">Bộ máy	Tên chức danh trực thuộc</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td rowspan="10"></td>
+<td colspan="2">-	Phó phòng Khách hàng ưu tiên (phụ trách Kinh doanh khách hàng ưu tiên)</td>
+<td>Deputy Head of Premier Banking Department<br>- Premier Banking Business Development</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td colspan="2">-	Phó phòng Khách hàng ưu tiên (phụ trách Trải nghiệm khách hàng ưu tiên)</td>
+<td>Deputy Head of Premier Banking Department<br>- Premier Banking Segment Experience</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Sản phẩm</td>
+<td>Chuyên gia Sản phẩm khách hàng ưu tiên</td>
+<td>Expert, Premier Banking Products &amp; Solutions</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Sản phẩm khách hàng ưu tiên</td>
+<td>Principal Specialist, Premier Banking Products &amp; Solutions</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Sản phẩm khách hàng ưu<br>tiên</td>
+<td>Senior Specialist, Premier Banking Products &amp; Solutions</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Sản phẩm khách hàng ưu tiên</td>
+<td>Specialist, Premier Banking Products &amp; Solutions</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận<br>Kinh doanh</td>
+<td>Chuyên gia Kinh doanh khách hàng ưu tiên</td>
+<td>Expert, Premier Banking Business Development</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Kinh doanh khách hàng ưu tiên</td>
+<td>Principal Specialist, Premier Banking Business Development</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Kinh doanh khách hàng<br>ưu tiên</td>
+<td>Senior Specialist, Premier Banking Business Development</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Kinh doanh khách hàng ưu tiên</td>
+<td>Specialist, Premier Banking Business Development</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Đơn vị   | Bộ máy	Tên chức danh trực thuộc                      | Bộ máy	Tên chức danh trực thuộc                                                   | Tên chức danh tiếng Anh                                                            | Phân luồng           | Phân loại            |
+|----------|----------------------|---------------------------------------------------|------------------------------------------------------------------------------------|----------------------|----------------------|
+|          | -	Phó phòng Khách hàng ưu tiên (phụ trách Kinh doanh khách hàng ưu tiên)                      | -	Phó phòng Khách hàng ưu tiên (phụ trách Kinh doanh khách hàng ưu tiên)                                                   | Deputy Head of Premier Banking Department   - Premier Banking Business Development | Kinh doanh trực tiếp | Nhân sự quản lý      |
+|          | -	Phó phòng Khách hàng ưu tiên (phụ trách Trải nghiệm khách hàng ưu tiên)                      | -	Phó phòng Khách hàng ưu tiên (phụ trách Trải nghiệm khách hàng ưu tiên)                                                   | Deputy Head of Premier Banking Department   - Premier Banking Segment Experience   | Hỗ trợ kinh   doanh  | Nhân sự quản lý      |
+|          | Bộ phận Sản phẩm     | Chuyên gia Sản phẩm khách hàng ưu tiên            | Expert, Premier Banking Products & Solutions                                       | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Sản phẩm     | Chuyên viên cao cấp Sản phẩm khách hàng ưu tiên   | Principal Specialist, Premier Banking Products & Solutions                         | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Sản phẩm     | Chuyên viên chính Sản phẩm khách hàng ưu   tiên   | Senior Specialist, Premier Banking Products & Solutions                            | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Sản phẩm     | Chuyên viên Sản phẩm khách hàng ưu tiên           | Specialist, Premier Banking Products & Solutions                                   | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận   Kinh doanh | Chuyên gia Kinh doanh khách hàng ưu tiên          | Expert, Premier Banking Business Development                                       | Kinh doanh trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận   Kinh doanh | Chuyên viên cao cấp Kinh doanh khách hàng ưu tiên | Principal Specialist, Premier Banking Business Development                         | Kinh doanh trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận   Kinh doanh | Chuyên viên chính Kinh doanh khách hàng   ưu tiên | Senior Specialist, Premier Banking Business Development                            | Kinh doanh trực tiếp | Nhân sự   chuyên môn |
+|          | Bộ phận   Kinh doanh | Chuyên viên Kinh doanh khách hàng ưu tiên         | Specialist, Premier Banking Business Development                                   | Kinh doanh trực tiếp | Nhân sự   chuyên môn |
+=========================================
+
+
+========== EMPTY SEMANTIC TEXT ==========
+Table index: 386
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Đơn vị</td>
+<td colspan="2">Bộ máy	Tên chức danh trực thuộc</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td rowspan="11"></td>
+<td colspan="2">-	Phó phòng Dịch vụ khách hàng (phụ trách Bán hàng đa kênh)</td>
+<td>Deputy Head of Customer Service Department - Omnichannel Sales</td>
+<td>Kinh doanh trực tiếp</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Quản trị dịch vụ<br>khách hàng<br>và kho quỹ</td>
+<td>Chuyên gia Quản trị dịch vụ khách hàng và kho quỹ</td>
+<td>Expert, Customer Service and Cash &amp; Vault Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Quản trị dịch vụ khách hàng và kho quỹ</td>
+<td>Principal Specialist, Customer Service and Cash &amp; Vault Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Quản trị dịch vụ khách hàng và kho quỹ</td>
+<td>Senior Specialist, Customer Service and Cash &amp; Vault Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Quản trị dịch vụ khách hàng và kho quỹ</td>
+<td>Specialist, Customer Service and Cash &amp; Vault Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="3">Bộ phận<br>Quản lý trải nghiệm khách hàng</td>
+<td>Chuyên viên cao cấp Quản lý trải nghiệm<br>khách hàng</td>
+<td>Principal Specialist, Customer Experience Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Quản lý trải nghiệm<br>khách hàng</td>
+<td>Senior Specialist, Customer Experience Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Quản lý trải nghiệm khách<br>hàng</td>
+<td>Specialist, Customer Experience Management</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="3">Bộ phận Dịch vụ<br>khách hàng 24/7</td>
+<td>Trưởng nhóm Dịch vụ khách hàng 24/7</td>
+<td>Team Leader, 24/7 Customer Service</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Dịch vụ khách hàng 24/7</td>
+<td>Senior Specialist, 24/7 Customer Service</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Dịch vụ khách hàng 24/7</td>
+<td>Specialist, 24/7 Customer Service</td>
+<td>Hỗ trợ kinh<br>doanh</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Đơn vị   | Bộ máy	Tên chức danh trực thuộc                                                    | Bộ máy	Tên chức danh trực thuộc                                                            | Tên chức danh tiếng Anh                                            | Phân luồng           | Phân loại            |
+|----------|----------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------|----------------------|----------------------|
+|          | -	Phó phòng Dịch vụ khách hàng (phụ trách Bán hàng đa kênh)                                                    | -	Phó phòng Dịch vụ khách hàng (phụ trách Bán hàng đa kênh)                                                            | Deputy Head of Customer Service Department - Omnichannel Sales     | Kinh doanh trực tiếp | Nhân sự quản lý      |
+|          | Bộ phận Quản trị dịch vụ   khách hàng   và kho quỹ | Chuyên gia Quản trị dịch vụ khách hàng và kho quỹ          | Expert, Customer Service and Cash & Vault Management               | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Quản trị dịch vụ   khách hàng   và kho quỹ | Chuyên viên cao cấp Quản trị dịch vụ khách hàng và kho quỹ | Principal Specialist, Customer Service and Cash & Vault Management | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Quản trị dịch vụ   khách hàng   và kho quỹ | Chuyên viên chính Quản trị dịch vụ khách hàng và kho quỹ   | Senior Specialist, Customer Service and Cash & Vault Management    | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Quản trị dịch vụ   khách hàng   và kho quỹ | Chuyên viên Quản trị dịch vụ khách hàng và kho quỹ         | Specialist, Customer Service and Cash & Vault Management           | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận   Quản lý trải nghiệm khách hàng           | Chuyên viên cao cấp Quản lý trải nghiệm   khách hàng       | Principal Specialist, Customer Experience Management               | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận   Quản lý trải nghiệm khách hàng           | Chuyên viên chính Quản lý trải nghiệm   khách hàng         | Senior Specialist, Customer Experience Management                  | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận   Quản lý trải nghiệm khách hàng           | Chuyên viên Quản lý trải nghiệm khách   hàng               | Specialist, Customer Experience Management                         | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ   khách hàng 24/7                  | Trưởng nhóm Dịch vụ khách hàng 24/7                        | Team Leader, 24/7 Customer Service                                 | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ   khách hàng 24/7                  | Chuyên viên chính Dịch vụ khách hàng 24/7                  | Senior Specialist, 24/7 Customer Service                           | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ   khách hàng 24/7                  | Chuyên viên Dịch vụ khách hàng 24/7                        | Specialist, 24/7 Customer Service                                  | Hỗ trợ kinh   doanh  | Nhân sự   chuyên môn |
+=========================================
+
+
+========== EMPTY SEMANTIC TEXT ==========
+Table index: 520
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Đơn vị</td>
+<td colspan="2">Bộ máy	Tên chức danh trực thuộc</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td rowspan="11"></td>
+<td colspan="2">-	Phó phòng Quản lý rủi ro tín dụng (phụ trách Quản lý công cụ tín dụng số)</td>
+<td>Deputy Head of Credit Risk Management Department - Digital Credit Solutions Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Chính sách tín dụng</td>
+<td>Chuyên gia Chính sách tín dụng</td>
+<td>Expert, Credit Policy</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Chính sách tín dụng</td>
+<td>Principal Specialist, Credit Policy</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Chính sách tín dụng</td>
+<td>Senior Specialist, Credit Policy</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Chính sách tín dụng</td>
+<td>Specialist, Credit Policy</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Quản lý danh mục tín dụng</td>
+<td>Chuyên gia Quản lý danh mục tín dụng</td>
+<td>Expert, Credit Portfolio Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Quản lý danh mục tín dụng</td>
+<td>Principal Specialist, Credit Portfolio Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Quản lý danh mục tín dụng</td>
+<td>Senior Specialist, Credit Portfolio Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Quản lý danh mục tín dụng</td>
+<td>Specialist, Credit Portfolio Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="2">Bộ phận Quản lý<br>công cụ tín dụng số</td>
+<td>Chuyên viên cao cấp Quản lý công cụ tín dụng số</td>
+<td>Principal Specialist, Digital Credit Solutions Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Quản lý công cụ tín dụng số</td>
+<td>Senior Specialist, Digital Credit Solutions Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Đơn vị   | Bộ máy	Tên chức danh trực thuộc                                       | Bộ máy	Tên chức danh trực thuộc                                                 | Tên chức danh tiếng Anh                                                                | Phân luồng   | Phân loại            |
+|----------|---------------------------------------|-------------------------------------------------|----------------------------------------------------------------------------------------|--------------|----------------------|
+|          | -	Phó phòng Quản lý rủi ro tín dụng (phụ trách Quản lý công cụ tín dụng số)                                       | -	Phó phòng Quản lý rủi ro tín dụng (phụ trách Quản lý công cụ tín dụng số)                                                 | Deputy Head of Credit Risk Management Department - Digital Credit Solutions Management | Hỗ trợ       | Nhân sự quản lý      |
+|          | Bộ phận Chính sách tín dụng           | Chuyên gia Chính sách tín dụng                  | Expert, Credit Policy                                                                  | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Chính sách tín dụng           | Chuyên viên cao cấp Chính sách tín dụng         | Principal Specialist, Credit Policy                                                    | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Chính sách tín dụng           | Chuyên viên chính Chính sách tín dụng           | Senior Specialist, Credit Policy                                                       | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Chính sách tín dụng           | Chuyên viên Chính sách tín dụng                 | Specialist, Credit Policy                                                              | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý danh mục tín dụng     | Chuyên gia Quản lý danh mục tín dụng            | Expert, Credit Portfolio Management                                                    | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý danh mục tín dụng     | Chuyên viên cao cấp Quản lý danh mục tín dụng   | Principal Specialist, Credit Portfolio Management                                      | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý danh mục tín dụng     | Chuyên viên chính Quản lý danh mục tín dụng     | Senior Specialist, Credit Portfolio Management                                         | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý danh mục tín dụng     | Chuyên viên Quản lý danh mục tín dụng           | Specialist, Credit Portfolio Management                                                | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý   công cụ tín dụng số | Chuyên viên cao cấp Quản lý công cụ tín dụng số | Principal Specialist, Digital Credit Solutions Management                              | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Quản lý   công cụ tín dụng số | Chuyên viên chính Quản lý công cụ tín dụng số   | Senior Specialist, Digital Credit Solutions Management                                 | Hỗ trợ       | Nhân sự   chuyên môn |
+=========================================
+
+
+========== EMPTY SEMANTIC TEXT ==========
+Table index: 1002
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>Đơn vị</td>
+<td colspan="2">Bộ máy	Tên chức danh trực thuộc</td>
+<td>Tên chức danh tiếng Anh</td>
+<td>Phân luồng</td>
+<td>Phân loại</td>
+</tr>
+<tr>
+<td rowspan="11"></td>
+<td colspan="2">-	Phó phòng Vận hành ứng dụng (phụ trách Giám sát hệ thống ứng dụng)</td>
+<td>Deputy Head of Application Operations Department - Application Monitoring</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td colspan="2">-	Phó phòng Vận hành ứng dụng (phụ trách Vận hành kênh thanh toán)</td>
+<td>Deputy Head of Application Operations Department - Payment Application Operations</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td colspan="2">-	Phó phòng Vận hành ứng dụng (phụ trách Quản lý chất lượng dịch vụ)</td>
+<td>Deputy Head of Application Operations Department - Service Quality Management</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự quản lý</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Dịch vụ công nghệ thông tin</td>
+<td>Trưởng nhóm Dịch vụ công nghệ thông tin</td>
+<td>Team Leader, IT Service</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Dịch vụ công nghệ<br>thông tin</td>
+<td>Principal Specialist, IT Service</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Dịch vụ công nghệ thông<br>tin</td>
+<td>Senior Specialist, IT Service</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên Dịch vụ công nghệ thông tin</td>
+<td>Specialist, IT Service</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td rowspan="4">Bộ phận Vận hành ứng dụng nghiệp vụ ngân hàng</td>
+<td>Chuyên gia Vận hành ứng dụng nghiệp vụ<br>ngân hàng</td>
+<td>Expert, Core and Business Application Operations</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Trưởng nhóm Vận hành ứng dụng nghiệp vụ<br>ngân hàng</td>
+<td>Team Leader, Core and Business Application Operations</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên cao cấp Vận hành ứng dụng nghiệp vụ ngân hàng</td>
+<td>Principal Specialist, Core and Business Application Operations</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+<tr>
+<td>Chuyên viên chính Vận hành ứng dụng nghiệp vụ ngân hàng</td>
+<td>Senior Specialist, Core and Business Application Operations</td>
+<td>Hỗ trợ</td>
+<td>Nhân sự<br>chuyên môn</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+| Đơn vị   | Bộ máy	Tên chức danh trực thuộc                                               | Bộ máy	Tên chức danh trực thuộc                                                           | Tên chức danh tiếng Anh                                                           | Phân luồng   | Phân loại            |
+|----------|-----------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------------------|
+|          | -	Phó phòng Vận hành ứng dụng (phụ trách Giám sát hệ thống ứng dụng)                                               | -	Phó phòng Vận hành ứng dụng (phụ trách Giám sát hệ thống ứng dụng)                                                           | Deputy Head of Application Operations Department - Application Monitoring         | Hỗ trợ       | Nhân sự quản lý      |
+|          | -	Phó phòng Vận hành ứng dụng (phụ trách Vận hành kênh thanh toán)                                               | -	Phó phòng Vận hành ứng dụng (phụ trách Vận hành kênh thanh toán)                                                           | Deputy Head of Application Operations Department - Payment Application Operations | Hỗ trợ       | Nhân sự quản lý      |
+|          | -	Phó phòng Vận hành ứng dụng (phụ trách Quản lý chất lượng dịch vụ)                                               | -	Phó phòng Vận hành ứng dụng (phụ trách Quản lý chất lượng dịch vụ)                                                           | Deputy Head of Application Operations Department - Service Quality Management     | Hỗ trợ       | Nhân sự quản lý      |
+|          | Bộ phận Dịch vụ công nghệ thông tin           | Trưởng nhóm Dịch vụ công nghệ thông tin                   | Team Leader, IT Service                                                           | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ công nghệ thông tin           | Chuyên viên cao cấp Dịch vụ công nghệ   thông tin         | Principal Specialist, IT Service                                                  | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ công nghệ thông tin           | Chuyên viên chính Dịch vụ công nghệ thông   tin           | Senior Specialist, IT Service                                                     | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Dịch vụ công nghệ thông tin           | Chuyên viên Dịch vụ công nghệ thông tin                   | Specialist, IT Service                                                            | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Vận hành ứng dụng nghiệp vụ ngân hàng | Chuyên gia Vận hành ứng dụng nghiệp vụ   ngân hàng        | Expert, Core and Business Application Operations                                  | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Vận hành ứng dụng nghiệp vụ ngân hàng | Trưởng nhóm Vận hành ứng dụng nghiệp vụ   ngân hàng       | Team Leader, Core and Business Application Operations                             | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Vận hành ứng dụng nghiệp vụ ngân hàng | Chuyên viên cao cấp Vận hành ứng dụng nghiệp vụ ngân hàng | Principal Specialist, Core and Business Application Operations                    | Hỗ trợ       | Nhân sự   chuyên môn |
+|          | Bộ phận Vận hành ứng dụng nghiệp vụ ngân hàng | Chuyên viên chính Vận hành ứng dụng nghiệp vụ ngân hàng   | Senior Specialist, Core and Business Application Operations                       | Hỗ trợ       | Nhân sự   chuyên môn |
+=========================================
+
+✗ Failed: test.docx
+  Error: Empty Semantic Text at table index 41.
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 1
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================

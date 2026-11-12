@@ -1,0 +1,83 @@
+================================================================================
+UAT DOCUMENT PIPELINE
+================================================================================
+
+Input container  : test-input
+Output container : test-output
+
+================================================================================
+AZURE BLOB DOCUMENT PIPELINE
+================================================================================
+INPUT DOCX  : 2
+OUTPUT DOCX : 1
+
+--------------------------------------------------------------------------------
+[1/2] sample.docx
+Status: UNCHANGED
+→ SKIP
+
+--------------------------------------------------------------------------------
+[2/2] test.docx
+Status: NEW
+→ PROCESS
+Tables selected: 1373
+Tables skipped: 15
+Table 0: processed successfully.
+Table 1: processed successfully.
+Table 2: processed successfully.
+Table 3: processed successfully.
+Table 4: processed successfully.
+Table 5: processed successfully.
+Table 6: processed successfully.
+Table 7: processed successfully.
+
+================================================================================
+TABLE PROCESSING ERROR
+Table index: 8
+Error: Unsupported table type: UNKNOWN
+
+--- INPUT HTML ---
+<html>
+<body>
+<table border='1'>
+<tr>
+<td>1.</td>
+<td>Khách hàng là trọng tâm</td>
+<td>2.</td>
+<td>Kỷ cương làm nền tảng</td>
+<td>3.</td>
+<td>Trách nhiệm là cam kết</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Sáng tạo để dẫn đầu</td>
+<td>5.</td>
+<td>Hiệu quả là mục tiêu</td>
+<td>6.</td>
+<td>Hạnh phúc là hành trình</td>
+</tr>
+</table>
+</body>
+</html>
+
+--- DOCLING MARKDOWN ---
+|   1. | Khách hàng là trọng tâm   |   2. | Kỷ cương làm nền tảng   |   3. | Trách nhiệm là cam kết   |
+|------|---------------------------|------|-------------------------|------|--------------------------|
+|   4. | Sáng tạo để dẫn đầu       |   5. | Hiệu quả là mục tiêu    |   6. | Hạnh phúc là hành trình  |
+================================================================================
+✗ Failed: test.docx
+  Error: Unsupported table type: UNKNOWN
+
+================================================================================
+AZURE BLOB PIPELINE SUMMARY
+================================================================================
+New       : 1
+Modified  : 0
+Unchanged : 1
+Deleted   : 0
+Failed    : 1
+================================================================================
+
+================================================================================
+UAT COMPLETED
+================================================================================
