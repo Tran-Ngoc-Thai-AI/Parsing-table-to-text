@@ -60,6 +60,35 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+
+## 5. Minimal Tool Usage & Scope Control
+
+- **Use the minimum tools and commands necessary to complete the user's request.**
+- Follow the exact scope of the request. Never expand a simple task into an unrelated investigation.
+- Stop immediately when sufficient information has been obtained.
+
+### Git Command Rules
+
+- Current branch: `git branch --show-current`
+- Working tree status: `git status --short`
+- All branches: `git branch --all`
+- Recent commits: `git log -5 --oneline`
+
+Do not inspect commit history, compare branches, inspect file diffs, or analyze unrelated files unless explicitly requested.
+
+### Tool Execution Rules
+
+- Simple questions must use simple commands.
+- Do not run multiple exploratory commands when one command is sufficient.
+- Do not repeat commands unless the previous result failed or was incomplete.
+- Do not autonomously investigate other branches or files.
+- Do not use Codebase Memory for simple Git, environment, or filesystem questions.
+- Use Codebase Memory only when understanding source code, architecture, dependencies, or execution flows is relevant.
+- For development tasks, inspect only the modules relevant to the requested change.
+- Never continue investigating after the user's question has been answered.
+
+**Priority: Accuracy and minimal execution over exhaustive investigation.**
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
